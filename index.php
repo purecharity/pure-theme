@@ -14,21 +14,21 @@
     </div>
 </div>
 
+
 <div class="wide-container">
 	<div class="container">
-		<div class="row">
-			<div class="page-content col span_18">
-				<div class="articles-container">
+		<div class="row page-content col span_24 articles-container">
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-						<?php get_template_part( 'inc/content', 'article' ); ?>
+          <div class="row article">
+             <?php get_template_part('inc/content','article'); ?> 
+          </div>
 					<?php endwhile; else: ?>
 					<?php _e('Sorry, no posts matched your criteria.'); ?>
 					<?php endif; ?>
-				</div><!--end articles container -->
-				<?php get_template_part( 'inc/feature', 'pagination' ); ?>
-			</div>
-			<?php get_sidebar()?>
-		</div><!-- end row-->
+          <div class="row">
+    		<?php get_template_part( 'inc/feature', 'pagination' ); ?>
+        </div>
+    </div><!-- end row-->
 	</div> <!-- end container--> 
 </div>
 

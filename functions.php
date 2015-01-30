@@ -48,29 +48,12 @@ add_action('wp_enqueue_scripts', 'pure_enqueue_scripts');
 
 // Add a few different custom excerpt lengths
 
-   function wpe_excerptlength_short($length) {
-       return 25;
-   }
-   function wpe_excerptlength_medium($length) {
-       return 55;
-   }
-   function wpe_excerptlength_long($length) {
-       return 85;
-   }
- 
-   function wpe_excerpt($length_callback='', $more_callback='') {
+// Replaces the excerpt "more" text by a link
+function new_excerpt_more($more) {
        global $post;
-       if(function_exists($length_callback)){
-           add_filter('excerpt_length', $length_callback);
-       }
-       if(function_exists($more_callback)){
-           add_filter('excerpt_more', $more_callback);
-       }
-       $output = get_the_excerpt();
-       $output = apply_filters('wptexturize', $output);
-       $output = apply_filters('convert_chars', $output);
-       echo $output;
-   }
+  return '<p><a class="moretag" href="'. get_permalink($post->ID) . '"> Read More</a></p>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
 
  // Add some featured images and sizes
 
@@ -81,6 +64,7 @@ add_action('wp_enqueue_scripts', 'pure_enqueue_scripts');
  // additional image sizes
  // delete the next line if you do not need additional image sizes
  add_image_size( 'image-small', 150, 9999 ); // 150 pixels wide (and unlimited height)
+ add_image_size( 'image-blog', 200, 200, true ); // 400 pixels wide (and unlimited height)
  add_image_size( 'image-single', 400, 9999 ); // 400 pixels wide (and unlimited height)
  add_image_size( 'grid-sidebyside', 463, 300, array( 'middle', 'center' )  ); // for the side by side images in the grid layout
  add_image_size( 'grid-large', 950, 9999, true ); // For the large image in the grid

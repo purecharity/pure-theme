@@ -162,20 +162,6 @@
 	font-size: .9em;
 }
 
-// Posts 
-
-.articles-container {
-	article {
-		padding: 30px 0;
-	}
-	h2 {
-		margin-bottom: 0;
-	}
-	.meta {
-		font-size: .9em;
-	}
-}
-
 .donatebody {
 	padding: 0px 0 100px 0;
 	color: #fff;
@@ -212,4 +198,67 @@
 
 .fr-list-container.is-grid {
 	font-size:.8em;
+}
+
+
+// Blog formatting
+
+// Posts 
+
+.article {
+	text-align: center;
+	padding: 50px 0;
+	h2 {
+		margin:0;
+	}
+}
+
+.meta {
+		font-size: .8em;
+		text-align: center;
+		font-style: italic;
+	}
+
+.featured-image {
+	img {
+		@include rounded(100%);
+	}
+}
+
+.comments-row {
+	border-top: 1px solid $bordercolor;
+	ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	li {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	.comment-author {
+		padding: 0px;
+		font-weight: $boldfontweight;
+		img {
+			float: left;
+			margin: 0 10px 10px 0;
+		}
+	}
+	.comment-meta {
+		font-size: .9em;
+	}
+	.children  {
+		margin-left: 40px;
+	}
+}
+}
+
+
+
+
+
+.comment-body {
+	margin: 20px 0;
+	padding: 20px 0;
+	border-bottom: 1px solid $bordercolor;
 }

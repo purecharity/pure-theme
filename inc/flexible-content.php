@@ -196,7 +196,7 @@
                     <?php the_post_thumbnail( 'image-medium' ); ?>   
                     <p class="meta date"><?php the_time('F j, Y'); ?></p>
                     <h4><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h4>
-                    <?php wpe_excerpt('wpe_excerptlength_short', 'wpe_excerptmore'); ?>     
+                    <?php the_excerpt(); ?>     
                   </article>  
                 </div>
               <?php endwhile; else: ?>

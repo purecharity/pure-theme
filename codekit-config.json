@@ -89,7 +89,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/style.css",
-      "outputAbbreviatedPath" : "No Output Path",
+      "outputAbbreviatedPath" : "\/No Output Path",
       "fileType" : 16
     },
     "\/page-fullwidth-nohead.php" : {
@@ -112,6 +112,17 @@
       "outputAbbreviatedPath" : "\/js\/jquery.livefilter-ck.js",
       "fileType" : 64
     },
+    "\/js\/jquery.customSelect.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/jquery.customSelect.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/jquery.customSelect.min-ck.js",
+      "fileType" : 64
+    },
     "\/lib\/metabox\/jquery.cmbScripts.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -122,6 +133,17 @@
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/lib\/metabox\/jquery.cmbScripts-ck.js",
       "fileType" : 64
+    },
+    "\/lib\/metabox\/images\/ui-icons_cd0a0a_256x240.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/lib\/metabox\/images\/ui-icons_cd0a0a_256x240.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/lib\/metabox\/images\/ui-icons_cd0a0a_256x240.png",
+      "initialSize" : 4369,
+      "fileType" : 8192
     },
     "\/sass\/images.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -135,26 +157,6 @@
       "fileType" : 4,
       "debugStyle" : 1
     },
-    "\/page-sidebar.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/page-sidebar.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/lib\/metabox\/images\/ui-icons_cd0a0a_256x240.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/lib\/metabox\/images\/ui-icons_cd0a0a_256x240.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/lib\/metabox\/images\/ui-icons_cd0a0a_256x240.png",
-      "initialSize" : 4369,
-      "fileType" : 8192
-    },
     "\/sass\/mobile.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -167,6 +169,24 @@
       "fileType" : 4,
       "debugStyle" : 1
     },
+    "\/page-sidebar.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/page-sidebar.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/lib\/admin.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/lib\/admin.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/sass\/responsive-gs-24col.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -178,26 +198,6 @@
       "outputAbbreviatedPath" : "\/sass\/responsive-gs-24col.css",
       "fileType" : 4,
       "debugStyle" : 1
-    },
-    "\/lib\/admin.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/lib\/admin.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/js\/jquery.customSelect.min.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/jquery.customSelect.min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/jquery.customSelect.min-ck.js",
-      "fileType" : 64
     },
     "\/lib\/plugins.php" : {
       "ignoreWasSetByUser" : 0,
@@ -409,6 +409,15 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/css\/theme.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/theme.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
     "\/lib\/metabox\/images\/ico-delete.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -419,15 +428,6 @@
       "outputAbbreviatedPath" : "\/lib\/metabox\/images\/ico-delete.png",
       "initialSize" : 715,
       "fileType" : 8192
-    },
-    "\/css\/theme.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/theme.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
     },
     "\/js\/jquery.bxslider.js" : {
       "ignoreWasSetByUser" : 0,
@@ -490,15 +490,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/inc\/nav-dark.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/inc\/nav-dark.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/images\/ai.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -509,6 +500,24 @@
       "outputAbbreviatedPath" : "\/images\/ai.png",
       "initialSize" : 81339,
       "fileType" : 8192
+    },
+    "\/inc\/nav-dark.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/inc\/nav-dark.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/page-donate.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/page-donate.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/images\/gc-cause-avatar.png" : {
       "ignoreWasSetByUser" : 0,
@@ -567,16 +576,14 @@
       "outputAbbreviatedPath" : "\/js\/easyResponsiveTabs-ck.js",
       "fileType" : 64
     },
-    "\/lib\/metabox\/images\/ui-icons_454545_256x240.png" : {
+    "\/page-defaultnoheader.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/lib\/metabox\/images\/ui-icons_454545_256x240.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/lib\/metabox\/images\/ui-icons_454545_256x240.png",
-      "initialSize" : 4369,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/page-defaultnoheader.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/page-noheader.php" : {
       "ignoreWasSetByUser" : 0,
@@ -587,14 +594,16 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/page-defaultnoheader.php" : {
+    "\/lib\/metabox\/images\/ui-icons_454545_256x240.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/page-defaultnoheader.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/lib\/metabox\/images\/ui-icons_454545_256x240.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/lib\/metabox\/images\/ui-icons_454545_256x240.png",
+      "initialSize" : 4369,
+      "fileType" : 8192
     },
     "\/lib\/metabox\/images\/ui-bg_flat_0_aaaaaa_40x100.png" : {
       "ignoreWasSetByUser" : 0,
@@ -753,17 +762,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
-    "\/js\/pin.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/pin.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/pin-ck.js",
-      "fileType" : 64
-    },
     "\/js\/jquery.dropdown.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -773,6 +771,17 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/js\/jquery.dropdown-ck.js",
+      "fileType" : 64
+    },
+    "\/js\/pin.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/pin.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/pin-ck.js",
       "fileType" : 64
     },
     "\/fonts\/ss-social-circle\/ss-social.js" : {
@@ -826,15 +835,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
-    "\/css\/ie.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/ie.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
     "\/sass\/bxslider.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -846,6 +846,15 @@
       "outputAbbreviatedPath" : "\/sass\/bxslider.css",
       "fileType" : 4,
       "debugStyle" : 1
+    },
+    "\/css\/ie.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/ie.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/functions.php" : {
       "ignoreWasSetByUser" : 0,
@@ -947,15 +956,6 @@
       "fileType" : 4,
       "debugStyle" : 1
     },
-    "\/lib\/class-tgm-plugin-activation.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/lib\/class-tgm-plugin-activation.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/sass\/variables.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -967,6 +967,15 @@
       "outputAbbreviatedPath" : "\/sass\/variables.css",
       "fileType" : 4,
       "debugStyle" : 1
+    },
+    "\/lib\/class-tgm-plugin-activation.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/lib\/class-tgm-plugin-activation.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/inc\/feature-pagination.php" : {
       "ignoreWasSetByUser" : 0,
@@ -1226,7 +1235,7 @@
   "projectAttributes" : {
     "bourbonEnabled" : 0,
     "displayValue" : "pure-theme",
-    "displayValueWasSetByUser" : 0,
+    "displayValueWasSetByUser" : 1,
     "compassEnabled" : 0
   }
 }

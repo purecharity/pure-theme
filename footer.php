@@ -1,51 +1,38 @@
 <div class="wide-container footer">
-			<div class="container">
-				<div class="row">
-
-					<div class="col span_6">
-
-						<?php if ( !function_exists('dynamic_sidebar')
-							|| !dynamic_sidebar('footer-left') ) : ?>
-						<?php endif; ?>
-
-					</div>
-
-					<div class="col span_6">
-
-						<?php if ( !function_exists('dynamic_sidebar')
-							|| !dynamic_sidebar('footer-centerleft') ) : ?>
-						<?php endif; ?>
-
-					</div>
-
-					<div class="col span_6">
-
-						<?php if ( !function_exists('dynamic_sidebar')
-							|| !dynamic_sidebar('footer-centerright') ) : ?>
-						<?php endif; ?>
-
-					</div>
-
-					<div class="col span_6">
-
-						<?php if ( !function_exists('dynamic_sidebar')
-							|| !dynamic_sidebar('footer-right') ) : ?>
-						<?php endif; ?>
-
-					</div>
-
-				</div>
+	<div class="container">
+		<div class="row">
+			<div class="col span_6">
+				<?php if ( !function_exists('dynamic_sidebar')
+					|| !dynamic_sidebar('footer-left') ) : ?>
+				<?php endif; ?>
+			</div>
+			<div class="col span_6">
+				<?php if ( !function_exists('dynamic_sidebar')
+					|| !dynamic_sidebar('footer-centerleft') ) : ?>
+				<?php endif; ?>
+			</div>
+			<div class="col span_6">
+				<?php if ( !function_exists('dynamic_sidebar')
+					|| !dynamic_sidebar('footer-centerright') ) : ?>
+				<?php endif; ?>
+			</div>
+			<div class="col span_6">
+				<?php if ( !function_exists('dynamic_sidebar')
+					|| !dynamic_sidebar('footer-right') ) : ?>
+				<?php endif; ?>
 			</div>
 		</div>
-
-		<div class="wide-container footer-wide">
-			<div class="container">
-				<div class="row">
-						<p>&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?></p>
-				</div><!-- end row -->
-			</div><!-- end container -->
-		</div>
 	</div>
+</div>
+
+	<div class="wide-container footer-wide">
+		<div class="container">
+			<div class="row">
+					<p>&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?></p>
+			</div><!-- end row -->
+		</div><!-- end container -->
+	</div>
+</div>
 	<?php wp_footer(); ?>
 	</body>
 </html>
@@ -64,7 +51,8 @@
 
 	a.button {color: #fff !important;}
 	a.button:hover {color: #fff !important;background:<?php the_field('secondary_color','options'); ?> !important; }
-
+	a.button.ghost { color: <?php the_field('main_color','options'); ?> !important;border-color: <?php the_field('main_color','options'); ?>;}
+	a.button.ghost:hover {background: <?php the_field('main_color','options'); ?> !important;color: #fff !important;}
 	.siteid h1 {
 		background: url(<?php the_field('logo','options'); ?>);
 		background-size: contain;
