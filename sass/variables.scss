@@ -1,0 +1,57 @@
+// fonts 
+
+$primaryfont: "proxima-nova",sans-serif;
+$primarybuttoncolor: #EEEEEE;
+
+// colors
+$primarycolor: #CCCB6C;
+$secondarycolor: #CF754C;
+$primarylightcolor: #EEEEEE;
+$canvascolor: #fff;
+
+$lightfontweight:300;
+$primaryfontweight: 400;
+$boldfontweight: 600;
+
+// other fun stuff 
+
+$bordercolor: #ddd;
+$insetshadow: inset 0px 3px 4px 1px rgba(0, 0, 0, .3);
+$outsetshadow: 0px -3px 4px 1px rgba(0, 0, 0, .2);
+
+// mixins
+
+@mixin font-size($sizeValue: 12 ){
+  font-size: $sizeValue + px; //fallback for old browsers
+  font-size: (0.125 * $sizeValue) + rem;
+}
+// usage:  @include font-size(16);
+
+@mixin line-height($heightValue: 12 ){
+	line-height: $heightValue + px; //fallback for old browsers
+	line-height: (0.125 * $heightValue) + rem;
+}
+// usage:  @include line-height (16);
+
+@mixin rounded($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+//  @include rounded(3px);	
+
+@mixin trans($transition) {
+	-webkit-transition: background $transition ease-in-out;
+	-moz-transition: background $transition ease-in-out;
+	-ms-transition: background $transition ease-in-out;
+	-o-transition: background $transition ease-in-out;
+	transition: background $transition ease-in-out;
+}
+// usage: @include trans(.3s);
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+// usage:  @include opacity(0.8);

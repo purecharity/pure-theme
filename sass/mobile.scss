@@ -1,0 +1,59 @@
+.mobileshow {
+  display: none;
+}
+
+.menu-btn {
+  float: right;
+  margin-top: 27px;
+  margin-right: 20px;
+  padding-bottom: 10px;
+  text-align: right;
+  font-size: 2.2em;
+  font-weight: $boldfontweight;
+}
+
+a.mobilepagebtn {
+  color: #000;
+}
+
+@media only screen 
+and (max-width : 768px) {
+
+  .sitesid h1 {
+    float: none;
+    text-align: left;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .site-header {
+    display: none;
+  }
+
+  .mobileshow {
+    display: block;
+  }
+
+  // class to hide any small stuff we need to in mobile
+  .mobilehide {
+    display: none !important;
+  }
+
+}
+
+
+@media only screen 
+and (max-width : 421px) {
+
+  // hide ONLY on mobile devices, not tablets
+  
+  .mobileshow {
+    display: inline;
+  }
+
+  .mobile-causes-nav.phone-only {
+    display: inline;
+  }
+
+}

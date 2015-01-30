@@ -1,0 +1,96 @@
+h1, h2, h3, h4, h5, h6, p, pre, blockquote, dl, address{ 
+	margin: .7em 0;
+	padding: 0; 
+	line-height:163%;
+}
+
+h1, h2,h3,h4,h5,h6 {
+	font-weight: bold;
+}
+
+h1 {font-size: 2em ;}
+h2 {font-size: 1.8em;}
+h3 {font-size: 1.6em;}
+h4 {font-size: 1.4em;}
+h5 {font-size: 1.2em;}
+h6 {font-size: 1em;}
+
+body {
+	margin:0 auto;padding:0;
+	font-family: $primaryfont;
+	font-style: normal;
+	font-weight: $primaryfontweight;
+	color: #333;
+	background: #fff;
+	-webkit-font-smoothing: antialiased;
+}
+
+blockquote {
+	padding: 2px 20px; 
+	margin: 5px 30px;
+	border-left: 1px dotted #ccc;
+}
+
+a {color: $secondarycolor;text-decoration: none;}
+a:hover {color: #000;}
+
+em, i {font-style: italic;}
+strong, b { font-weight: $boldfontweight;}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+.pin {
+  width: 100%;
+  z-index: 999999999;
+  position: absolute;
+  left:0;
+  top:0;
+}
+
+.pinned {
+  position: fixed !important;
+  background: #000;
+  opacity: .8;
+}
+
+/* Page Layout */
+
+.wide-container {
+	width: 100%;
+	background: $canvascolor;
+	&.header-wide {
+		background: $canvascolor;
+	}
+	&.footer-wide {
+		background: $canvascolor;
+	}	
+}
+
+/*  page layout */
+
+.post-body {
+	p {
+		margin: .7em 0;
+	}
+	ul {
+		padding-left: 1.5em;
+		li {
+			list-style: disc;
+		}
+	}
+	ol {
+		padding-left: 1.5em;
+		li {
+			list-style: decimal;
+		}
+	}	
+}
+
+.clear_block {
+  float: left;
+  width: 100%;
+  padding: 10px;
+}

@@ -1,0 +1,129 @@
+/* ===== Top ===== */
+.col.nav {
+	float: right;
+	padding-right: 20px
+}
+.navigation {
+	font-weight: $boldfontweight;
+	ul.menu {
+		list-style:none;
+		margin:30px 0px;
+		padding:0;
+		width: 100%;
+		float: left;
+		text-align: right;
+		position: relative;
+		z-index: 3;
+		li {
+			display: inline-block;
+			position:relative;
+			padding:0;
+			margin:0;
+			a {
+				display:block;
+				text-decoration:none;
+				padding:0 10px;
+				line-height:43px;
+				color: #fff ; // main nav color
+				&:hover{
+					position:relative;
+					color: #000; // main nav hover color
+					text-shadow:none;		
+				}
+			}
+			&:hover {
+					position:relative;
+					background: $primarylightcolor; // main nav li hover
+					color: #000 !important; // main name li hover color
+					text-shadow:none;	
+					a {
+						color: #000; // main nav li hover color
+					}	
+				}
+			&.current-page-parent,
+			&.current_page_item {
+				a {
+					color: #fff; // main nav current page color
+					text-shadow:none;		
+				}
+			}
+		}
+		ul {
+			background:$primarylightcolor;
+			text-align: left;
+			&:hover {
+				color: #000; // main nav second level ul hover color
+			}
+			li {
+				border:none;
+				background: $primarylightcolor;
+				&:active {
+					color: #fff; // main nav second level li active color
+				} 
+				a {
+					float:none;
+					width:180px;
+					line-height:normal;
+					font-variant:normal;
+					font-weight:normal;
+					font-size:14px;
+					text-transform:none;
+					padding:6px 10px;
+					background:none !important;
+					font-style: normal;
+					text-shadow:none;		
+					color: #000; // main nav second level a color
+				}
+			}
+			ul {
+				background:#e4e4e4 !important; // main nav second level 
+				border-color:#e4e4e4 !important;
+				margin-left:-14px;
+			}
+		}
+	}
+}
+
+
+
+.navigation .menu ul ul,
+.navigation .menu ul li:hover ul ul {
+	position:absolute;
+	display:none;
+}
+.navigation .menu ul ul li:hover ul,		
+.navigation .menu ul li:hover ul li:hover ul {
+	display:block;
+	top:0px;
+	left: 100%;
+}
+
+/* ===== Second and Third Level ===== */
+.navigation .menu ul li:hover ul {
+	display:block;
+	position:absolute;
+	left:0;
+	top:100%;
+	width:auto;
+	height:auto;
+	margin:0;
+	padding:0;
+}
+
+.navigation .menu ul ul ul li a {
+	color:#000;
+	font-weight:bold;
+}
+.navigation .menu ul ul li:hover>a {
+	background: #6A6A67 !important;
+	color: #fff;
+}
+.navigation .menu ul ul ul li:hover>a {
+	background: #666 !important;
+	color:#fff !important;
+}
+
+
+
+
+
