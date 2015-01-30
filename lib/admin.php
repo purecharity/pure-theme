@@ -116,7 +116,7 @@ function my_custom_dashboard_widgets() {
   }
 
  function custom_dashboard_help() {
-  echo '<p>If you need help or support for your theme, please contact Pure Charity at <a href="mailto:dev@purecharity.com">todd@purecharity.com</a></p>';
+  echo '<p>If you need help or support for your theme, please contact Pure Charity at <a href="mailto:wpdev@purecharity.com">wpdev@purecharity.com</a></p>';
  }
 
 // Remove unnecessary items from the admin bar
