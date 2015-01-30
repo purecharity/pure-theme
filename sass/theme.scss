@@ -228,9 +228,10 @@
 .comments-row {
 	border-top: 1px solid $bordercolor;
 	ol {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
 	li {
 		list-style: none;
 		margin: 0;
@@ -250,15 +251,11 @@
 	.children  {
 		margin-left: 40px;
 	}
+	.comment-body {
+		margin: 20px 0;
+		padding: 20px 0;
+		border-bottom: 1px solid $bordercolor;
+	}
 }
-}
 
 
-
-
-
-.comment-body {
-	margin: 20px 0;
-	padding: 20px 0;
-	border-bottom: 1px solid $bordercolor;
-}

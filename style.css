@@ -584,19 +584,18 @@ a.button:hover { background: #cf754c; }
 .comments-row { border-top: 1px solid #dddddd; }
 /* line 230, sass/theme.scss */
 .comments-row ol { margin: 0; padding: 0; list-style: none; }
-/* line 234, sass/theme.scss */
-.comments-row ol li { list-style: none; margin: 0; padding: 0; }
-/* line 239, sass/theme.scss */
-.comments-row ol .comment-author { padding: 0px; font-weight: 600; }
-/* line 242, sass/theme.scss */
-.comments-row ol .comment-author img { float: left; margin: 0 10px 10px 0; }
-/* line 247, sass/theme.scss */
-.comments-row ol .comment-meta { font-size: .9em; }
-/* line 250, sass/theme.scss */
-.comments-row ol .children { margin-left: 40px; }
-
-/* line 260, sass/theme.scss */
-.comment-body { margin: 20px 0; padding: 20px 0; border-bottom: 1px solid #dddddd; }
+/* line 235, sass/theme.scss */
+.comments-row li { list-style: none; margin: 0; padding: 0; }
+/* line 240, sass/theme.scss */
+.comments-row .comment-author { padding: 0px; font-weight: 600; }
+/* line 243, sass/theme.scss */
+.comments-row .comment-author img { float: left; margin: 0 10px 10px 0; }
+/* line 248, sass/theme.scss */
+.comments-row .comment-meta { font-size: .9em; }
+/* line 251, sass/theme.scss */
+.comments-row .children { margin-left: 40px; }
+/* line 254, sass/theme.scss */
+.comments-row .comment-body { margin: 20px 0; padding: 20px 0; border-bottom: 1px solid #dddddd; }
 
 /*
 ----------------------------------------------------------------
