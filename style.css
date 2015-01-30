@@ -503,100 +503,100 @@ a.button:hover { background: #cf754c; }
 /* line 43, sass/theme.scss */
 .bxslider.slider-header li { height: 98vh; display: block; background-position: center center; background-repeat: no-repeat; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; color: #fff; text-align: center; }
 /* line 54, sass/theme.scss */
-.bxslider.slider-header .slide-content { padding-top: 260px; }
-/* line 57, sass/theme.scss */
+.bxslider.slider-header .slide-content { position: absolute; top: 50%; left: 50%; margin: 0; line-height: 120%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+/* line 64, sass/theme.scss */
 .bxslider.slider-header h2 { font-size: 2em; margin: 0 0 30px 0; line-height: 100%; }
 
-/* line 65, sass/theme.scss */
+/* line 72, sass/theme.scss */
 .blurb-content { text-align: center; }
 
-/* line 69, sass/theme.scss */
+/* line 76, sass/theme.scss */
 .content-section { padding: 50px 0; text-align: center; border-bottom: 1px solid #dddddd; }
-/* line 73, sass/theme.scss */
-.content-section.main-content-section { text-align: inherit; font-size: 1.2em; }
-/* line 77, sass/theme.scss */
-.content-section.general_content { padding: 0 0 40px 0; }
 /* line 80, sass/theme.scss */
+.content-section.main-content-section { text-align: inherit; font-size: 1.2em; }
+/* line 84, sass/theme.scss */
+.content-section.general_content { padding: 0 0 40px 0; }
+/* line 87, sass/theme.scss */
 .content-section.bgimage_content_section { padding: 100px 0; background-position: center; background-repeat: no-repeat; background-size: cover; font-size: 1.2em; }
-/* line 88, sass/theme.scss */
+/* line 95, sass/theme.scss */
 .content-section .videoembed p { margin: 0; }
 
-/* line 94, sass/theme.scss */
+/* line 101, sass/theme.scss */
 .bx-quote { padding-bottom: 40px; font-style: italic; font-size: 1.6em; line-height: 133%; }
 
-/* line 101, sass/theme.scss */
+/* line 108, sass/theme.scss */
 .intro { font-size: 1.4em; }
 
-/* line 107, sass/theme.scss */
+/* line 114, sass/theme.scss */
 .page-header { height: 70vh; background-size: cover; background-repeat: no-repeat; background-position: center; text-align: center; color: #fff; margin-top: -105px; position: relative; z-index: -10; }
-/* line 117, sass/theme.scss */
+/* line 124, sass/theme.scss */
 .page-header h1 { position: absolute; top: 50%; left: 50%; margin: 0; font-size: 4em; line-height: 120%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 
-/* line 130, sass/theme.scss */
+/* line 137, sass/theme.scss */
 .post-body { padding-top: 30px; }
 
-/* line 134, sass/theme.scss */
+/* line 141, sass/theme.scss */
 .sidebar { padding-top: 20px; }
-/* line 136, sass/theme.scss */
+/* line 143, sass/theme.scss */
 .sidebar h4 { font-size: 1em; }
-/* line 139, sass/theme.scss */
+/* line 146, sass/theme.scss */
 .sidebar ul { list-style: none; }
 
-/* line 146, sass/theme.scss */
+/* line 153, sass/theme.scss */
 .footer { border-top: 1px solid #dddddd; font-size: .9em; text-align: center; }
-/* line 150, sass/theme.scss */
+/* line 157, sass/theme.scss */
 .footer ul { list-style: none; margin: 0; padding: 0; }
-/* line 154, sass/theme.scss */
+/* line 161, sass/theme.scss */
 .footer ul li { margin: 0; }
 
-/* line 160, sass/theme.scss */
+/* line 167, sass/theme.scss */
 .footer-wide { text-align: center; font-size: .9em; }
 
-/* line 165, sass/theme.scss */
+/* line 172, sass/theme.scss */
 .donatebody { padding: 0px 0 100px 0; color: #fff; font-size: 2em; }
-/* line 169, sass/theme.scss */
+/* line 176, sass/theme.scss */
 .donatebody h1 { margin: 0; text-align: center; }
-/* line 173, sass/theme.scss */
+/* line 180, sass/theme.scss */
 .donatebody .donateintro { text-align: center; }
 
-/* line 179, sass/theme.scss */
+/* line 186, sass/theme.scss */
 .donatebuttons ul { margin-top: 0px; text-align: center; list-style: none; font-size: .5em; }
-/* line 184, sass/theme.scss */
+/* line 191, sass/theme.scss */
 .donatebuttons ul.generaldonation { font-size: .6em; padding-bottom: 10px; }
-/* line 188, sass/theme.scss */
+/* line 195, sass/theme.scss */
 .donatebuttons ul li { list-style: none; margin-bottom: 10px; }
-/* line 192, sass/theme.scss */
+/* line 199, sass/theme.scss */
 .donatebuttons ul a { width: 300px; font-weight: 600; }
 
-/* line 199, sass/theme.scss */
+/* line 206, sass/theme.scss */
 .fr-list-container.is-grid { font-size: .8em; }
 
-/* line 208, sass/theme.scss */
+/* line 215, sass/theme.scss */
 .article { text-align: center; padding: 50px 0; }
-/* line 211, sass/theme.scss */
+/* line 218, sass/theme.scss */
 .article h2 { margin: 0; }
 
-/* line 216, sass/theme.scss */
+/* line 223, sass/theme.scss */
 .meta { font-size: .8em; text-align: center; font-style: italic; }
 
-/* line 223, sass/theme.scss */
+/* line 230, sass/theme.scss */
 .featured-image img { -webkit-border-radius: 100%; -moz-border-radius: 100%; border-radius: 100%; }
 
-/* line 228, sass/theme.scss */
-.comments-row { border-top: 1px solid #dddddd; }
-/* line 230, sass/theme.scss */
-.comments-row ol { margin: 0; padding: 0; list-style: none; }
 /* line 235, sass/theme.scss */
+.comments-row { border-top: 1px solid #dddddd; }
+/* line 237, sass/theme.scss */
+.comments-row ol { margin: 0; padding: 0; list-style: none; }
+/* line 242, sass/theme.scss */
 .comments-row li { list-style: none; margin: 0; padding: 0; }
-/* line 240, sass/theme.scss */
+/* line 247, sass/theme.scss */
 .comments-row .comment-author { padding: 0px; font-weight: 600; }
-/* line 243, sass/theme.scss */
+/* line 250, sass/theme.scss */
 .comments-row .comment-author img { float: left; margin: 0 10px 10px 0; }
-/* line 248, sass/theme.scss */
+/* line 255, sass/theme.scss */
 .comments-row .comment-meta { font-size: .9em; }
-/* line 251, sass/theme.scss */
+/* line 258, sass/theme.scss */
 .comments-row .children { margin-left: 40px; }
-/* line 254, sass/theme.scss */
+/* line 261, sass/theme.scss */
 .comments-row .comment-body { margin: 20px 0; padding: 20px 0; border-bottom: 1px solid #dddddd; }
 
 /*

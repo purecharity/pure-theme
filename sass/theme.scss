@@ -52,7 +52,14 @@
 			text-align: center;
 		}
 		.slide-content {
-			padding-top: 260px;
+			position: absolute;
+			top: 50%;
+		  left: 50%;
+		  margin:0;
+		  line-height: 120%;
+		  -webkit-transform: translate(-50%, -50%);
+		  -ms-transform: translate(-50%, -50%);
+		  transform: translate(-50%, -50%);
 		}
 		h2 {
 			font-size: 2em;
