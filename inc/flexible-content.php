@@ -10,7 +10,7 @@
       </div>
     </div>
   <?php elseif(get_row_layout() == "general_content"): // layout: General Content with bg image ?> 
-    <div class="wide-container content-section bgimage_content_section" style="color:<?php the_sub_field('font_color'); ?>;background-image: url(<?php the_sub_field('background_image'); ?>);">
+    <div class="wide-container general_content content-section bgimage_content_section" style="color:<?php the_sub_field('font_color'); ?>;background-image: url(<?php the_sub_field('background_image'); ?>);">
       <div class="container">
         <div class="row">
           <div class="col centered span_24 centered-section">
@@ -135,24 +135,48 @@
         </div>  
       <?php elseif(get_row_layout() == "quotes_rotator"): // layout: Video Embed ?>
         <div class="wide-container content-section" style="color:<?php the_sub_field('font_color'); ?>;background: <?php the_sub_field('background_color'); ?>;">
+            <div class="container">
+              <div class="row">
+                <?php if( $quote_title = get_sub_field('title') ){ ?>
+                  <h3><?php echo $quote_title; ?></h3>
+                <?php }?>
+                <?php if( $quote_intro = get_sub_field('intro') ){ ?>
+                  <p class="intro"><?php echo $quote_intro; ?></p>
+                <?php }?>
+              </div>
+              <div class="row nopadtop">
+                <ul class="quotes-slider">
+                  <?php while(has_sub_field('quotes')): ?>
+                    <div class="row nopadrow">
+                    <li class="bx-quote col span_18 centered"><?php the_sub_field('quote'); ?> </li>
+                    </div>
+                  <?php endwhile; ?>
+                </ul>
+              </div>
+            </div>
+        </div>  
+      <?php elseif(get_row_layout() == "general_rotator"): // layout: Video Embed ?>
+        <div class="wide-container content-section" style="color:<?php the_sub_field('font_color'); ?>;background: <?php the_sub_field('background_color'); ?>;">
+          <div class="container">
             <div class="row">
-              <?php if( $quote_title = get_sub_field('title') ){ ?>
-                <h3><?php echo $quote_title; ?></h3>
+              <?php if( $rotator_title = get_sub_field('title') ){ ?>
+                <h3><?php echo $rotator_title; ?></h3>
               <?php }?>
-              <?php if( $quote_intro = get_sub_field('intro') ){ ?>
-                <p class="intro"><?php echo $quote_intro; ?></p>
+              <?php if( $rotator_intro = get_sub_field('intro') ){ ?>
+                <p class="intro"><?php echo $rotator_intro; ?></p>
               <?php }?>
             </div>
             <div class="row nopadtop">
-              <ul class="quotes-slider">
-                <?php while(has_sub_field('quotes')): ?>
+              <ul class="general-slider">
+                <?php while(has_sub_field('rotator_content')): ?>
                   <div class="row nopadrow">
-                  <li class="bx-quote col span_18 centered"><?php the_sub_field('quote'); ?> </li>
+                  <li class="bx-general col span_18 centered"><?php the_sub_field('content'); ?> </li>
                   </div>
                 <?php endwhile; ?>
               </ul>
             </div>
-        </div>  
+          </div>
+        </div>    
       <?php elseif(get_row_layout() == "blog_posts_section"): // layout: Video Embed ?>
         <div class="wide-container content-section" style="color:<?php the_sub_field('font_color'); ?>;background: <?php the_sub_field('background_color'); ?>;">
           <div class="container">  

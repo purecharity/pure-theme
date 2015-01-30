@@ -1,17 +1,17 @@
 <?php 
 	get_header(); 
 	get_template_part( 'head'); 
-  get_template_part( 'inc/nav','light'); 
+  get_template_part('inc/nav','dark');
 ?>
 
 <div class="wide-container noheaderimage">    
-	<div class="row nopadrow">
-    <div class="col span_24 centered">
-      <header>
-      <h1>Blog</h1>
-      </header>     
+  <div class="row nopadrow">
+      <div class="col span_24 centered">
+        <header>
+        <h1>Blog</h1>
+        </header>     
+      </div>
     </div>
-  </div>
 </div>
 
 <div class="wide-container">

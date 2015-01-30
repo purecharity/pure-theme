@@ -15,10 +15,13 @@ get_header();
 <div class="site-overlay"></div>
 
 <div id="container">
+
+<div class="wide-container home-head">
  
-<div class="wide-container">
+	<?get_template_part('inc/nav','dark');?>
+
 	<?php if(get_field('home_slider')): ?>
-	<div class="header-content col span_24 centered">	
+		<div class="header-content">
 		<ul class="bxslider slider-header">
 			<?php while(has_sub_field('home_slider')): ?>
 				<li style="background-image: url(<?php the_sub_field('image'); ?>);">	
@@ -29,12 +32,11 @@ get_header();
 				</li>
 			<?php endwhile; ?>
 		</ul>
-	</div>
+		</div>
 	<?php endif; ?>
 </div>
 
 <?php 
-	get_template_part('inc/nav','dark');
 	get_template_part('inc/flexible','content');
 	get_footer();
 ?>

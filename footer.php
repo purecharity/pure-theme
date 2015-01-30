@@ -55,7 +55,7 @@
 	a {color: <?php the_field('main_color','options'); ?> !important;}
 
 	a:hover {color: <?php the_field('secondary_color','options'); ?> !important;}
-
+	a.fr-pure-button:hover {color: #e0e0e0 !important;}
 	a.button,
 	.pagination ul a:hover,
 	.pagination ul span.current,
@@ -87,8 +87,17 @@
 		  minSlides: 1,
 		  maxSlides: 1,
 		  moveSlides: 0,
-		  auto: true,
-		  autoStart: true,
+		  auto: false,
+		  autoStart: false,
+		  slideWidth: 0,
+		  pager: true
+	 }); 
+	  $('.general-slider').bxSlider({
+		  minSlides: 1,
+		  maxSlides: 1,
+		  moveSlides: 0,
+		  auto: false,
+		  autoStart: false,
 		  slideWidth: 0,
 		  pager: true
 	 }); 

@@ -52,7 +52,7 @@ strong, b { font-weight: 600; }
 ul { margin: 0; padding: 0; }
 
 /* line 45, sass/format.scss */
-.pin { width: 100%; z-index: 999999999; position: absolute; left: 0; top: 0; }
+.pin { width: 100%; z-index: 2; position: relative; background: #000; opacity: .7; }
 
 /* line 53, sass/format.scss */
 .pinned { position: fixed !important; background: #000; opacity: .8; }
@@ -332,16 +332,16 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 /* special typography */
 /* line 4, sass/buttons.scss */
-a.button { -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; font-size: 1em; background: #cccb6c; color: #fff; padding: 7px 15px; position: relative; border: none; top: 0; left: 0; vertical-align: middle; margin: 0; line-height: 100%; cursor: pointer; width: auto; overflow: visible; font-weight: normal; text-decoration: none; vertical-align: middle; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; display: inline-block; zoom: 1; -webkit-transition: background 0.3s ease-in-out; -moz-transition: background 0.3s ease-in-out; -ms-transition: background 0.3s ease-in-out; -o-transition: background 0.3s ease-in-out; transition: background 0.3s ease-in-out; }
-/* line 29, sass/buttons.scss */
+a.button { -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; font-size: 1em; background: #cccb6c; color: #fff; padding: 7px 15px; text-transform: uppercase; position: relative; border: none; top: 0; left: 0; vertical-align: middle; margin: 0; line-height: 100%; cursor: pointer; width: auto; overflow: visible; font-weight: normal; text-decoration: none; vertical-align: middle; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; display: inline-block; zoom: 1; -webkit-transition: background 0.3s ease-in-out; -moz-transition: background 0.3s ease-in-out; -ms-transition: background 0.3s ease-in-out; -o-transition: background 0.3s ease-in-out; transition: background 0.3s ease-in-out; }
+/* line 30, sass/buttons.scss */
 a.button.small { padding: 4px 10px; font-size: .8em; }
-/* line 33, sass/buttons.scss */
-a.button.medium { padding: 6px 12px; font-size: 1.1em; }
-/* line 37, sass/buttons.scss */
-a.button.large { padding: 12px 20px; font-size: 1.3em; }
-/* line 41, sass/buttons.scss */
+/* line 34, sass/buttons.scss */
+a.button.medium { padding: 10px 12px; font-size: 1em; }
+/* line 38, sass/buttons.scss */
+a.button.large { padding: 12px 20px; font-size: 1.2em; }
+/* line 42, sass/buttons.scss */
 a.button.ghost { border: 2px solid #fff; color: #fff; border-radius: 5px; background: none !important; }
-/* line 47, sass/buttons.scss */
+/* line 48, sass/buttons.scss */
 a.button:hover { background: #cf754c; }
 
 /* line 1, sass/pagination.scss */
@@ -483,79 +483,98 @@ a.button:hover { background: #cf754c; }
 .col.centered { position: relative; margin-left: auto; margin-right: auto; float: none !important; }
 
 /* line 1, sass/theme.scss */
-.fixed { position: absolute; top: 0; left: 0; width: 100%; z-index: 9999; }
-
-/* line 9, sass/theme.scss */
 .noheaderimage { font-size: 2em; padding: 30px 0; background: #eeeeee; text-align: center; }
-/* line 14, sass/theme.scss */
+/* line 6, sass/theme.scss */
 .noheaderimage h1 { margin: 0; }
 
-/* line 20, sass/theme.scss */
+/* line 11, sass/theme.scss */
+.header-content { z-index: 1; position: absolute; width: 100%; top: 0; }
+
+/* line 18, sass/theme.scss */
+.home-head { height: 92vh; }
+
+/* line 23, sass/theme.scss */
 .siteid h1 { margin: 18px 20px; padding: 0; text-indent: 100%; white-space: nowrap; overflow: hidden; width: 200px; height: 70px; z-index: 200; position: relative; font-size: 2em; }
-/* line 31, sass/theme.scss */
+/* line 34, sass/theme.scss */
 .siteid h1 a { display: block; color: #fff; }
 
-/* line 38, sass/theme.scss */
-.header-content { position: relative; }
-
-/* line 44, sass/theme.scss */
+/* line 43, sass/theme.scss */
 .bxslider.slider-header li { height: 98vh; display: block; background-position: center center; background-repeat: no-repeat; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; color: #fff; text-align: center; }
-/* line 55, sass/theme.scss */
+/* line 54, sass/theme.scss */
 .bxslider.slider-header .slide-content { padding-top: 260px; }
-/* line 58, sass/theme.scss */
+/* line 57, sass/theme.scss */
 .bxslider.slider-header h2 { font-size: 2em; margin: 0 0 30px 0; line-height: 100%; }
 
-/* line 66, sass/theme.scss */
+/* line 65, sass/theme.scss */
 .blurb-content { text-align: center; }
 
-/* line 70, sass/theme.scss */
+/* line 69, sass/theme.scss */
 .content-section { padding: 50px 0; text-align: center; border-bottom: 1px solid #dddddd; }
-/* line 74, sass/theme.scss */
-.content-section.main-content-section { text-align: inherit; }
+/* line 73, sass/theme.scss */
+.content-section.main-content-section { text-align: inherit; font-size: 1.2em; }
 /* line 77, sass/theme.scss */
-.content-section.bgimage_content_section { padding: 100px 0; background-position: center; }
-/* line 81, sass/theme.scss */
-.content-section p { font-size: 1.1em; }
-/* line 85, sass/theme.scss */
+.content-section.general_content { padding: 0 0 40px 0; }
+/* line 80, sass/theme.scss */
+.content-section.bgimage_content_section { padding: 100px 0; background-position: center; background-repeat: no-repeat; background-size: cover; font-size: 1.2em; }
+/* line 88, sass/theme.scss */
 .content-section .videoembed p { margin: 0; }
 
-/* line 91, sass/theme.scss */
+/* line 94, sass/theme.scss */
 .bx-quote { padding-bottom: 40px; font-style: italic; font-size: 1.6em; line-height: 133%; }
 
-/* line 98, sass/theme.scss */
+/* line 101, sass/theme.scss */
 .intro { font-size: 1.4em; }
 
-/* line 104, sass/theme.scss */
-.page-header { height: 70vh; background-size: cover; background-repeat: no-repeat; background-position: center; text-align: center; color: #fff; }
-/* line 111, sass/theme.scss */
-.page-header h1 { position: absolute; top: 50%; left: 50%; margin: 0; font-size: 4em; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+/* line 107, sass/theme.scss */
+.page-header { height: 70vh; background-size: cover; background-repeat: no-repeat; background-position: center; text-align: center; color: #fff; margin-top: -105px; position: relative; z-index: -10; }
+/* line 117, sass/theme.scss */
+.page-header h1 { position: absolute; top: 50%; left: 50%; margin: 0; font-size: 4em; line-height: 120%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 
-/* line 123, sass/theme.scss */
+/* line 130, sass/theme.scss */
 .post-body { padding-top: 30px; }
 
-/* line 127, sass/theme.scss */
+/* line 134, sass/theme.scss */
 .sidebar { padding-top: 20px; }
-/* line 129, sass/theme.scss */
+/* line 136, sass/theme.scss */
 .sidebar h4 { font-size: 1em; }
-/* line 132, sass/theme.scss */
+/* line 139, sass/theme.scss */
 .sidebar ul { list-style: none; }
 
-/* line 139, sass/theme.scss */
+/* line 146, sass/theme.scss */
 .footer { border-top: 1px solid #dddddd; font-size: .9em; text-align: center; }
-/* line 143, sass/theme.scss */
+/* line 150, sass/theme.scss */
 .footer ul { list-style: none; margin: 0; padding: 0; }
-/* line 147, sass/theme.scss */
+/* line 154, sass/theme.scss */
 .footer ul li { margin: 0; }
 
-/* line 153, sass/theme.scss */
+/* line 160, sass/theme.scss */
 .footer-wide { text-align: center; font-size: .9em; }
 
-/* line 161, sass/theme.scss */
+/* line 168, sass/theme.scss */
 .articles-container article { padding: 30px 0; }
-/* line 164, sass/theme.scss */
+/* line 171, sass/theme.scss */
 .articles-container h2 { margin-bottom: 0; }
-/* line 167, sass/theme.scss */
+/* line 174, sass/theme.scss */
 .articles-container .meta { font-size: .9em; }
+
+/* line 179, sass/theme.scss */
+.donatebody { padding: 0px 0 100px 0; color: #fff; font-size: 2em; }
+/* line 183, sass/theme.scss */
+.donatebody h1 { margin: 0; text-align: center; }
+/* line 187, sass/theme.scss */
+.donatebody .donateintro { text-align: center; }
+
+/* line 193, sass/theme.scss */
+.donatebuttons ul { margin-top: 0px; text-align: center; list-style: none; font-size: .5em; }
+/* line 198, sass/theme.scss */
+.donatebuttons ul.generaldonation { font-size: .6em; padding-bottom: 10px; }
+/* line 202, sass/theme.scss */
+.donatebuttons ul li { list-style: none; margin-bottom: 10px; }
+/* line 206, sass/theme.scss */
+.donatebuttons ul a { width: 300px; font-weight: 600; }
+
+/* line 213, sass/theme.scss */
+.fr-list-container.is-grid { font-size: .8em; }
 
 /*
 ----------------------------------------------------------------
@@ -1476,16 +1495,18 @@ body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html dl dd {
 a.mobilepagebtn { color: #000; }
 
 @media only screen and (max-width: 768px) { /* line 22, sass/mobile.scss */
+  .donatebuttons { margin-top: 40px; }
+  /* line 26, sass/mobile.scss */
   .sitesid h1 { float: none; text-align: left; height: 100px; display: block; margin: 0 auto; }
-  /* line 30, sass/mobile.scss */
-  .site-header { display: none; }
   /* line 34, sass/mobile.scss */
+  .site-header { display: none; }
+  /* line 38, sass/mobile.scss */
   .mobileshow { display: block; }
-  /* line 39, sass/mobile.scss */
+  /* line 43, sass/mobile.scss */
   .mobilehide { display: none !important; } }
-@media only screen and (max-width: 421px) { /* line 51, sass/mobile.scss */
+@media only screen and (max-width: 421px) { /* line 55, sass/mobile.scss */
   .mobileshow { display: inline; }
-  /* line 55, sass/mobile.scss */
+  /* line 59, sass/mobile.scss */
   .mobile-causes-nav.phone-only { display: inline; } }
 /*! Pushy - v0.9.1 - 2013-9-16
 * Pushy is a responsive off-canvas navigation menu using CSS transforms & transitions.
@@ -1550,7 +1571,7 @@ a.mobilepagebtn { color: #000; }
 /** THEME
 ===================================*/
 /* line 33, sass/bxslider.scss */
-.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto { position: absolute; bottom: -30px; width: 100%; }
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto { position: absolute; bottom: -40px; width: 100%; }
 
 /* LOADER */
 /* line 41, sass/bxslider.scss */

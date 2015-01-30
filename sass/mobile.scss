@@ -19,6 +19,10 @@ a.mobilepagebtn {
 @media only screen 
 and (max-width : 768px) {
 
+  .donatebuttons {
+    margin-top: 40px;
+  }
+
   .sitesid h1 {
     float: none;
     text-align: left;

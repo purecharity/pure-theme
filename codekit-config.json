@@ -30,15 +30,15 @@
       "inputAbbreviatedPath" : "\/screenshot.png",
       "processed" : 0,
       "outputAbbreviatedPath" : "\/screenshot.png",
-      "initialSize" : 54050,
+      "initialSize" : 83992,
       "fileType" : 8192
     },
-    "\/lib\/post-types.php" : {
+    "\/sidebar.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/lib\/post-types.php",
+      "inputAbbreviatedPath" : "\/sidebar.php",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -53,12 +53,12 @@
       "initialSize" : 153795,
       "fileType" : 4096
     },
-    "\/sidebar.php" : {
+    "\/lib\/post-types.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sidebar.php",
+      "inputAbbreviatedPath" : "\/lib\/post-types.php",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -68,15 +68,6 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/404.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/page-fullwidth-nohead.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/page-fullwidth-nohead.php",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -98,8 +89,17 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/style.css",
-      "outputAbbreviatedPath" : "\/No Output Path",
+      "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
+    },
+    "\/page-fullwidth-nohead.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/page-fullwidth-nohead.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/js\/jquery.livefilter.js" : {
       "ignoreWasSetByUser" : 0,
@@ -112,15 +112,15 @@
       "outputAbbreviatedPath" : "\/js\/jquery.livefilter-ck.js",
       "fileType" : 64
     },
-    "\/js\/jquery.customSelect.min.js" : {
+    "\/lib\/metabox\/jquery.cmbScripts.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/jquery.customSelect.min.js",
+      "inputAbbreviatedPath" : "\/lib\/metabox\/jquery.cmbScripts.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/jquery.customSelect.min-ck.js",
+      "outputAbbreviatedPath" : "\/lib\/metabox\/jquery.cmbScripts-ck.js",
       "fileType" : 64
     },
     "\/sass\/images.scss" : {
@@ -144,16 +144,16 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/lib\/metabox\/jquery.cmbScripts.js" : {
+    "\/lib\/metabox\/images\/ui-icons_cd0a0a_256x240.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/lib\/metabox\/jquery.cmbScripts.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/lib\/metabox\/jquery.cmbScripts-ck.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/lib\/metabox\/images\/ui-icons_cd0a0a_256x240.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/lib\/metabox\/images\/ui-icons_cd0a0a_256x240.png",
+      "initialSize" : 4369,
+      "fileType" : 8192
     },
     "\/sass\/mobile.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -188,16 +188,16 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/lib\/metabox\/images\/ui-icons_cd0a0a_256x240.png" : {
+    "\/js\/jquery.customSelect.min.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/lib\/metabox\/images\/ui-icons_cd0a0a_256x240.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/lib\/metabox\/images\/ui-icons_cd0a0a_256x240.png",
-      "initialSize" : 4369,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/js\/jquery.customSelect.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/jquery.customSelect.min-ck.js",
+      "fileType" : 64
     },
     "\/lib\/plugins.php" : {
       "ignoreWasSetByUser" : 0,
@@ -324,7 +324,7 @@
       "inputAbbreviatedPath" : "\/images\/controls.png",
       "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/controls.png",
-      "initialSize" : 103520,
+      "initialSize" : 56469,
       "fileType" : 8192
     },
     "\/js\/jquery.stellar.js" : {
@@ -490,17 +490,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/images\/ai.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/ai.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/ai.png",
-      "initialSize" : 60010,
-      "fileType" : 8192
-    },
     "\/inc\/nav-dark.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -509,6 +498,17 @@
       "inputAbbreviatedPath" : "\/inc\/nav-dark.php",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
+    },
+    "\/images\/ai.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/ai.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/ai.png",
+      "initialSize" : 81339,
+      "fileType" : 8192
     },
     "\/images\/gc-cause-avatar.png" : {
       "ignoreWasSetByUser" : 0,
@@ -679,7 +679,7 @@
       "inputAbbreviatedPath" : "\/images\/login-image.png",
       "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/login-image.png",
-      "initialSize" : 59877,
+      "initialSize" : 60131,
       "fileType" : 8192
     },
     "\/sass\/pushy.scss" : {
@@ -753,17 +753,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
-    "\/js\/jquery.dropdown.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/jquery.dropdown.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/jquery.dropdown-ck.js",
-      "fileType" : 64
-    },
     "\/js\/pin.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -773,6 +762,17 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/js\/pin-ck.js",
+      "fileType" : 64
+    },
+    "\/js\/jquery.dropdown.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/jquery.dropdown.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/jquery.dropdown-ck.js",
       "fileType" : 64
     },
     "\/fonts\/ss-social-circle\/ss-social.js" : {
@@ -826,6 +826,15 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
+    "\/css\/ie.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/ie.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
     "\/sass\/bxslider.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -837,15 +846,6 @@
       "outputAbbreviatedPath" : "\/sass\/bxslider.css",
       "fileType" : 4,
       "debugStyle" : 1
-    },
-    "\/css\/ie.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/ie.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
     },
     "\/functions.php" : {
       "ignoreWasSetByUser" : 0,
@@ -889,6 +889,15 @@
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/js\/modernizr-2.6.2.min-ck.js",
       "fileType" : 64
+    },
+    "\/inc\/pageheader-fullimage.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/inc\/pageheader-fullimage.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/lib\/metabox\/init.php" : {
       "ignoreWasSetByUser" : 0,

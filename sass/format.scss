@@ -44,10 +44,10 @@ ul {
 
 .pin {
   width: 100%;
-  z-index: 999999999;
-  position: absolute;
-  left:0;
-  top:0;
+  z-index: 2;
+  position: relative;
+  background: #000;
+  opacity: .7;
 }
 
 .pinned {

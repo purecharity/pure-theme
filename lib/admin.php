@@ -1,9 +1,59 @@
 <?php
 
+function dashboard_widget_function() {
+     $rss = fetch_feed( "http://purecharitywpdemo.com/feed/" );
+  
+     if ( is_wp_error($rss) ) {
+          if ( is_admin() || current_user_can('manage_options') ) {
+               echo '<p>';
+               printf(__('<strong>RSS Error</strong>: %s'), $rss->get_error_message());
+               echo '</p>';
+          }
+     return;
+}
+  
+if ( !$rss->get_item_quantity() ) {
+     echo '<p>Apparently, there are no updates to show!</p>';
+     $rss->__destruct();
+     unset($rss);
+     return;
+}
+  
+echo "<ul>\n";
+  
+if ( !isset($items) )
+     $items = 5;
+  
+     foreach ( $rss->get_items(0, $items) as $item ) {
+          $publisher = '';
+          $site_link = '';
+          $link = '';
+          $content = '';
+          $date = '';
+          $link = esc_url( strip_tags( $item->get_link() ) );
+          $title = esc_html( $item->get_title() );
+          $content = $item->get_content();
+          $content = wp_html_excerpt($content, 250) . ' ...';
+  
+         echo "<li><a class='rsswidget' href='$link'>$title</a>\n<div class='rssSummary'>$content</div>\n";
+}
+  
+echo "</ul>\n";
+$rss->__destruct();
+unset($rss);
+}
+ 
+function add_dashboard_widget() {
+     wp_add_dashboard_widget('purecharitywpdev_dashboard_widget', 'Recent Posts from Pure Charity WP Development', 'dashboard_widget_function');
+}
+ 
+add_action('wp_dashboard_setup', 'add_dashboard_widget');
+
+
 // BRANDING
 
 // Add custom branding to the footer of the admin
-
+ 
 function modify_footer_admin () {
   echo 'Created by <a href="http://www.purecharity.com">Pure Charity</a>.';
 }
@@ -11,8 +61,8 @@ function modify_footer_admin () {
 add_filter('admin_footer_text', 'modify_footer_admin');
 
 // LOGIN STYLE
-function custom_login() {
-echo '<link rel="stylesheet" type="text/css" href="'.get_bloginfo('template_directory').'/lib/login.css" />';
+function custom_login() { 
+echo '<link rel="stylesheet" type="text/css" href="'.get_bloginfo('template_directory').'/lib/login.css" />'; 
 }
 add_action('login_head', 'custom_login');
 
@@ -32,7 +82,7 @@ function register_my_menus() {
   register_nav_menus(
     array(
       'main-menu' => __( 'Main Menu' ),
-      'utility-menu' => __( 'Utility Menu' )
+      'utility-menu' => __( 'Utility Menu' )      
     )
   );
 }
@@ -104,17 +154,17 @@ function my_save_extra_profile_fields( $user_id )
 
 function my_custom_dashboard_widgets() {
  global $wp_meta_boxes;
-
+ 
  unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_plugins']);
  unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_primary']);
  unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_secondary']);
  unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_recent_comments']);
  unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_incoming_links']);
  unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_right_now']);
-
+ 
  wp_add_dashboard_widget('custom_help_widget', 'Help and Support', 'custom_dashboard_help');
   }
-
+ 
  function custom_dashboard_help() {
   echo '<p>If you need help or support for your theme, please contact Pure Charity at <a href="mailto:wpdev@purecharity.com">wpdev@purecharity.com</a></p>';
  }
@@ -159,7 +209,7 @@ add_action( 'admin_menu', 'be_remove_menus' );
   remove_meta_box( 'authordiv','post','normal' ); // Author Metabox
   }
     add_action('admin_menu','remove_default_post_screen_metaboxes');
-
+ 
  // Rid ourselves of the default metaboxes on the pages screen
     function remove_default_page_screen_metaboxes() {
   remove_meta_box( 'postexcerpt','post','normal' ); // Excerpt Metabox
@@ -167,7 +217,7 @@ add_action( 'admin_menu', 'be_remove_menus' );
   remove_meta_box( 'authordiv','post','normal' ); // Author Metabox
   }
     add_action('admin_menu','remove_default_page_screen_metaboxes');
-
+    
 
 
 ?>

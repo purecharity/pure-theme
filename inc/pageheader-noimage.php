@@ -1,4 +1,4 @@
-<?php get_template_part('inc/nav','light');?>
+<?php get_template_part('inc/nav','dark');?>
 
 <div class="wide-container noheaderimage">    
   <div class="row nopadrow">
@@ -9,4 +9,3 @@
       </div>
     </div>
 </div>
-
