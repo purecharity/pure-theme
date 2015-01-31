@@ -51,8 +51,6 @@
 
 	a.button {color: #fff !important;}
 	a.button:hover {color: #fff !important;background:<?php the_field('secondary_color','options'); ?> !important; }
-	a.button.ghost { color: <?php the_field('main_color','options'); ?> !important;border-color: <?php the_field('main_color','options'); ?>;}
-	a.button.ghost:hover {background: <?php the_field('main_color','options'); ?> !important;color: #fff !important;}
 	.siteid h1 {
 		background: url(<?php the_field('logo','options'); ?>);
 		background-size: contain;

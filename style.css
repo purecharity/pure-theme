@@ -342,8 +342,8 @@ a.button.medium { padding: 10px 12px; font-size: 1em; }
 /* line 38, sass/buttons.scss */
 a.button.large { padding: 12px 20px; font-size: 1.2em; }
 /* line 42, sass/buttons.scss */
-a.button.ghost { border: 2px solid #cccb6c; color: #cccb6c !important; border-radius: 5px; background: none !important; }
-/* line 49, sass/buttons.scss */
+a.button.ghost { border: 2px solid #fff; color: #FFF !important; border-radius: 5px; background: none !important; }
+/* line 48, sass/buttons.scss */
 a.button:hover { background: #cf754c; }
 
 /* line 1, sass/pagination.scss */

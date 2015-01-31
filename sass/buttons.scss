@@ -40,11 +40,10 @@ a.button {
 		font-size: 1.2em;
 	}
 	&.ghost {
-		border: 2px solid $primarycolor;
-		color: $primarycolor !important;
+		border: 2px solid #fff;
+		color:#FFF !important;
   	border-radius: 5px;
   	background: none !important;
-
 	}
 	&:hover {
 		background: $secondarycolor;
