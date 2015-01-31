@@ -50,7 +50,7 @@ function my_theme_register_required_plugins() {
 
         array(
             'name'               => 'GitHub Updater', // The plugin name.
-            'slug'               => '', // The plugin slug (typically the folder name).
+            'slug'               => 'github-updater-3.2.6', // The plugin slug (typically the folder name).
             'source'             => get_template_directory() . '/lib/plugins/github-updater-3.2.6.zip', // The plugin source.
             'required'           => true, // If false, the plugin is only 'recommended' instead of required.
             'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher.
