@@ -26,8 +26,8 @@
 					<?php _e('Sorry, no posts matched your criteria.'); ?>
 					<?php endif; ?>
           <div class="row">
-    		<?php get_template_part( 'inc/feature', 'pagination' ); ?>
-        </div>
+    		    <?php get_template_part( 'inc/feature', 'pagination' ); ?>
+          </div>
     </div><!-- end row-->
 	</div> <!-- end container--> 
 </div>
