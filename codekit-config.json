@@ -2,6 +2,15 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "8403",
   "files" : {
+    "\/global\/postmeta.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/global\/postmeta.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/lib\/metabox\/images\/ui-bg_flat_75_ffffff_40x100.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -12,15 +21,6 @@
       "outputAbbreviatedPath" : "\/lib\/metabox\/images\/ui-bg_flat_75_ffffff_40x100.png",
       "initialSize" : 178,
       "fileType" : 8192
-    },
-    "\/global\/postmeta.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/global\/postmeta.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/screenshot.png" : {
       "ignoreWasSetByUser" : 0,
@@ -71,6 +71,15 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/page-fullwidth-nohead.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/page-fullwidth-nohead.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/sass\/format.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -82,15 +91,6 @@
       "outputAbbreviatedPath" : "\/sass\/format.css",
       "fileType" : 4,
       "debugStyle" : 1
-    },
-    "\/page-fullwidth-nohead.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/page-fullwidth-nohead.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/style.css" : {
       "ignoreWasSetByUser" : 0,
@@ -155,18 +155,6 @@
       "outputAbbreviatedPath" : "\/lib\/metabox\/jquery.cmbScripts-ck.js",
       "fileType" : 64
     },
-    "\/sass\/mobile.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/mobile.scss",
-      "outputStyle" : 2,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/sass\/mobile.css",
-      "fileType" : 4,
-      "debugStyle" : 1
-    },
     "\/lib\/metabox\/images\/ui-icons_cd0a0a_256x240.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -178,15 +166,6 @@
       "initialSize" : 4369,
       "fileType" : 8192
     },
-    "\/lib\/admin.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/lib\/admin.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/sass\/responsive-gs-24col.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -196,6 +175,27 @@
       "outputStyle" : 2,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "\/sass\/responsive-gs-24col.css",
+      "fileType" : 4,
+      "debugStyle" : 1
+    },
+    "\/lib\/admin.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/lib\/admin.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/sass\/mobile.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/sass\/mobile.scss",
+      "outputStyle" : 2,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/sass\/mobile.css",
       "fileType" : 4,
       "debugStyle" : 1
     },
@@ -409,6 +409,15 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/css\/theme.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/theme.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
     "\/lib\/metabox\/images\/ico-delete.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -419,15 +428,6 @@
       "outputAbbreviatedPath" : "\/lib\/metabox\/images\/ico-delete.png",
       "initialSize" : 715,
       "fileType" : 8192
-    },
-    "\/css\/theme.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/theme.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
     },
     "\/js\/jquery.bxslider.js" : {
       "ignoreWasSetByUser" : 0,
@@ -501,21 +501,21 @@
       "initialSize" : 81339,
       "fileType" : 8192
     },
-    "\/inc\/nav-dark.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/inc\/nav-dark.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/page-donate.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/page-donate.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/inc\/nav-dark.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/inc\/nav-dark.php",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -784,26 +784,6 @@
       "outputAbbreviatedPath" : "\/js\/pin-ck.js",
       "fileType" : 64
     },
-    "\/fonts\/ss-social-circle\/ss-social.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/fonts\/ss-social-circle\/ss-social.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/fonts\/ss-social-circle\/ss-social-ck.js",
-      "fileType" : 64
-    },
-    "\/fonts\/ss-social-circle\/documentation.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/fonts\/ss-social-circle\/documentation.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/js\/pin-ck.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -825,6 +805,26 @@
       "outputAbbreviatedPath" : "\/lib\/metabox\/images\/ui-bg_glass_65_ffffff_1x400.png",
       "initialSize" : 105,
       "fileType" : 8192
+    },
+    "\/fonts\/ss-social-circle\/ss-social.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/fonts\/ss-social-circle\/ss-social.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/fonts\/ss-social-circle\/ss-social-ck.js",
+      "fileType" : 64
+    },
+    "\/fonts\/ss-social-circle\/documentation.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/fonts\/ss-social-circle\/documentation.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/css\/jquery.bxslider.css" : {
       "ignoreWasSetByUser" : 0,
@@ -1024,15 +1024,6 @@
       "initialSize" : 15359,
       "fileType" : 8192
     },
-    "\/inc\/flexible-content.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/inc\/flexible-content.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/js\/pushy.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1043,6 +1034,15 @@
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/js\/pushy-ck.js",
       "fileType" : 64
+    },
+    "\/inc\/flexible-content.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/inc\/flexible-content.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/lib\/metabox\/images\/ui-bg_glass_75_e6e6e6_1x400.png" : {
       "ignoreWasSetByUser" : 0,

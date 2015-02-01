@@ -3,7 +3,7 @@ Theme Name: Pure  Theme
 Theme URI: http://www.purecharity.com
 Github Theme URI: https://github.com/purecharity/pure-theme
 Description: Created by Pure Charity
-Version: 1.1.0
+Version: 1.1.1
 Author: Todd Hiestand
 Author URI: http://www.purecharity.com/
 */
@@ -333,7 +333,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 /* special typography */
 /* line 4, sass/buttons.scss */
-a.button { -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; font-size: 1em; background: #cccb6c; color: #fff; padding: 7px 15px; text-transform: uppercase; position: relative; border: none; top: 0; left: 0; vertical-align: middle; margin: 0; line-height: 100%; cursor: pointer; width: auto; overflow: visible; font-weight: normal; text-decoration: none; vertical-align: middle; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; display: inline-block; zoom: 1; -webkit-transition: background 0.3s ease-in-out; -moz-transition: background 0.3s ease-in-out; -ms-transition: background 0.3s ease-in-out; -o-transition: background 0.3s ease-in-out; transition: background 0.3s ease-in-out; }
+a.button { -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; font-size: 1em; background: #cccb6c; color: #fff; padding: 7px 15px; text-transform: uppercase; position: relative; border: none; top: 0; left: 0; vertical-align: middle; margin: 0; line-height: 100%; cursor: pointer; width: auto; overflow: visible; font-weight: 600; text-decoration: none; vertical-align: middle; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; display: inline-block; zoom: 1; -webkit-transition: background 0.3s ease-in-out; -moz-transition: background 0.3s ease-in-out; -ms-transition: background 0.3s ease-in-out; -o-transition: background 0.3s ease-in-out; transition: background 0.3s ease-in-out; }
 /* line 30, sass/buttons.scss */
 a.button.small { padding: 4px 10px; font-size: .8em; }
 /* line 34, sass/buttons.scss */
