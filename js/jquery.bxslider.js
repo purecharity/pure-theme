@@ -51,8 +51,8 @@
 
 		// CONTROLS
 		controls: true,
-		nextText: '>',
-		prevText: '<',
+		nextText: '<span class="ss-icon">navigateright</span>',
+		prevText: '<span class="ss-icon">navigateleft</span>',
 		nextSelector: null,
 		prevSelector: null,
 		autoControls: false,

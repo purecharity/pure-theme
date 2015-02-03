@@ -21,6 +21,8 @@ require_once(__DIR__ . '/lib/admin.php');
 function pure_enqueue_scripts() {
 // Register some often used Scripts
 
+    wp_register_style( 'ss-pika', get_template_directory_uri() . '/fonts/symbolset/ss-pika.css', array(), '', 'all' );
+
    // register da scripts that we often use
       wp_deregister_script('jquery');
       wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js', false, '1.8.3');
@@ -32,6 +34,8 @@ function pure_enqueue_scripts() {
       wp_register_script( 'bxjs', get_template_directory_uri() . '/js/jquery.bxslider.js', array(), true,true );
  
    // enqueue da scripts
+      wp_enqueue_style('ss-pika');
+
       wp_enqueue_script( 'jquery' );
       wp_enqueue_script( 'modernizer' );
       wp_enqueue_script( 'themejs' );

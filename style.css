@@ -496,134 +496,136 @@ a.button:hover { background: #cf754c; }
 
 /* line 18, sass/theme.scss */
 .home-head { height: 92vh; }
+/* line 20, sass/theme.scss */
+.home-head a.bx-prev, .home-head a.bx-next { color: #fff !important; }
 
-/* line 23, sass/theme.scss */
+/* line 27, sass/theme.scss */
 .siteid h1 { margin: 18px 20px; padding: 0; text-indent: 100%; white-space: nowrap; overflow: hidden; width: 200px; height: 70px; z-index: 200; position: relative; font-size: 2em; }
-/* line 34, sass/theme.scss */
+/* line 38, sass/theme.scss */
 .siteid h1 a { display: block; color: #fff; }
 
-/* line 43, sass/theme.scss */
+/* line 47, sass/theme.scss */
 .bxslider.slider-header li { height: 98vh; display: block; background-position: center center; background-repeat: no-repeat; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; color: #fff; text-align: center; }
-/* line 54, sass/theme.scss */
+/* line 58, sass/theme.scss */
 .bxslider.slider-header .slide-content { position: absolute; top: 50%; left: 50%; margin: 0; line-height: 120%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); }
-/* line 65, sass/theme.scss */
+/* line 69, sass/theme.scss */
 .bxslider.slider-header h2 { font-size: 2em; margin: 0 0 30px 0; line-height: 100%; }
 
-/* line 73, sass/theme.scss */
+/* line 77, sass/theme.scss */
 .blurb-content { text-align: center; }
 
-/* line 77, sass/theme.scss */
+/* line 81, sass/theme.scss */
 .content-section { padding: 50px 0; border-bottom: 1px solid #dddddd; }
-/* line 80, sass/theme.scss */
+/* line 84, sass/theme.scss */
 .content-section h3.content-heading { text-align: center; }
-/* line 83, sass/theme.scss */
-.content-section.main-content-section { text-align: inherit; font-size: 1.2em; }
 /* line 87, sass/theme.scss */
+.content-section.main-content-section { text-align: inherit; font-size: 1.2em; }
+/* line 91, sass/theme.scss */
 .content-section.general_content { padding: 0 0 40px 0; }
-/* line 90, sass/theme.scss */
+/* line 94, sass/theme.scss */
 .content-section.bgimage_content_section { padding: 100px 0; background-position: center; background-repeat: no-repeat; background-size: cover; font-size: 1.2em; }
-/* line 98, sass/theme.scss */
+/* line 102, sass/theme.scss */
 .content-section .videoembed p { margin: 0; }
 
-/* line 104, sass/theme.scss */
+/* line 108, sass/theme.scss */
 .bx-quote { padding-bottom: 40px; font-style: italic; font-size: 1.6em; line-height: 133%; }
 
-/* line 111, sass/theme.scss */
+/* line 115, sass/theme.scss */
 .intro { font-size: 1.4em; }
 
-/* line 115, sass/theme.scss */
+/* line 119, sass/theme.scss */
 .cause-section { color: #fff; text-align: center; position: relative; margin: 0 5% 5% 5%; width: 90%; background-position: center center; background-repeat: no-repeat; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; }
-/* line 126, sass/theme.scss */
+/* line 130, sass/theme.scss */
 .cause-section h3 { color: #fff; text-transform: uppercase; display: inline-block; }
-/* line 131, sass/theme.scss */
-.cause-section p.intro { line-height: 130%; font-size: .9em; }
 /* line 135, sass/theme.scss */
+.cause-section p.intro { line-height: 130%; font-size: .9em; }
+/* line 139, sass/theme.scss */
 .cause-section a { color: #fff !important; }
-/* line 137, sass/theme.scss */
-.cause-section a:hover { color: #fff !important; }
 /* line 141, sass/theme.scss */
+.cause-section a:hover { color: #fff !important; }
+/* line 145, sass/theme.scss */
 .cause-section:hover { background: rgba(0, 0, 0, 0.6) !important; }
-/* line 144, sass/theme.scss */
+/* line 148, sass/theme.scss */
 .cause-section:after { content: ""; opacity: 0.5; top: 0; left: 0; bottom: 0; right: 0; position: absolute; z-index: -1; background-position: center center; background-repeat: no-repeat; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; }
-/* line 159, sass/theme.scss */
+/* line 163, sass/theme.scss */
 .cause-section a { display: block; padding: 140px 0; }
-/* line 166, sass/theme.scss */
+/* line 170, sass/theme.scss */
 .cause-section .feature1, .cause-section .feature2, .cause-section .feature3, .cause-section .feature4 { position: relative; }
-/* line 168, sass/theme.scss */
+/* line 172, sass/theme.scss */
 .cause-section .feature1:hover, .cause-section .feature2:hover, .cause-section .feature3:hover, .cause-section .feature4:hover { background: rgba(0, 0, 0, 0.6) !important; }
-/* line 171, sass/theme.scss */
+/* line 175, sass/theme.scss */
 .cause-section .feature1:after, .cause-section .feature2:after, .cause-section .feature3:after, .cause-section .feature4:after { content: ""; opacity: 0.5; top: 0; left: 0; bottom: 0; right: 0; position: absolute; z-index: -1; }
 
-/* line 186, sass/theme.scss */
+/* line 190, sass/theme.scss */
 .page-header { height: 70vh; background-size: cover; background-repeat: no-repeat; background-position: center; text-align: center; color: #fff; margin-top: -105px; position: relative; z-index: -10; }
-/* line 196, sass/theme.scss */
+/* line 200, sass/theme.scss */
 .page-header h1 { position: absolute; top: 50%; left: 50%; margin: 0; font-size: 4em; line-height: 120%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); }
 
-/* line 210, sass/theme.scss */
+/* line 214, sass/theme.scss */
 .post-body { padding-top: 30px; }
 
-/* line 214, sass/theme.scss */
+/* line 218, sass/theme.scss */
 .sidebar { padding-top: 20px; }
-/* line 216, sass/theme.scss */
+/* line 220, sass/theme.scss */
 .sidebar h4 { font-size: 1em; }
-/* line 219, sass/theme.scss */
+/* line 223, sass/theme.scss */
 .sidebar ul { list-style: none; }
 
-/* line 226, sass/theme.scss */
-.footer { border-top: 1px solid #dddddd; font-size: .9em; text-align: center; }
 /* line 230, sass/theme.scss */
-.footer ul { list-style: none; margin: 0; padding: 0; }
+.footer { border-top: 1px solid #dddddd; font-size: .9em; text-align: center; }
 /* line 234, sass/theme.scss */
+.footer ul { list-style: none; margin: 0; padding: 0; }
+/* line 238, sass/theme.scss */
 .footer ul li { margin: 0; }
 
-/* line 240, sass/theme.scss */
+/* line 244, sass/theme.scss */
 .footer-wide { text-align: center; font-size: .9em; }
 
-/* line 245, sass/theme.scss */
+/* line 249, sass/theme.scss */
 .donatebody { padding: 50px 0; color: #fff; font-size: 2em; height: 86vh; }
-/* line 250, sass/theme.scss */
-.donatebody h1 { margin: 0; text-align: center; }
 /* line 254, sass/theme.scss */
+.donatebody h1 { margin: 0; text-align: center; }
+/* line 258, sass/theme.scss */
 .donatebody .donateintro p { text-align: center; margin: 0; line-height: 133%; }
 
-/* line 262, sass/theme.scss */
+/* line 266, sass/theme.scss */
 .donatebuttons ul { margin-top: 0px; text-align: center; list-style: none; font-size: .5em; }
-/* line 267, sass/theme.scss */
-.donatebuttons ul.generaldonation { font-size: .6em; padding-bottom: 10px; }
 /* line 271, sass/theme.scss */
-.donatebuttons ul li { list-style: none; margin-bottom: 10px; }
+.donatebuttons ul.generaldonation { font-size: .6em; padding-bottom: 10px; }
 /* line 275, sass/theme.scss */
+.donatebuttons ul li { list-style: none; margin-bottom: 10px; }
+/* line 279, sass/theme.scss */
 .donatebuttons ul a { width: 300px; font-weight: 600; }
 
-/* line 282, sass/theme.scss */
+/* line 286, sass/theme.scss */
 .fr-list-container.is-grid { font-size: .8em; }
 
-/* line 291, sass/theme.scss */
+/* line 295, sass/theme.scss */
 .article { text-align: center; padding: 50px 0; }
-/* line 294, sass/theme.scss */
+/* line 298, sass/theme.scss */
 .article h2 { margin: 0; }
 
-/* line 299, sass/theme.scss */
+/* line 303, sass/theme.scss */
 .meta { font-size: .8em; text-align: center; font-style: italic; }
 
-/* line 306, sass/theme.scss */
+/* line 310, sass/theme.scss */
 .featured-image img { -webkit-border-radius: 100%; -moz-border-radius: 100%; border-radius: 100%; }
 
-/* line 311, sass/theme.scss */
+/* line 315, sass/theme.scss */
 .comments-row { border-top: 1px solid #dddddd; }
-/* line 313, sass/theme.scss */
+/* line 317, sass/theme.scss */
 .comments-row ol { margin: 0; padding: 0; list-style: none; }
-/* line 318, sass/theme.scss */
+/* line 322, sass/theme.scss */
 .comments-row li { list-style: none; margin: 0; padding: 0; }
-/* line 323, sass/theme.scss */
+/* line 327, sass/theme.scss */
 .comments-row .comment-author { padding: 0px; font-weight: 600; }
-/* line 326, sass/theme.scss */
+/* line 330, sass/theme.scss */
 .comments-row .comment-author img { float: left; margin: 0 10px 10px 0; }
-/* line 331, sass/theme.scss */
+/* line 335, sass/theme.scss */
 .comments-row .comment-meta { font-size: .9em; }
-/* line 334, sass/theme.scss */
+/* line 338, sass/theme.scss */
 .comments-row .children { margin-left: 40px; }
-/* line 337, sass/theme.scss */
+/* line 341, sass/theme.scss */
 .comments-row .comment-body { margin: 20px 0; padding: 20px 0; border-bottom: 1px solid #dddddd; }
 
 /*
@@ -1642,49 +1644,49 @@ a.mobilepagebtn { color: #000; }
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
 /* line 89, sass/bxslider.scss */
-.bx-wrapper .bx-prev { left: 160px; background: url(./images/controls.png) no-repeat 0px 0px; }
+.bx-wrapper .bx-prev { left: 160px; }
 
-/* line 94, sass/bxslider.scss */
-.bx-wrapper .bx-next { right: 60px; background: url(./images/controls.png) no-repeat -53px 0px; }
+/* line 93, sass/bxslider.scss */
+.bx-wrapper .bx-next { right: 60px; }
 
-/* line 99, sass/bxslider.scss */
+/* line 97, sass/bxslider.scss */
 .bx-wrapper .bx-prev:hover { background-position: 0 -71px; }
 
-/* line 103, sass/bxslider.scss */
+/* line 101, sass/bxslider.scss */
 .bx-wrapper .bx-next:hover { background-position: -53px -71px; }
 
-/* line 107, sass/bxslider.scss */
-.bx-wrapper .bx-controls-direction a { position: absolute; top: 50%; margin-top: -16px; margin-left: -100px; outline: 0; width: 40px; height: 59px; text-indent: -9999px; z-index: 9999; }
+/* line 105, sass/bxslider.scss */
+.bx-wrapper .bx-controls-direction a { position: absolute; top: 50%; margin-top: -16px; margin-left: -100px; outline: 0; width: 40px; height: 59px; z-index: 9999; font-size: 3em; }
 
-/* line 119, sass/bxslider.scss */
+/* line 117, sass/bxslider.scss */
 .bx-wrapper .bx-controls-direction a.disabled { display: none; }
 
 /* AUTO CONTROLS (START / STOP) */
-/* line 125, sass/bxslider.scss */
+/* line 123, sass/bxslider.scss */
 .bx-wrapper .bx-controls-auto { text-align: center; }
 
-/* line 129, sass/bxslider.scss */
+/* line 127, sass/bxslider.scss */
 .bx-wrapper .bx-controls-auto .bx-start { display: block; text-indent: -9999px; width: 10px; height: 11px; outline: 0; background: url(images/controls.png) -86px -11px no-repeat; margin: 0 3px; }
 
-/* line 140, sass/bxslider.scss */
+/* line 138, sass/bxslider.scss */
 .bx-wrapper .bx-controls-auto .bx-start:hover, .bx-wrapper .bx-controls-auto .bx-start.active { background-position: -86px 0; }
 
-/* line 144, sass/bxslider.scss */
+/* line 142, sass/bxslider.scss */
 .bx-wrapper .bx-controls-auto .bx-stop { display: block; text-indent: -9999px; width: 9px; height: 11px; outline: 0; background: url(images/controls.png) -86px -44px no-repeat; margin: 0 3px; }
 
-/* line 155, sass/bxslider.scss */
+/* line 153, sass/bxslider.scss */
 .bx-wrapper .bx-controls-auto .bx-stop:hover, .bx-wrapper .bx-controls-auto .bx-stop.active { background-position: -86px -33px; }
 
 /* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
-/* line 161, sass/bxslider.scss */
+/* line 159, sass/bxslider.scss */
 .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager { text-align: left; width: 80%; }
 
-/* line 166, sass/bxslider.scss */
+/* line 164, sass/bxslider.scss */
 .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto { right: 0; width: 35px; }
 
 /* IMAGE CAPTIONS */
-/* line 173, sass/bxslider.scss */
+/* line 171, sass/bxslider.scss */
 .bx-wrapper .bx-caption { position: absolute; bottom: 0; left: 0; background: #666666 \9; background: rgba(80, 80, 80, 0.75); width: 100%; }
 
-/* line 182, sass/bxslider.scss */
+/* line 180, sass/bxslider.scss */
 .bx-wrapper .bx-caption span { color: #fff; font-family: Arial; display: block; font-size: .85em; padding: 10px; }
