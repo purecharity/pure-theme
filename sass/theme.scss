@@ -241,15 +241,18 @@
 }
 
 .donatebody {
-	padding: 0px 0 100px 0;
+	padding: 50px 0;
 	color: #fff;
 	font-size: 2em;
+	height: 86vh;
 	h1 {
 		margin: 0;
 		text-align: center;
 	}
-	.donateintro {
+	.donateintro p {
 		text-align: center;
+		margin:0;
+		line-height: 133%;
 	}
 }
 

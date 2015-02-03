@@ -575,50 +575,50 @@ a.button:hover { background: #cf754c; }
 .footer-wide { text-align: center; font-size: .9em; }
 
 /* line 243, sass/theme.scss */
-.donatebody { padding: 0px 0 100px 0; color: #fff; font-size: 2em; }
-/* line 247, sass/theme.scss */
+.donatebody { padding: 50px 0; color: #fff; font-size: 2em; height: 86vh; }
+/* line 248, sass/theme.scss */
 .donatebody h1 { margin: 0; text-align: center; }
-/* line 251, sass/theme.scss */
-.donatebody .donateintro { text-align: center; }
+/* line 252, sass/theme.scss */
+.donatebody .donateintro p { text-align: center; margin: 0; line-height: 133%; }
 
-/* line 257, sass/theme.scss */
+/* line 260, sass/theme.scss */
 .donatebuttons ul { margin-top: 0px; text-align: center; list-style: none; font-size: .5em; }
-/* line 262, sass/theme.scss */
+/* line 265, sass/theme.scss */
 .donatebuttons ul.generaldonation { font-size: .6em; padding-bottom: 10px; }
-/* line 266, sass/theme.scss */
+/* line 269, sass/theme.scss */
 .donatebuttons ul li { list-style: none; margin-bottom: 10px; }
-/* line 270, sass/theme.scss */
+/* line 273, sass/theme.scss */
 .donatebuttons ul a { width: 300px; font-weight: 600; }
 
-/* line 277, sass/theme.scss */
+/* line 280, sass/theme.scss */
 .fr-list-container.is-grid { font-size: .8em; }
 
-/* line 286, sass/theme.scss */
-.article { text-align: center; padding: 50px 0; }
 /* line 289, sass/theme.scss */
+.article { text-align: center; padding: 50px 0; }
+/* line 292, sass/theme.scss */
 .article h2 { margin: 0; }
 
-/* line 294, sass/theme.scss */
+/* line 297, sass/theme.scss */
 .meta { font-size: .8em; text-align: center; font-style: italic; }
 
-/* line 301, sass/theme.scss */
+/* line 304, sass/theme.scss */
 .featured-image img { -webkit-border-radius: 100%; -moz-border-radius: 100%; border-radius: 100%; }
 
-/* line 306, sass/theme.scss */
+/* line 309, sass/theme.scss */
 .comments-row { border-top: 1px solid #dddddd; }
-/* line 308, sass/theme.scss */
+/* line 311, sass/theme.scss */
 .comments-row ol { margin: 0; padding: 0; list-style: none; }
-/* line 313, sass/theme.scss */
+/* line 316, sass/theme.scss */
 .comments-row li { list-style: none; margin: 0; padding: 0; }
-/* line 318, sass/theme.scss */
-.comments-row .comment-author { padding: 0px; font-weight: 600; }
 /* line 321, sass/theme.scss */
+.comments-row .comment-author { padding: 0px; font-weight: 600; }
+/* line 324, sass/theme.scss */
 .comments-row .comment-author img { float: left; margin: 0 10px 10px 0; }
-/* line 326, sass/theme.scss */
-.comments-row .comment-meta { font-size: .9em; }
 /* line 329, sass/theme.scss */
-.comments-row .children { margin-left: 40px; }
+.comments-row .comment-meta { font-size: .9em; }
 /* line 332, sass/theme.scss */
+.comments-row .children { margin-left: 40px; }
+/* line 335, sass/theme.scss */
 .comments-row .comment-body { margin: 20px 0; padding: 20px 0; border-bottom: 1px solid #dddddd; }
 
 /*
