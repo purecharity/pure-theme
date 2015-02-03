@@ -207,31 +207,28 @@
             <p class="centered"><a class="button" href="<?php the_sub_field("articles_link"); ?>">More Articles</a>
           </div> 
         </div>                 
-      <?php elseif(get_row_layout() == "three_photo_section"): // layout: Video Embed ?>
-        <?php if(get_sub_field('small_photos')): ?>
-          <div class="wide-container content-section" style="color:<?php the_sub_field('font_color'); ?>;background: <?php the_sub_field('background_color'); ?>;">
-            <div class="container">
-              <div class="row">
-                <?php while(has_sub_field('small_photos')): ?>
-                  <div class="col span_12">
-                    <?php 
-                      $image = get_sub_field('photo');
-                      $size = 'grid-sidebyside'; // (thumbnail, medium, large, full or custom size)
-                      if( $image ) { echo wp_get_attachment_image( $image, $size ); }
-                    ?>
+        <?php elseif(get_row_layout() == "large_background_images"): // layout: Large Background Image ?>
+          <?php if(get_sub_field('large_image_section')): ?>
+            <?php while(has_sub_field('large_image_section')): ?>
+              <style type="text/css"> 
+                .feature<?php echo $counter; ?>:after { background-image: url(<?php the_sub_field('image'); ?>); }
+              </style>
+              <div class="wide-container home-section cause-section feature<?php echo $counter; ?>" style="background-image: url(<?php the_sub_field('image'); ?>);">
+                <a href="<?php the_sub_field('link'); ?>">
+                <div class="container">
+                  <div class="row nopadrow">
+                    <div class="col span_12 centered">
+                      <h3><?php the_sub_field('title'); ?></h3>
+                      <p class="intro"><?php the_sub_field('content'); ?></p>
+                    </div>
                   </div>
-                <?php endwhile; ?>
+                </div>
+                </a>
               </div>
-            <?php endif; ?> 
-            <?php if(get_sub_field('large_photo')): ?>
-              <?php 
-              $image = get_sub_field('large_photo');
-              $size = 'grid-large'; // (thumbnail, medium, large, full or custom size)
-              if( $image ) { echo wp_get_attachment_image( $image, $size ); }
-              ?>
-            <?php endif; ?>
-          </div>
-        </div>
+              <?php $counter++; // add one per row ?>
+            <?php endwhile; ?>
+          <?php endif; ?>
+
          <?php elseif(get_row_layout() == "4_photo_section"): // layout: Video Embed ?>
           <?php if(get_sub_field('photo_row')): ?>
           <div class="wide-container content-section" style="color:<?php the_sub_field('font_color'); ?>;background: <?php the_sub_field('background_color'); ?>;">
