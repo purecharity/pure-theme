@@ -31,7 +31,7 @@ if(function_exists("register_field_group"))
                         ),
                     ),
                     array (
-                        'label' => 'General Content',
+                        'label' => 'General Content with Background Image',
                         'name' => 'general_content',
                         'display' => 'row',
                         'min' => '',
@@ -81,7 +81,7 @@ if(function_exists("register_field_group"))
                         ),
                     ),
                     array (
-                        'label' => 'General No BG Image',
+                        'label' => 'General No Background Image',
                         'name' => 'general_no_bg_image',
                         'display' => 'row',
                         'min' => '',
@@ -484,7 +484,7 @@ if(function_exists("register_field_group"))
                         ),
                     ),
                     array (
-                        'label' => 'Blog Posts Section',
+                        'label' => 'Recent Blog Posts Section',
                         'name' => 'blog_posts_section',
                         'display' => 'row',
                         'min' => '',
@@ -529,78 +529,7 @@ if(function_exists("register_field_group"))
                         ),
                     ),
                     array (
-                        'label' => 'Quotes Rotator',
-                        'name' => 'quotes_rotator',
-                        'display' => 'row',
-                        'min' => '',
-                        'max' => '',
-                        'sub_fields' => array (
-                            array (
-                                'key' => 'field_54c66af7ca386',
-                                'label' => 'Title',
-                                'name' => 'title',
-                                'type' => 'text',
-                                'column_width' => '',
-                                'default_value' => '',
-                                'placeholder' => '',
-                                'prepend' => '',
-                                'append' => '',
-                                'formatting' => 'html',
-                                'maxlength' => '',
-                            ),
-                            array (
-                                'key' => 'field_54c66affca387',
-                                'label' => 'Intro',
-                                'name' => 'intro',
-                                'type' => 'wysiwyg',
-                                'column_width' => '',
-                                'default_value' => '',
-                                'toolbar' => 'full',
-                                'media_upload' => 'yes',
-                            ),
-                            array (
-                                'key' => 'field_54c66a247092d',
-                                'label' => 'Quotes',
-                                'name' => 'quotes',
-                                'type' => 'repeater',
-                                'column_width' => '',
-                                'sub_fields' => array (
-                                    array (
-                                        'key' => 'field_54c66a2c7092e',
-                                        'label' => 'Quote',
-                                        'name' => 'quote',
-                                        'type' => 'wysiwyg',
-                                        'column_width' => '',
-                                        'default_value' => '',
-                                        'toolbar' => 'full',
-                                        'media_upload' => 'yes',
-                                    ),
-                                ),
-                                'row_min' => 1,
-                                'row_limit' => '',
-                                'layout' => 'table',
-                                'button_label' => 'Add Quote',
-                            ),
-                            array (
-                                'key' => 'field_54c66b0cca388',
-                                'label' => 'Background Color',
-                                'name' => 'background_color',
-                                'type' => 'color_picker',
-                                'column_width' => '',
-                                'default_value' => '',
-                            ),
-                            array (
-                                'key' => 'field_54c66b1cca389',
-                                'label' => 'Font Color',
-                                'name' => 'font_color',
-                                'type' => 'color_picker',
-                                'column_width' => '',
-                                'default_value' => '',
-                            ),
-                        ),
-                    ),
-                    array (
-                        'label' => 'General Rotator',
+                        'label' => 'Rotator',
                         'name' => 'general_rotator',
                         'display' => 'row',
                         'min' => '',
@@ -671,7 +600,7 @@ if(function_exists("register_field_group"))
                         ),
                     ),
                     array (
-                        'label' => 'Large Background Images',
+                        'label' => 'Large Background Image Links',
                         'name' => 'large_background_images',
                         'display' => 'row',
                         'min' => '',
@@ -1167,6 +1096,5 @@ if(function_exists("register_field_group"))
         ),
         'menu_order' => 0,
     ));
-}
-
+} 
 ?>
