@@ -208,27 +208,26 @@
           </div> 
         </div>                 
         <?php elseif(get_row_layout() == "large_background_images"): // layout: Large Background Image ?>
+          <div class="wide-container content-section">
           <?php if(get_sub_field('large_image_section')): ?>
             <?php while(has_sub_field('large_image_section')): ?>
               <style type="text/css"> 
-                .feature<?php echo $counter; ?>:after { background-image: url(<?php the_sub_field('image'); ?>); }
+                .feature<?php echo $counter; ?>:after { background-image: url(<?php the_sub_field('background_image'); ?>); }
               </style>
-              <div class="wide-container home-section cause-section feature<?php echo $counter; ?>" style="background-image: url(<?php the_sub_field('image'); ?>);">
-                <a href="<?php the_sub_field('link'); ?>">
-                <div class="container">
+                <div class="container home-section cause-section feature<?php echo $counter; ?>" style="background-image: url(<?php the_sub_field('background_image'); ?>);">
                   <div class="row nopadrow">
+                    <a href="<?php the_sub_field('link'); ?>">
                     <div class="col span_12 centered">
                       <h3><?php the_sub_field('title'); ?></h3>
                       <p class="intro"><?php the_sub_field('content'); ?></p>
                     </div>
+                    </a>
                   </div>
                 </div>
-                </a>
-              </div>
               <?php $counter++; // add one per row ?>
             <?php endwhile; ?>
           <?php endif; ?>
-
+          </div>
          <?php elseif(get_row_layout() == "4_photo_section"): // layout: Video Embed ?>
           <?php if(get_sub_field('photo_row')): ?>
           <div class="wide-container content-section" style="color:<?php the_sub_field('font_color'); ?>;background: <?php the_sub_field('background_color'); ?>;">
