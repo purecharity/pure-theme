@@ -211,12 +211,12 @@
               <?php query_posts( array('showposts' => '2') );?>
               <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 <div class="col span_12">
-                  <article>
+                  <div class="article">
                     <?php the_post_thumbnail( 'image-medium' ); ?>   
                     <p class="meta date"><?php the_time('F j, Y'); ?></p>
                     <h4><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h4>
                     <?php the_excerpt(); ?>     
-                  </article>  
+                  </div>  
                 </div>
               <?php endwhile; else: ?>
               <?php _e('Sorry, no posts matched your criteria.'); ?>

@@ -79,6 +79,9 @@ ul { margin: 0; padding: 0; }
 .post-body ol li { list-style: decimal; }
 
 /* line 92, sass/format.scss */
+p.centered { text-align: center; }
+
+/* line 96, sass/format.scss */
 .clear_block { float: left; width: 100%; padding: 10px; }
 
 /* line 1, sass/forms.scss */
