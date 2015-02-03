@@ -17,13 +17,9 @@
 
 		<!-- This is the theme's stylesheet, delete it at your own peril! -->
 		<link href="<?php bloginfo('template_directory'); ?>/style.css" rel="stylesheet" type="text/css" />
-
-		<script src="//use.typekit.net/nkz8hsv.js"></script>
-		<script>try{Typekit.load();}catch(e){}</script>
-
+ 
 		<!-- add open graph -->
 		<?php if (have_posts()):while(have_posts()):the_post(); endwhile; endif;?>
-
 
 			<!-- if page is content page -->
 			<?php if (is_single()) { ?>
