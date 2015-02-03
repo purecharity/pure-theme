@@ -232,6 +232,14 @@
           <?php if(get_sub_field('photo_row')): ?>
           <div class="wide-container content-section" style="color:<?php the_sub_field('font_color'); ?>;background: <?php the_sub_field('background_color'); ?>;">
             <div class="container">    
+              <div class="row">
+              <?php if( $rotator_title = get_sub_field('title') ){ ?>
+                <h3><?php echo $rotator_title; ?></h3>
+              <?php }?>
+              <?php if( $rotator_intro = get_sub_field('intro') ){ ?>
+                <p class="intro"><?php echo $rotator_intro; ?></p>
+              <?php }?>
+            </div>
               <div class="row nopadbottom">
                 <?php while(has_sub_field('photo_row')): ?>
                   <?php if(get_sub_field('photos')): ?>
