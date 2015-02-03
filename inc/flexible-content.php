@@ -147,30 +147,6 @@
           </div>
         </div> 
         <?php } ?>    
-      <?php elseif(get_row_layout() == "quotes_rotator"): // layout: Video Embed ?>
-        <?php if(!isset($_GET['slug']) && !isset($_GET['event_id']) && !isset($_GET['child_id'])){ ?>
-        <div class="wide-container content-section" style="color:<?php the_sub_field('font_color'); ?>;background: <?php the_sub_field('background_color'); ?>;">
-            <div class="container">
-              <div class="row">
-                <?php if( $quote_title = get_sub_field('title') ){ ?>
-                  <h3 class="content-heading"><?php echo $quote_title; ?></h3>
-                <?php }?>
-                <?php if( $quote_intro = get_sub_field('intro') ){ ?>
-                  <p class="intro"><?php echo $quote_intro; ?></p>
-                <?php }?>
-              </div>
-              <div class="row nopadtop">
-                <ul class="quotes-slider">
-                  <?php while(has_sub_field('quotes')): ?>
-                    <div class="row nopadrow">
-                    <li class="bx-quote col span_18 centered"><?php the_sub_field('quote'); ?> </li>
-                    </div>
-                  <?php endwhile; ?>
-                </ul>
-              </div>
-            </div>
-        </div> 
-        <?php } ?>  
       <?php elseif(get_row_layout() == "general_rotator"): // layout: Video Embed ?>
         <?php if(!isset($_GET['slug']) && !isset($_GET['event_id']) && !isset($_GET['child_id'])){ ?>
         <div class="wide-container content-section" style="color:<?php the_sub_field('font_color'); ?>;background: <?php the_sub_field('background_color'); ?>;">
