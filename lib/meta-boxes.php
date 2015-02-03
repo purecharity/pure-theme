@@ -744,6 +744,52 @@ if(function_exists("register_field_group"))
                             ),
                         ),
                     ),
+                    array (
+                        'label' => 'Pure Charity Embed Section',
+                        'name' => 'pure_charity_embed_section',
+                        'display' => 'row',
+                        'min' => '',
+                        'max' => '',
+                        'sub_fields' => array (
+                            array (
+                                'key' => 'field_54d146eb11920',
+                                'label' => 'Title',
+                                'name' => 'title',
+                                'type' => 'text',
+                                'column_width' => '',
+                                'default_value' => '',
+                                'placeholder' => '',
+                                'prepend' => '',
+                                'append' => '',
+                                'formatting' => 'html',
+                                'maxlength' => '',
+                            ),
+                            array (
+                                'key' => 'field_54d146f011921',
+                                'label' => 'Subtitle',
+                                'name' => 'subtitle',
+                                'type' => 'text',
+                                'column_width' => '',
+                                'default_value' => '',
+                                'placeholder' => '',
+                                'prepend' => '',
+                                'append' => '',
+                                'formatting' => 'html',
+                                'maxlength' => '',
+                            ),
+                            array (
+                                'key' => 'field_54d146f511922',
+                                'label' => 'Embed Code',
+                                'name' => 'embed_code',
+                                'type' => 'wysiwyg',
+                                'instructions' => 'Enter the embed code from Pure Charity',
+                                'column_width' => '',
+                                'default_value' => '',
+                                'toolbar' => 'basic',
+                                'media_upload' => 'no',
+                            ),
+                        ),
+                    ),
                 ),
                 'button_label' => 'Add Content Section',
                 'min' => 0,
@@ -1127,5 +1173,4 @@ if(function_exists("register_field_group"))
         'menu_order' => 0,
     ));
 }
-
 ?>

@@ -76,8 +76,10 @@
 
 .content-section {
 	padding: 50px 0;
-	text-align: center;
-	border-bottom: 1px solid $bordercolor;
+ 	border-bottom: 1px solid $bordercolor;
+ 	h3.content-heading {
+ 		text-align: center;
+ 	}
 	&.main-content-section {
 		text-align: inherit;
 		font-size: 1.2em;
