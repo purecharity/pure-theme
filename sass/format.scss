@@ -44,16 +44,16 @@ ul {
 
 .pin {
   width: 100%;
-  z-index: 2;
+  z-index: 99999;
   position: relative;
   background: #000;
-  opacity: .7;
+  opacity: .9;
 }
 
 .pinned {
   position: fixed !important;
   background: #000;
-  opacity: .8;
+  opacity: .9;
 }
 
 /* Page Layout */
