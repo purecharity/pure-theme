@@ -4,7 +4,7 @@
     <div class="wide-container content-section main-content-section">
       <div class="container">
         <div class="row">
-          <div class="col centered span_24">
+          <div class="col span_24">
             <p><?php the_sub_field("content"); ?></p>
           </div>
         </div>
@@ -16,7 +16,7 @@
     <div class="wide-container general_content content-section bgimage_content_section" style="color:<?php the_sub_field('font_color'); ?>;background-image: url(<?php the_sub_field('background_image'); ?>);">
       <div class="container">
         <div class="row">
-          <div class="col centered span_24 centered-section">
+          <div class="col span_24 centered-section">
             <?php if( $general_title = get_sub_field('title') ){ ?>
                 <h3 class="content-heading"><?php echo $general_title; ?></h3>
               <?php }?>
@@ -33,7 +33,7 @@
     <div class="wide-container content-section general_content_section_bgcolor" style="color:<?php the_sub_field('font_color'); ?>;background: <?php the_sub_field('background_color'); ?>;">
       <div class="container">
         <div class="row">
-          <div class="col centered span_24 centered-section">
+          <div class="col span_24 centered-section">
             <?php if( $noimage_title = get_sub_field('title') ){ ?>
               <h3 class="content-heading"><?php echo $noimage_title; ?></h3>
             <?php }?>
