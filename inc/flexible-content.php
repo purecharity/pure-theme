@@ -265,7 +265,7 @@
     <div class="wide-container content-section general_content_section_bgcolor" style="color:<?php the_sub_field('font_color'); ?>;background: <?php the_sub_field('background_color'); ?>;">
       <div class="container">
         <div class="row">
-          <div class="col centered span_24 centered-section">
+          <div class="col span_24 centered-section">
             <?php if( $title = get_sub_field('title') ){ ?>
               <h3 class="content-heading"><?php echo $title; ?></h3>
             <?php }?>
