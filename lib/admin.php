@@ -81,8 +81,7 @@ add_action('login_head', 'custom_login');
 function register_my_menus() {
   register_nav_menus(
     array(
-      'main-menu' => __( 'Main Menu' ),
-      'utility-menu' => __( 'Utility Menu' )      
+      'main-menu' => __( 'Main Menu' )
     )
   );
 }
