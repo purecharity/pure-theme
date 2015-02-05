@@ -173,33 +173,12 @@ function gist_custom_admin_bar_remove() {
   global $wp_admin_bar;
   $wp_admin_bar->remove_menu('wp-logo');
   // $wp_admin_bar->remove_menu('comments');
-  $wp_admin_bar->remove_menu('new-media');
   $wp_admin_bar->remove_menu('new-link');
   $wp_admin_bar->remove_menu('new-theme');
   $wp_admin_bar->remove_menu('w3tc');
 }
 add_action('wp_before_admin_bar_render', 'gist_custom_admin_bar_remove', 0);
 
-/**
- * Remove Menu Items
- * @since 1.0.0
- *
- * Remove unused menu items by adding them to the array.
- * See the commented list of menu items for reference.
- *
- */
-function be_remove_menus () {
-  global $menu;
-  $restricted = array(__('Media'));
-  // Example:
-  //$restricted = array(__('Dashboard'), __('Posts'), __('Media'), __('Links'), __('Pages'), __('Appearance'), __('Tools'), __('Users'), __('Settings'), __('Comments'), __('Plugins'));
-  end ($menu);
-  while (prev($menu)){
-    $value = explode(' ',$menu[key($menu)][0]);
-    if(in_array($value[0] != NULL?$value[0]:"" , $restricted)){unset($menu[key($menu)]);}
-  }
-}
-add_action( 'admin_menu', 'be_remove_menus' );
 
 // Rid ourselves of the default metaboxes on the post screen
     function remove_default_post_screen_metaboxes() {

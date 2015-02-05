@@ -579,58 +579,58 @@ a.button:hover { background: #cf754c; }
 .footer ul li { margin: 0; }
 
 /* line 241, sass/theme.scss */
-.footer-wide { font-size: .9em; background: #f0f0f0; }
+.footer-wide { font-size: .9em; }
 
-/* line 247, sass/theme.scss */
+/* line 245, sass/theme.scss */
 ul.social-icons { list-style: none; margin: 0; text-align: right; }
-/* line 251, sass/theme.scss */
+/* line 249, sass/theme.scss */
 ul.social-icons li { display: inline-block; margin: 0; font-size: 2em; }
 
-/* line 260, sass/theme.scss */
+/* line 258, sass/theme.scss */
 .donatebody { padding: 50px 0; color: #fff; font-size: 2em; height: 86vh; }
-/* line 265, sass/theme.scss */
+/* line 263, sass/theme.scss */
 .donatebody h1 { margin: 0; text-align: center; }
-/* line 269, sass/theme.scss */
+/* line 267, sass/theme.scss */
 .donatebody .donateintro p { text-align: center; margin: 0; line-height: 133%; }
 
-/* line 277, sass/theme.scss */
+/* line 275, sass/theme.scss */
 .donatebuttons ul { margin-top: 0px; text-align: center; list-style: none; font-size: .5em; }
-/* line 282, sass/theme.scss */
+/* line 280, sass/theme.scss */
 .donatebuttons ul.generaldonation { font-size: .6em; padding-bottom: 10px; }
-/* line 286, sass/theme.scss */
+/* line 284, sass/theme.scss */
 .donatebuttons ul li { list-style: none; margin-bottom: 10px; }
-/* line 290, sass/theme.scss */
+/* line 288, sass/theme.scss */
 .donatebuttons ul a { width: 300px; font-weight: 600; }
 
-/* line 297, sass/theme.scss */
+/* line 295, sass/theme.scss */
 .fr-list-container.is-grid { font-size: .8em; }
 
-/* line 306, sass/theme.scss */
+/* line 304, sass/theme.scss */
 .article { text-align: center; padding: 50px 0; }
-/* line 309, sass/theme.scss */
+/* line 307, sass/theme.scss */
 .article h2 { margin: 0; }
 
-/* line 314, sass/theme.scss */
+/* line 312, sass/theme.scss */
 .meta { font-size: .8em; text-align: center; font-style: italic; }
 
-/* line 321, sass/theme.scss */
+/* line 319, sass/theme.scss */
 .featured-image img { -webkit-border-radius: 100%; -moz-border-radius: 100%; border-radius: 100%; }
 
-/* line 326, sass/theme.scss */
+/* line 324, sass/theme.scss */
 .comments-row { border-top: 1px solid #dddddd; }
-/* line 328, sass/theme.scss */
+/* line 326, sass/theme.scss */
 .comments-row ol { margin: 0; padding: 0; list-style: none; }
-/* line 333, sass/theme.scss */
+/* line 331, sass/theme.scss */
 .comments-row li { list-style: none; margin: 0; padding: 0; }
-/* line 338, sass/theme.scss */
+/* line 336, sass/theme.scss */
 .comments-row .comment-author { padding: 0px; font-weight: 600; }
-/* line 341, sass/theme.scss */
+/* line 339, sass/theme.scss */
 .comments-row .comment-author img { float: left; margin: 0 10px 10px 0; }
-/* line 346, sass/theme.scss */
+/* line 344, sass/theme.scss */
 .comments-row .comment-meta { font-size: .9em; }
-/* line 349, sass/theme.scss */
+/* line 347, sass/theme.scss */
 .comments-row .children { margin-left: 40px; }
-/* line 352, sass/theme.scss */
+/* line 350, sass/theme.scss */
 .comments-row .comment-body { margin: 20px 0; padding: 20px 0; border-bottom: 1px solid #dddddd; }
 
 /*
