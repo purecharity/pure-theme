@@ -68,16 +68,7 @@
 
 </style>
 
-<script>
-	 $('.quotes-slider').bxSlider({
-		  minSlides: 1,
-		  maxSlides: 1,
-		  moveSlides: 0,
-		  auto: false,
-		  autoStart: false,
-		  slideWidth: 0,
-		  pager: true
-	 }); 
+<script> 
 	  $('.general-slider').bxSlider({
 		  minSlides: 1,
 		  maxSlides: 1,
