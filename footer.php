@@ -66,6 +66,8 @@
 	.navigation .menu ul ul li:hover > a { background: <?php the_field('main_color','options'); ?>  !important; color: #fff !important; }
 	.navigation .menu ul ul ul li:hover > a { background: <?php the_field('main_color','options'); ?>   !important; color: #fff !important; }
 
+	.pin, .pinned {background-color:<?php the_field('static_header_background_color','options'); ?> }
+
 </style>
 
 <script> 
