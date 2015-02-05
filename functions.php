@@ -22,19 +22,21 @@ function pure_enqueue_scripts() {
 // Register some often used Scripts
 
     wp_register_style( 'ss-pika', get_template_directory_uri() . '/fonts/symbolset/ss-pika.css', array(), '', 'all' );
-
+    wp_register_style( 'ss-social', get_template_directory_uri() . '/fonts/ss-social-circle/ss-social-circle.css', array(), '', 'all' );
+   
    // register da scripts that we often use
       wp_deregister_script('jquery');
       wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js', false, '1.8.3');
       wp_register_script( 'modernizer', get_template_directory_uri() . '/js/modernizr-2.6.2.min.js', array(), true );
       wp_register_script( 'themejs', get_template_directory_uri() . '/js/theme.js', array(), true );
       wp_register_script( 'pin', get_template_directory_uri() . '/js/pin.js', array(), true,'1.0',true,true );
-
+      wp_register_script( 'ss-social-circle-js', get_template_directory_uri() . '/fonts/ss-social-circle/ss-social.js', array(), true,'1.0',true,true );
       wp_register_script( 'pushy', get_template_directory_uri() . '/js/pushy.js', array(), true,'1.0',true,true );
       wp_register_script( 'bxjs', get_template_directory_uri() . '/js/jquery.bxslider.js', array(), true,true );
  
    // enqueue da scripts
       wp_enqueue_style('ss-pika');
+      wp_enqueue_style('ss-social');
 
       wp_enqueue_script( 'jquery' );
       wp_enqueue_script( 'modernizer' );
@@ -42,6 +44,7 @@ function pure_enqueue_scripts() {
       wp_enqueue_script( 'pin' );
       wp_enqueue_script( 'pushy' );
       wp_enqueue_script( 'bxjs' );
+      wp_enqueue_script( 'ss-social-circle' );
 }
 
 add_action('wp_enqueue_scripts', 'pure_enqueue_scripts');

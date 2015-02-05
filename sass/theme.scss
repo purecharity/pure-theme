@@ -227,8 +227,7 @@
 
 .footer {
 	border-top: 1px solid $bordercolor;
-	font-size: .9em;
-	text-align: center;
+	font-size: .8em;
 	ul {
 		list-style: none;
 		margin: 0;
@@ -241,8 +240,23 @@
 
 .footer-wide {
 	font-size: .9em;
+			background: #f0f0f0;
+
 }
 
+ul.social-icons {
+	list-style: none;
+	margin:0;
+	text-align: right;
+	li {
+		display: inline-block;
+		margin:0;
+		font-size: 2em;
+	}
+}
+
+
+// Donate Page
 .donatebody {
 	padding: 50px 0;
 	color: #fff;

@@ -28,7 +28,18 @@
 	<div class="wide-container footer-wide">
 		<div class="container">
 			<div class="row">
-					<p>&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?> | Site Powered by <a href="http://www.purecharity.com">Pure Charity</a></p>
+					<div class="col span_12">
+						<p>&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?> | Site Powered by <a href="http://www.purecharity.com">Pure Charity</a></p>
+					</div>
+					<div class="col span_12">
+								<?php if(get_field('social_network_links', 'option')): ?>
+									<ul class="social-icons">
+										<?php while(has_sub_field('social_network_links', 'option')): ?>
+											<li class="ss-icon"><a href="<?php the_sub_field('social_network_link', 'option');?>"><?php the_sub_field('social_network_name', 'option');?></a></li>
+										<?php endwhile; ?>
+									</ul>
+								<?php endif; ?>
+					</div>
 			</div><!-- end row -->
 		</div><!-- end container -->
 	</div>
