@@ -31,12 +31,13 @@ function pure_enqueue_scripts() {
       wp_register_script( 'themejs', get_template_directory_uri() . '/js/theme.js', array(), true );
       wp_register_script( 'pin', get_template_directory_uri() . '/js/pin.js', array(), true,'1.0',true,true );
       wp_register_script( 'ss-social-circle-js', get_template_directory_uri() . '/fonts/ss-social-circle/ss-social.js', array(), true,'1.0',true,true );
+      wp_register_script( 'ss-pika-js', get_template_directory_uri() . '/fonts/symbolset/ss-pika.js', array(), true,'1.0',true,true );
       wp_register_script( 'pushy', get_template_directory_uri() . '/js/pushy.js', array(), true,'1.0',true,true );
       wp_register_script( 'bxjs', get_template_directory_uri() . '/js/jquery.bxslider.js', array(), true,true );
  
    // enqueue da scripts
-      wp_enqueue_style('ss-pika');
       wp_enqueue_style('ss-social');
+      wp_enqueue_style('ss-pika');
 
       wp_enqueue_script( 'jquery' );
       wp_enqueue_script( 'modernizer' );
@@ -44,6 +45,8 @@ function pure_enqueue_scripts() {
       wp_enqueue_script( 'pin' );
       wp_enqueue_script( 'pushy' );
       wp_enqueue_script( 'bxjs' );
+      wp_enqueue_script( 'ss-pika-js' );
+
       wp_enqueue_script( 'ss-social-circle' );
 }
 

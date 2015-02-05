@@ -35,7 +35,7 @@
 								<?php if(get_field('social_network_links', 'option')): ?>
 									<ul class="social-icons">
 										<?php while(has_sub_field('social_network_links', 'option')): ?>
-											<li class="ss-icon"><a href="<?php the_sub_field('social_network_link', 'option');?>"><?php the_sub_field('social_network_name', 'option');?></a></li>
+											<li class="ss-icon ss-social-circle"><a href="<?php the_sub_field('social_network_link', 'option');?>"><?php the_sub_field('social_network_name', 'option');?></a></li>
 										<?php endwhile; ?>
 									</ul>
 								<?php endif; ?>
