@@ -28,7 +28,7 @@
 	<div class="wide-container footer-wide">
 		<div class="container">
 			<div class="row">
-					<p>&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?></p>
+					<p>&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?> | Site Powered by <a href="http://www.purecharity.com">Pure Charity</a></p>
 			</div><!-- end row -->
 		</div><!-- end container -->
 	</div>
