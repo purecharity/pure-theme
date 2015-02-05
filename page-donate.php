@@ -19,7 +19,7 @@ Template Name: Donate Page Template
 				<div class="page-content col span_10 donatebuttons">
 					<?php if(get_field('additional_donate_options')): ?>
 							<ul class="generaldonation">
-								<li><a class="general-donaton button large" href="<?php the_field('main_button_donate_link');?>"><?php the_field('main_donate_link_text');?></a></li>
+								<li><a class="general-donaton button large" href="<?php the_field('main_donate_button_link');?>"><?php the_field('main_donate_link_text');?></a></li>
 							</ul>
 							<ul class="donate-options">
 							<?php while(has_sub_field('additional_donate_options')): ?>
