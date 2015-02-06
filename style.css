@@ -1621,77 +1621,76 @@ a.mobilepagebtn { color: #000; }
 ===================================*/
 /* line 17, sass/bxslider.scss */
 .bx-wrapper { position: relative; margin: 0 auto 0px; padding: 0; *zoom: 1; }
-
-/* line 24, sass/bxslider.scss */
+/* line 22, sass/bxslider.scss */
 .bx-wrapper img { max-width: 100%; display: block; }
 
 /** THEME
 ===================================*/
-/* line 33, sass/bxslider.scss */
+/* line 32, sass/bxslider.scss */
 .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto { position: absolute; bottom: -40px; width: 100%; }
 
 /* LOADER */
-/* line 41, sass/bxslider.scss */
+/* line 40, sass/bxslider.scss */
 .bx-wrapper .bx-loading { min-height: 50px; background: url(../images/bx_loader.gif) center center no-repeat white; height: 100%; width: 100%; position: absolute; top: 0; left: 0; z-index: 2000; }
 
 /* PAGER */
-/* line 55, sass/bxslider.scss */
+/* line 54, sass/bxslider.scss */
 .bx-pager { padding-top: 0px; text-align: center; }
 
-/* line 62, sass/bxslider.scss */
+/* line 60, sass/bxslider.scss */
 .bx-pager .bx-pager-item, .bx-controls-auto .bx-controls-auto-item { display: inline-block; *zoom: 1; *display: inline; }
 
-/* line 68, sass/bxslider.scss */
+/* line 66, sass/bxslider.scss */
 .bx-pager.bx-default-pager a { background: none; border: 3px solid #cccb6c; text-indent: -9999px; display: block; width: 30px; height: 20px; width: 20px; margin: 0 2px; outline: 0; -moz-border-radius: 100%; -webkit-border-radius: 100%; border-radius: 100%; }
 
-/* line 84, sass/bxslider.scss */
+/* line 82, sass/bxslider.scss */
 .bx-pager.bx-default-pager a:hover, .bx-pager.bx-default-pager a.active { background: #cccb6c; }
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
-/* line 90, sass/bxslider.scss */
+/* line 88, sass/bxslider.scss */
 .bx-wrapper .bx-prev { left: 160px; }
 
-/* line 94, sass/bxslider.scss */
+/* line 92, sass/bxslider.scss */
 .bx-wrapper .bx-next { right: 60px; }
 
-/* line 98, sass/bxslider.scss */
+/* line 96, sass/bxslider.scss */
 .bx-wrapper .bx-prev:hover { background-position: 0 -71px; }
 
-/* line 102, sass/bxslider.scss */
+/* line 100, sass/bxslider.scss */
 .bx-wrapper .bx-next:hover { background-position: -53px -71px; }
 
-/* line 106, sass/bxslider.scss */
+/* line 104, sass/bxslider.scss */
 .bx-wrapper .bx-controls-direction a { position: absolute; top: 50%; margin-top: -16px; margin-left: -100px; outline: 0; width: 40px; height: 59px; z-index: 9999; font-size: 3em; }
 
-/* line 118, sass/bxslider.scss */
+/* line 116, sass/bxslider.scss */
 .bx-wrapper .bx-controls-direction a.disabled { display: none; }
 
 /* AUTO CONTROLS (START / STOP) */
-/* line 124, sass/bxslider.scss */
+/* line 122, sass/bxslider.scss */
 .bx-wrapper .bx-controls-auto { text-align: center; }
 
-/* line 128, sass/bxslider.scss */
+/* line 126, sass/bxslider.scss */
 .bx-wrapper .bx-controls-auto .bx-start { display: block; text-indent: -9999px; width: 10px; height: 11px; outline: 0; background: url(images/controls.png) -86px -11px no-repeat; margin: 0 3px; }
 
-/* line 139, sass/bxslider.scss */
+/* line 137, sass/bxslider.scss */
 .bx-wrapper .bx-controls-auto .bx-start:hover, .bx-wrapper .bx-controls-auto .bx-start.active { background-position: -86px 0; }
 
-/* line 143, sass/bxslider.scss */
+/* line 141, sass/bxslider.scss */
 .bx-wrapper .bx-controls-auto .bx-stop { display: block; text-indent: -9999px; width: 9px; height: 11px; outline: 0; background: url(images/controls.png) -86px -44px no-repeat; margin: 0 3px; }
 
-/* line 154, sass/bxslider.scss */
+/* line 152, sass/bxslider.scss */
 .bx-wrapper .bx-controls-auto .bx-stop:hover, .bx-wrapper .bx-controls-auto .bx-stop.active { background-position: -86px -33px; }
 
 /* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
-/* line 160, sass/bxslider.scss */
+/* line 158, sass/bxslider.scss */
 .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager { text-align: left; width: 80%; }
 
-/* line 165, sass/bxslider.scss */
+/* line 163, sass/bxslider.scss */
 .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto { right: 0; width: 35px; }
 
 /* IMAGE CAPTIONS */
-/* line 172, sass/bxslider.scss */
+/* line 170, sass/bxslider.scss */
 .bx-wrapper .bx-caption { position: absolute; bottom: 0; left: 0; background: #666666 \9; background: rgba(80, 80, 80, 0.75); width: 100%; }
 
-/* line 181, sass/bxslider.scss */
+/* line 179, sass/bxslider.scss */
 .bx-wrapper .bx-caption span { color: #fff; font-family: Arial; display: block; font-size: .85em; padding: 10px; }

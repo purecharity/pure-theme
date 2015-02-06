@@ -19,11 +19,10 @@
   margin: 0 auto 0px;
   padding: 0;
   *zoom: 1;
-}
-
-.bx-wrapper img {
-  max-width: 100%;
-  display: block;
+  img {
+    max-width: 100%;
+    display: block;
+  }
 }
 
 /** THEME
@@ -54,8 +53,7 @@
 .bx-pager
  {
   padding-top: 0px;
-    text-align: center;
-
+  text-align: center;
 }
 
 .bx-pager .bx-pager-item,
