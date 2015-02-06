@@ -16,7 +16,8 @@
 }
 
 .home-head {
-	height: 92vh;
+	height: 98vh;
+	position: relative;	
 	a.bx-prev, a.bx-next {
 		color: #fff !important;
 	}
@@ -44,7 +45,7 @@
 .bxslider {	
 	&.slider-header {
 		li {
-			height: 98vh;
+			height: 102vh;
 			display: block;
 			background-position: center center;
 			background-repeat: no-repeat;
