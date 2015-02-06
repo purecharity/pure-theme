@@ -523,7 +523,7 @@ a.button:hover { background: #cf754c; }
 /* line 90, sass/theme.scss */
 .content-section.general_content { padding: 0 0 40px 0; }
 /* line 93, sass/theme.scss */
-.content-section.bgimage_content_section { padding: 100px 0; background-position: center; background-repeat: no-repeat; background-size: cover; }
+.content-section.bgimage_content_section { padding: 200px 0; background-position: center; background-repeat: no-repeat; background-size: cover; }
 /* line 100, sass/theme.scss */
 .content-section .videoembed p { margin: 0; }
 
