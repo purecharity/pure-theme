@@ -51,14 +51,15 @@
 <style type="text/css">
 	
 	a {color: <?php the_field('main_color','options'); ?> !important;}
+	.bx-pager.bx-default-pager a {border-color: <?php the_field('main_color','options'); ?>;}
 
 	a:hover {color: <?php the_field('secondary_color','options'); ?> !important;}
 	a.fr-pure-button:hover {color: #e0e0e0 !important;}
 	a.button,
 	.pagination ul a:hover,
-	.pagination ul span.current,
+	.pagination ul span.current, 
 	.bx-pager.bx-default-pager a:hover, 
-	.bx-pager.bx-default-pager a.active   {background: <?php the_field('main_color','options'); ?> !important;}
+	.bx-pager.bx-default-pager a.active  {border-color: <?php the_field('main_color','options'); ?>;background: <?php the_field('main_color','options'); ?> !important;}
 
 	a.button {color: #fff !important;}
 	a.button:hover {color: #fff !important;background:<?php the_field('secondary_color','options'); ?> !important; }
