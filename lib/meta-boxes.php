@@ -999,6 +999,19 @@
                 'default_value' => '#000000',
             ),
             array (
+                'key' => 'field_54d90222f07be',
+                'label' => 'Nav Color',
+                'name' => 'nav_color',
+                'type' => 'select',
+                'choices' => array (
+                    'dark-nav' => 'Dark',
+                    'light-nav' => 'light',
+                ),
+                'default_value' => '',
+                'allow_null' => 0,
+                'multiple' => 0,
+            ),
+            array (
                 'key' => 'field_54d39812033fc',
                 'label' => 'Social Network Links',
                 'name' => 'social_network_links',

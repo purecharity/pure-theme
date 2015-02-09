@@ -43,6 +43,9 @@
 			</div><!-- end row -->
 		</div><!-- end container -->
 	</div>
+
+<?php var_dump($trips);?>
+
 </div>
 	<?php wp_footer(); ?>
 	</body>
@@ -72,13 +75,12 @@
 	.pushy a {color: #fff !important;}
 	.navigation ul.menu li a { color: #fff !important; }
 	.lightnav ul.menu li a {color: <?php the_field('main_color','options'); ?> !important;}
-	.navigation ul.menu li a:hover { color: <?php the_field('main_color','options'); ?> !important;  }
-	.navigation ul.menu li:hover {  background: #eeeeee; color: #000 !important;  }
-	.navigation ul.menu li:hover a { color: #000 !important; }
-	.navigation .menu ul ul li:hover > a { background: <?php the_field('main_color','options'); ?>  !important; color: #fff !important; }
-	.navigation .menu ul ul ul li:hover > a { background: <?php the_field('main_color','options'); ?>   !important; color: #fff !important; }
-
+	ul.menu li:hover {background: <?php the_field('main_color','options'); ?> !important;}
+	ul.menu li ul li:hover {background: <?php the_field('main_color','options'); ?> !important;}
 	.pin, .pinned {background-color:<?php the_field('static_header_background_color','options'); ?> }
+
+	.light-nav ul.menu li a {color:<?php the_field('main_color','options'); ?> !important;}
+	.light-nav ul.menu li:hover a {color: #fff !important;}
 
 </style>
 

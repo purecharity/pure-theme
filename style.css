@@ -120,57 +120,29 @@ a img.alignleft { float: left; margin: 0 1em 1em 0; }
 /* line 21, sass/images.scss */
 a img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 
-/* ===== Top ===== */
-/* line 2, sass/nav.scss */
-.col.nav { float: right; padding-right: 20px; }
+/* line 1, sass/nav.scss */
+ul.menu { text-align: right; width: 98%; display: inline-block; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); list-style: none; font-weight: 600; }
 
-/* line 6, sass/nav.scss */
-.navigation { font-weight: 600; }
-/* line 8, sass/nav.scss */
-.navigation ul.menu { list-style: none; margin: 30px 0px; padding: 0; width: 100%; float: left; text-align: right; position: relative; z-index: 3; }
+/* line 14, sass/nav.scss */
+ul.menu li a { color: #fff; }
+
 /* line 17, sass/nav.scss */
-.navigation ul.menu li { display: inline-block; position: relative; padding: 0; margin: 0; }
-/* line 22, sass/nav.scss */
-.navigation ul.menu li a { display: block; text-decoration: none; padding: 0 10px; line-height: 43px; color: white; }
-/* line 28, sass/nav.scss */
-.navigation ul.menu li a:hover { position: relative; color: #000; text-shadow: none; }
+ul.menu li { text-align: left; display: inline-block; margin-right: -4px; position: relative; padding: 10px 15px; cursor: pointer; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -ms-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
+
+/* line 30, sass/nav.scss */
+ul.menu li:hover { background: #cf754c; color: #fff; }
+
 /* line 34, sass/nav.scss */
-.navigation ul.menu li:hover { position: relative; background: #eeeeee; color: #000 !important; text-shadow: none; }
-/* line 39, sass/nav.scss */
-.navigation ul.menu li:hover a { color: #000; }
-/* line 45, sass/nav.scss */
-.navigation ul.menu li.current-page-parent a, .navigation ul.menu li.current_page_item a { color: #fff; text-shadow: none; }
-/* line 51, sass/nav.scss */
-.navigation ul.menu ul { background: #eeeeee; text-align: left; }
-/* line 54, sass/nav.scss */
-.navigation ul.menu ul:hover { color: #000; }
-/* line 57, sass/nav.scss */
-.navigation ul.menu ul li { border: none; background: #eeeeee; }
+ul.menu li ul { padding: 0; position: absolute; top: 42px; left: 0; width: 200px; font-size: .8em; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; display: none; opacity: 0; visibility: hidden; -webkit-transiton: opacity 0.2s; -moz-transition: opacity 0.2s; -ms-transition: opacity 0.2s; -o-transition: opacity 0.2s; -transition: opacity 0.2s; }
+
+/* line 53, sass/nav.scss */
+ul.menu li ul li { text-transform: capitalize; background: #555; display: block; padding: 15px 20px; color: #fff; }
+
 /* line 60, sass/nav.scss */
-.navigation ul.menu ul li:active { color: #fff; }
-/* line 63, sass/nav.scss */
-.navigation ul.menu ul li a { float: none; width: 180px; line-height: normal; font-variant: normal; font-weight: normal; font-size: 14px; text-transform: none; padding: 6px 10px; background: none !important; font-style: normal; text-shadow: none; color: #000; }
-/* line 78, sass/nav.scss */
-.navigation ul.menu ul ul { background: #e4e4e4 !important; border-color: #e4e4e4 !important; margin-left: -14px; }
+ul.menu li ul li:hover { background: #cf754c; }
 
-/* line 88, sass/nav.scss */
-.navigation .menu ul ul, .navigation .menu ul li:hover ul ul { position: absolute; display: none; }
-
-/* line 93, sass/nav.scss */
-.navigation .menu ul ul li:hover ul, .navigation .menu ul li:hover ul li:hover ul { display: block; top: 0px; left: 100%; }
-
-/* ===== Second and Third Level ===== */
-/* line 100, sass/nav.scss */
-.navigation .menu ul li:hover ul { display: block; position: absolute; left: 0; top: 100%; width: auto; height: auto; margin: 0; padding: 0; }
-
-/* line 111, sass/nav.scss */
-.navigation .menu ul ul ul li a { color: #000; font-weight: bold; }
-
-/* line 115, sass/nav.scss */
-.navigation .menu ul ul li:hover > a { background: #6A6A67 !important; color: #fff; }
-
-/* line 119, sass/nav.scss */
-.navigation .menu ul ul ul li:hover > a { background: #666 !important; color: #fff !important; }
+/* line 61, sass/nav.scss */
+ul.menu li:hover ul { display: block; opacity: 1; visibility: visible; }
 
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
 /* ========================================================================== HTML5 display definitions ========================================================================== */
