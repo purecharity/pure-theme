@@ -44,8 +44,6 @@
 		</div><!-- end container -->
 	</div>
 
-<?php var_dump($trips);?>
-
 </div>
 	<?php wp_footer(); ?>
 	</body>
