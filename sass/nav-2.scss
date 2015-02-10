@@ -1,0 +1,70 @@
+ul.menu {
+  text-align: right;
+  width: 98%;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  list-style: none;
+  font-weight: $boldfontweight;
+}
+ul.menu li a{
+  color: #fff;
+  margin-right: -4px;
+  padding: 10px 15px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  display: block;
+}
+ul.menu li {
+  text-align: left;
+  display: inline-block;
+  position: relative;
+}
+ul.menu li a:hover {
+  background: $secondarycolor;
+  color: #fff;
+}
+ul.menu li ul {
+  padding: 0;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 200px;
+  font-size: .8em;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+ul.menu li ul li a {
+  width: 200px; 
+  text-transform: capitalize;
+  background: #555; 
+  display: block;
+  padding: 15px 20px; 
+  color: #fff;
+}
+ul.menu li ul li a:hover { background: $secondarycolor; }
+ul.menu li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
