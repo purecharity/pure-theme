@@ -357,4 +357,36 @@ ul.social-icons {
 	}
 }
 
+.leader-section {
+	h2 {
+		font-weight: $boldfontweight;
+		text-align: center;
+	}
+}
+
+ul.leader-container {
+	text-align: center !important;
+	li.col {
+		display: inline-block;
+		width: 22.5%;
+		float: none;
+		&.secondary-leader {
+			width: 13.5%;
+		}
+	}
+	img {
+		width: 100%;
+		height: auto;
+		@include rounded(100%);	
+	}
+	h3,h4 {
+		font-size: 1.2em;
+		font-weight: $boldfontweight;
+	}
+	li {
+
+	}
+}
+	
+
 
