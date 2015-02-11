@@ -75,6 +75,7 @@ add_filter('excerpt_more', 'new_excerpt_more');
  // delete the next line if you do not need additional image sizes
  add_image_size( 'image-small', 150, 9999 ); // 150 pixels wide (and unlimited height)
  add_image_size( 'image-blog', 200, 200, true ); // 400 pixels wide (and unlimited height)
+ add_image_size( 'image-square', 200, 200, true ); // 400 pixels wide (and unlimited height)
  add_image_size( 'image-single', 400, 9999 ); // 400 pixels wide (and unlimited height)
  add_image_size( 'grid-sidebyside', 463, 300, array( 'middle', 'center' )  ); // for the side by side images in the grid layout
  add_image_size( 'grid-large', 950, 9999, true ); // For the large image in the grid

@@ -150,7 +150,6 @@
       <?php elseif(get_row_layout() == "general_rotator"): // layout: Video Embed ?>
         <?php if(!isset($_GET['slug']) && !isset($_GET['event_id']) && !isset($_GET['child_id'])){ ?>
         <div class="wide-container content-section" style="color:<?php the_sub_field('font_color'); ?>;background: <?php the_sub_field('background_color'); ?>;">
-          <div class="container">
             <div class="row">
               <?php if( $rotator_title = get_sub_field('title') ){ ?>
                 <h3 class="content-heading"><?php echo $rotator_title; ?></h3>
@@ -168,7 +167,6 @@
                 <?php endwhile; ?>
               </ul>
             </div>
-          </div>
         </div>
         <?php } ?>   
       <?php elseif(get_row_layout() == "blog_posts_section"): // layout: Video Embed ?>
