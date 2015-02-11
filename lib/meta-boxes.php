@@ -1067,7 +1067,7 @@ if(function_exists("register_field_group"))
                                 ),
                                 'row_min' => '',
                                 'row_limit' => '',
-                                'layout' => 'row',
+                                'layout' => 'table',
                                 'button_label' => 'Add Link',
                             ),
                         ),
@@ -1193,7 +1193,7 @@ if(function_exists("register_field_group"))
                                 ),
                                 'row_min' => '',
                                 'row_limit' => '',
-                                'layout' => 'row',
+                                'layout' => 'table',
                                 'button_label' => 'Add Link',
                             ),
                         ),
@@ -1452,4 +1452,5 @@ if(function_exists("register_field_group"))
         'menu_order' => 0,
     ));
 }
+
 ?>
