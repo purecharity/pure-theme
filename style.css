@@ -639,13 +639,15 @@ ul.social-icons li { display: inline-block; margin: 0; font-size: 2em; }
 /* line 367, sass/theme.scss */
 ul.leader-container { text-align: center !important; }
 /* line 369, sass/theme.scss */
-ul.leader-container li.col { display: inline-block; width: 22.5%; float: none; }
-/* line 373, sass/theme.scss */
+ul.leader-container li.col { display: inline-block; width: 22.5%; float: none; min-height: 300px; vertical-align: top; }
+/* line 375, sass/theme.scss */
 ul.leader-container li.col.secondary-leader { width: 13.5%; }
-/* line 377, sass/theme.scss */
+/* line 379, sass/theme.scss */
 ul.leader-container img { width: 100%; height: auto; -webkit-border-radius: 100%; -moz-border-radius: 100%; border-radius: 100%; }
-/* line 382, sass/theme.scss */
+/* line 384, sass/theme.scss */
 ul.leader-container h3, ul.leader-container h4 { font-size: 1.2em; font-weight: 600; }
+/* line 388, sass/theme.scss */
+ul.leader-container .leader-position { font-size: .7em; }
 
 /*
 ----------------------------------------------------------------

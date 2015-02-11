@@ -58,7 +58,7 @@ Template Name: Leadership Template
 									<li class="leader secondary-leader col span_4">
 										<h4><?php the_sub_field('name'); ?></h4>
 										<img class="rounded-avatar" src="<?php the_sub_field('image'); ?>" alt="<?php the_sub_field('name'); ?>">
-										<p><?php the_sub_field('position'); ?></p>
+										<p class="leader-position"><?php the_sub_field('position'); ?></p>
 										<?php while( have_rows('connections') ): the_row();?>
 											<a class="ss-icon ss-social-circle" href="<?php the_sub_field('link'); ?>"><?php the_sub_field('link_name'); ?></a>
 										<?php endwhile; ?>

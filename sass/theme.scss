@@ -370,6 +370,8 @@ ul.leader-container {
 		display: inline-block;
 		width: 22.5%;
 		float: none;
+		min-height: 300px;
+		vertical-align: top;
 		&.secondary-leader {
 			width: 13.5%;
 		}
@@ -383,8 +385,8 @@ ul.leader-container {
 		font-size: 1.2em;
 		font-weight: $boldfontweight;
 	}
-	li {
-
+	.leader-position {
+		font-size: .7em;
 	}
 }
 	
