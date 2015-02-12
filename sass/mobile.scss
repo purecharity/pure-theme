@@ -60,4 +60,14 @@ and (max-width : 421px) {
     display: inline;
   }
 
+  ul.leader-container {
+    li.col {
+      width: 75%;
+      &.secondary-leader {
+        width: 75%;
+        font-size: 1em;
+      }
+    } 
+  }
+
 }

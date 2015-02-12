@@ -55,7 +55,7 @@ Template Name: Leadership Template
 							<div class="row">
 								<ul class="leader-container col span_24">
 								<?php while( have_rows('leadership_group') ): the_row(); ?>
-									<li class="leader secondary-leader col span_4">
+									<li class="leader secondary-leader col span_6">
 										<h4><?php the_sub_field('name'); ?></h4>
 										<img class="rounded-avatar" src="<?php the_sub_field('image'); ?>" alt="<?php the_sub_field('name'); ?>">
 										<p class="leader-position"><?php the_sub_field('position'); ?></p>

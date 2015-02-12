@@ -370,10 +370,11 @@ ul.leader-container {
 		display: inline-block;
 		width: 22.5%;
 		float: none;
-		min-height: 300px;
+		min-height: 320px;
 		vertical-align: top;
 		&.secondary-leader {
-			width: 13.5%;
+		width: 18.25%;
+		font-size: .7em;
 		}
 	}
 	img {
@@ -386,7 +387,7 @@ ul.leader-container {
 		font-weight: $boldfontweight;
 	}
 	.leader-position {
-		font-size: .7em;
+		font-size: 1em;
 	}
 }
 	
