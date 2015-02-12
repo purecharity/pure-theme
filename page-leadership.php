@@ -33,7 +33,7 @@ Template Name: Leadership Template
 										<img class="rounded-avatar" src="<?php the_sub_field('image'); ?>" alt="<?php the_sub_field('name'); ?>">
 										<p><?php the_sub_field('position'); ?></p>
 										<?php while( have_rows('connections') ): the_row();?>
-											<a class="ss-icon ss-social-circle" href="<?php the_sub_field('link'); ?>"><?php the_sub_field('link_name'); ?></a>
+                      <a class="leadercontact ss-icon ss-social-circle" href="<?php the_sub_field('link'); ?>"><?php the_sub_field('link_name'); ?></a>
 										<?php endwhile; ?>
 									</li>
 								<?php endwhile; ?>
@@ -60,7 +60,7 @@ Template Name: Leadership Template
 										<img class="rounded-avatar" src="<?php the_sub_field('image'); ?>" alt="<?php the_sub_field('name'); ?>">
 										<p class="leader-position"><?php the_sub_field('position'); ?></p>
 										<?php while( have_rows('connections') ): the_row();?>
-											<a class="ss-icon ss-social-circle" href="<?php the_sub_field('link'); ?>"><?php the_sub_field('link_name'); ?></a>
+                      <a class="leadercontact ss-icon ss-social-circle" href="<?php the_sub_field('link'); ?>"><?php the_sub_field('link_name'); ?></a>
 										<?php endwhile; ?>
 									</li>
 								<?php endwhile; ?>

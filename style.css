@@ -633,20 +633,22 @@ ul.social-icons li { display: inline-block; margin: 0; font-size: 2em; }
 /* line 353, sass/theme.scss */
 .comments-row .comment-body { margin: 20px 0; padding: 20px 0; border-bottom: 1px solid #dddddd; }
 
-/* line 361, sass/theme.scss */
+/* line 363, sass/theme.scss */
 .leader-section h2 { font-weight: 600; text-align: center; }
 
-/* line 367, sass/theme.scss */
-ul.leader-container { text-align: center !important; }
 /* line 369, sass/theme.scss */
+ul.leader-container { text-align: center !important; }
+/* line 371, sass/theme.scss */
 ul.leader-container li.col { display: inline-block; width: 22.5%; float: none; min-height: 320px; vertical-align: top; }
-/* line 375, sass/theme.scss */
+/* line 377, sass/theme.scss */
 ul.leader-container li.col.secondary-leader { width: 18.25%; font-size: .7em; }
-/* line 380, sass/theme.scss */
-ul.leader-container img { width: 100%; height: auto; -webkit-border-radius: 100%; -moz-border-radius: 100%; border-radius: 100%; }
+/* line 381, sass/theme.scss */
+ul.leader-container li.col .leadercontact { font-size: 1.8em; }
 /* line 385, sass/theme.scss */
+ul.leader-container img { width: 100%; height: auto; -webkit-border-radius: 100%; -moz-border-radius: 100%; border-radius: 100%; }
+/* line 390, sass/theme.scss */
 ul.leader-container h3, ul.leader-container h4 { font-size: 1.2em; font-weight: 600; }
-/* line 389, sass/theme.scss */
+/* line 394, sass/theme.scss */
 ul.leader-container .leader-position { font-size: 1em; }
 
 /*

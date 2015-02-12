@@ -357,6 +357,8 @@ ul.social-icons {
 	}
 }
 
+// Leadership Section Formatting
+
 .leader-section {
 	h2 {
 		font-weight: $boldfontweight;
@@ -373,8 +375,11 @@ ul.leader-container {
 		min-height: 320px;
 		vertical-align: top;
 		&.secondary-leader {
-		width: 18.25%;
-		font-size: .7em;
+			width: 18.25%;
+			font-size: .7em;
+		}
+		.leadercontact {
+			font-size: 1.8em;
 		}
 	}
 	img {
