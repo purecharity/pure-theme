@@ -45,6 +45,30 @@
       </div>
     </div>
   <?php } ?> 
+  <?php elseif(get_row_layout() == "four_column_content"): // layout: Three Columns ?>
+    <?php if(!isset($_GET['slug']) && !isset($_GET['event_id']) && !isset($_GET['child_id'])){ ?>
+    <div class="wide-container content-section" style="color:<?php the_sub_field('font_color'); ?>;background: <?php the_sub_field('background_color'); ?>;">
+      <div class="container">
+        <div class="row">
+            <?php if( $fourcol_title = get_sub_field('section_title') ){ ?>
+              <h3 class="content-heading"><?php echo $fourcol_title; ?></h3>
+            <?php }?>  
+            <?php if( $fourcol_intro = get_sub_field('section_intro') ){ ?>
+              <p class="intro"><?php echo $fourcol_intro; ?></p>
+            <?php }?>  
+        </div>
+        <div class="row">
+            <?php if(get_sub_field('columns')): ?>
+              <?php while(has_sub_field('columns')): ?>
+                <div class="col span_6">
+                    <?php the_sub_field("column"); ?>
+                </div>
+              <?php endwhile; ?>
+            <?php endif; ?>
+        </div>
+      </div>
+    </div>
+    <?php } ?> 
   <?php elseif(get_row_layout() == "three_column_content"): // layout: Three Columns ?>
     <?php if(!isset($_GET['slug']) && !isset($_GET['event_id']) && !isset($_GET['child_id'])){ ?>
     <div class="wide-container content-section" style="color:<?php the_sub_field('font_color'); ?>;background: <?php the_sub_field('background_color'); ?>;">
@@ -68,7 +92,7 @@
         </div>
       </div>
     </div>
-    <?php } ?> 
+    <?php } ?>     
   <?php elseif(get_row_layout() == "two_column_content"): // layout: Three Columns ?>
     <?php if(!isset($_GET['slug']) && !isset($_GET['event_id']) && !isset($_GET['child_id'])){ ?>
     <div class="wide-container content-section" style="color:<?php the_sub_field('font_color'); ?>;background: <?php the_sub_field('background_color'); ?>;">

@@ -1,4 +1,5 @@
 <?php
+fourcol_intro
 if(function_exists("register_field_group"))
 {
     register_field_group(array (
@@ -125,6 +126,77 @@ if(function_exists("register_field_group"))
                                 'type' => 'color_picker',
                                 'column_width' => '',
                                 'default_value' => '#000000',
+                            ),
+                        ),
+                    ),
+                    array (
+                        'label' => 'Four Column Content',
+                        'name' => 'four_column_content',
+                        'display' => 'row',
+                        'min' => '',
+                        'max' => '',
+                        'sub_fields' => array (
+                            array (
+                                'key' => 'field_54de72187861a',
+                                'label' => 'Section Title',
+                                'name' => 'section_title',
+                                'type' => 'text',
+                                'column_width' => '',
+                                'default_value' => '',
+                                'placeholder' => '',
+                                'prepend' => '',
+                                'append' => '',
+                                'formatting' => 'html',
+                                'maxlength' => '',
+                            ),
+                            array (
+                                'key' => 'field_54de72187861b',
+                                'label' => 'Section Intro',
+                                'name' => 'section_intro',
+                                'type' => 'wysiwyg',
+                                'column_width' => '',
+                                'default_value' => '',
+                                'toolbar' => 'full',
+                                'media_upload' => 'yes',
+                            ),
+                            array (
+                                'key' => 'field_54de72187861c',
+                                'label' => 'Columns',
+                                'name' => 'columns',
+                                'type' => 'repeater',
+                                'column_width' => '',
+                                'sub_fields' => array (
+                                    array (
+                                        'key' => 'field_54de72187861d',
+                                        'label' => 'Column',
+                                        'name' => 'column',
+                                        'type' => 'wysiwyg',
+                                        'column_width' => '',
+                                        'default_value' => '',
+                                        'toolbar' => 'full',
+                                        'media_upload' => 'yes',
+                                    ),
+                                ),
+                                'row_min' => 4,
+                                'row_limit' => 4,
+                                'layout' => 'table',
+                                'button_label' => 'Add Column',
+                            ),
+                            array (
+                                'key' => 'field_54de72187861e',
+                                'label' => 'Background Color',
+                                'name' => 'background_color',
+                                'type' => 'color_picker',
+                                'column_width' => '',
+                                'default_value' => '',
+                            ),
+                            array (
+                                'key' => 'field_54de72187861f',
+                                'label' => 'Font Color',
+                                'name' => 'font_color',
+                                'type' => 'color_picker',
+                                'column_width' => '',
+                                'default_value' => '',
                             ),
                         ),
                     ),
@@ -1587,5 +1659,4 @@ if(function_exists("register_field_group"))
         'menu_order' => 0,
     ));
 }
-
 ?>
