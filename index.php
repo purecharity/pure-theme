@@ -14,12 +14,11 @@
     </div>
 </div>
 
-
 <div class="wide-container">
 	<div class="container">
 		<div class="row page-content col span_24 articles-container">
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-          <div class="row article">
+          <div class="row col span_18 centered article">
              <?php get_template_part('inc/content','article'); ?> 
           </div>
 					<?php endwhile; else: ?>

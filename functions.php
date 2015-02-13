@@ -80,7 +80,7 @@ add_filter('excerpt_more', 'new_excerpt_more');
  add_image_size( 'grid-sidebyside', 463, 300, array( 'middle', 'center' )  ); // for the side by side images in the grid layout
  add_image_size( 'grid-large', 950, 9999, true ); // For the large image in the grid
  add_image_size( 'grid-wide', 960, 300, array( 'middle', 'center' )  ); // For the three image block section
- add_image_size( 'header', 1299, 9999 ); // Sized to fit the headers
+ add_image_size( 'header', 1299, 300, true ); // Sized to fit the headers
  add_image_size( 'videoembedsize', 460, 280, true ); // 460 wide 280 tall cropped / we use this next to size next to youtube videos
 
  }
