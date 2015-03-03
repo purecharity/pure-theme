@@ -1,6 +1,5 @@
 <?php while(the_flexible_field("content_sections")): ?>
   <?php if(get_row_layout() == "main_content"): // layout: Main Content with bg image ?> 
-  <?php if(!isset($_GET['slug']) && !isset($_GET['event_id']) && !isset($_GET['child_id'])){ ?>
     <div class="wide-container content-section main-content-section">
       <div class="container">
         <div class="row">
@@ -10,9 +9,7 @@
         </div>
       </div>
     </div>
-  <?php } ?> 
   <?php elseif(get_row_layout() == "general_content"): // layout: General Content with bg image ?> 
-  <?php if(!isset($_GET['slug']) && !isset($_GET['event_id']) && !isset($_GET['child_id'])){ ?>
     <div class="wide-container general_content content-section bgimage_content_section" style="color:<?php the_sub_field('font_color'); ?>;background-image: url(<?php the_sub_field('background_image'); ?>);">
       <div class="container">
         <div class="row">
@@ -27,9 +24,7 @@
         </div>
       </div>
     </div>
-  <?php } ?> 
   <?php elseif(get_row_layout() == "general_no_bg_image"): // layout: General Conent no image ?>
-  <?php if(!isset($_GET['slug']) && !isset($_GET['event_id']) && !isset($_GET['child_id'])){ ?>
     <div class="wide-container content-section general_content_section_bgcolor" style="color:<?php the_sub_field('font_color'); ?>;background: <?php the_sub_field('background_color'); ?>;">
       <div class="container">
         <div class="row">
@@ -44,9 +39,7 @@
         </div>
       </div>
     </div>
-  <?php } ?> 
   <?php elseif(get_row_layout() == "four_column_content"): // layout: Three Columns ?>
-    <?php if(!isset($_GET['slug']) && !isset($_GET['event_id']) && !isset($_GET['child_id'])){ ?>
     <div class="wide-container content-section" style="color:<?php the_sub_field('font_color'); ?>;background: <?php the_sub_field('background_color'); ?>;">
       <div class="container">
         <div class="row">
@@ -68,9 +61,7 @@
         </div>
       </div>
     </div>
-    <?php } ?> 
   <?php elseif(get_row_layout() == "three_column_content"): // layout: Three Columns ?>
-    <?php if(!isset($_GET['slug']) && !isset($_GET['event_id']) && !isset($_GET['child_id'])){ ?>
     <div class="wide-container content-section" style="color:<?php the_sub_field('font_color'); ?>;background: <?php the_sub_field('background_color'); ?>;">
       <div class="container">
         <div class="row">
@@ -92,9 +83,7 @@
         </div>
       </div>
     </div>
-    <?php } ?>     
   <?php elseif(get_row_layout() == "two_column_content"): // layout: Three Columns ?>
-    <?php if(!isset($_GET['slug']) && !isset($_GET['event_id']) && !isset($_GET['child_id'])){ ?>
     <div class="wide-container content-section" style="color:<?php the_sub_field('font_color'); ?>;background: <?php the_sub_field('background_color'); ?>;">
       <div class="container">
         <div class="row">
@@ -116,9 +105,7 @@
         </div>
       </div>
     </div>
-    <?php } ?> 
   <?php elseif(get_row_layout() == "video_image_section"): // layout: Video Embed ?>
-      <?php if(!isset($_GET['slug']) && !isset($_GET['event_id']) && !isset($_GET['child_id'])){ ?>  
         <div class="wide-container content-section" style="color:<?php the_sub_field('font_color'); ?>;background: <?php the_sub_field('background_color'); ?>;">
           <div class="container">  
             <div class="row">
@@ -143,9 +130,7 @@
             </div> 
           </div>
         </div>
-      <?php } ?>  
       <?php elseif(get_row_layout() == "video_image_section_right"): // layout: Video Embed ?>
-        <?php if(!isset($_GET['slug']) && !isset($_GET['event_id']) && !isset($_GET['child_id'])){ ?>
         <div class="wide-container content-section" style="color:<?php the_sub_field('font_color'); ?>;background: <?php the_sub_field('background_color'); ?>;">
            <div class="container">  
             <div class="row">
@@ -170,9 +155,7 @@
             </div>
           </div>
         </div> 
-        <?php } ?>    
       <?php elseif(get_row_layout() == "general_rotator"): // layout: Video Embed ?>
-        <?php if(!isset($_GET['slug']) && !isset($_GET['event_id']) && !isset($_GET['child_id'])){ ?>
         <div class="wide-container content-section" style="color:<?php the_sub_field('font_color'); ?>;background: <?php the_sub_field('background_color'); ?>;">
             <div class="row">
               <?php if( $rotator_title = get_sub_field('title') ){ ?>
@@ -192,9 +175,7 @@
               </ul>
             </div>
         </div>
-        <?php } ?>   
       <?php elseif(get_row_layout() == "blog_posts_section"): // layout: Video Embed ?>
-        <?php if(!isset($_GET['slug']) && !isset($_GET['event_id']) && !isset($_GET['child_id'])){ ?>  
         <div class="wide-container content-section" style="color:<?php the_sub_field('font_color'); ?>;background: <?php the_sub_field('background_color'); ?>;">
           <div class="container">  
             <div class="row">
@@ -224,9 +205,7 @@
             <p class="centered"><a class="button" href="<?php the_sub_field("articles_link"); ?>">More Articles</a>
           </div> 
         </div>   
-        <?php } ?>               
         <?php elseif(get_row_layout() == "large_background_images"): // layout: Large Background Image ?>
-           <?php if(!isset($_GET['slug']) && !isset($_GET['event_id']) && !isset($_GET['child_id'])){ ?>
           <div class="wide-container content-section">
           <?php if(get_sub_field('large_image_section')): ?>
             <?php while(has_sub_field('large_image_section')): ?>
@@ -247,9 +226,7 @@
             <?php endwhile; ?>
           <?php endif; ?>
           </div>
-        <?php } ?> 
         <?php elseif(get_row_layout() == "leadership_section"): // layout: Large Background Image ?>
-           <?php if(!isset($_GET['slug']) && !isset($_GET['event_id']) && !isset($_GET['child_id'])){ ?>
           <div class="wide-container content-section">
             <?php if( have_rows('leadership_section') ): ?>
               <div class="leader-section">
@@ -278,9 +255,7 @@
               </div>
             <?php endif; // if( get_field('to-do_lists') ): ?>
           </div>
-        <?php } ?> 
          <?php elseif(get_row_layout() == "4_photo_section"): // layout: Video Embed ?>
-           <?php if(!isset($_GET['slug']) && !isset($_GET['event_id']) && !isset($_GET['child_id'])){ ?>
 
           <?php if(get_sub_field('photo_row')): ?>
           <div class="wide-container content-section" style="color:<?php the_sub_field('font_color'); ?>;background: <?php the_sub_field('background_color'); ?>;">
@@ -313,24 +288,5 @@
               </div>
               </div>
             <?php endif; ?>
-        <?php } ?>             
-    <?php elseif(get_row_layout() == "pure_charity_embed_section"): // layout: General Conent no image ?>
-    <div class="wide-container content-section general_content_section_bgcolor" style="color:<?php the_sub_field('font_color'); ?>;background: <?php the_sub_field('background_color'); ?>;">
-      <div class="container">
-        <div class="row">
-          <div class="col span_24 centered-section">
-            <?php if( $title = get_sub_field('title') ){ ?>
-              <h3 class="content-heading"><?php echo $title; ?></h3>
-            <?php }?>
-             <?php if( $intro = get_sub_field('intro') ){ ?>
-                <p class="intro"><?php echo $intro; ?></p>
-              <?php }?>
-            <?php if( $embed_code = get_sub_field('embed_code') ){ ?>
-              <p><?php echo $embed_code; ?></p>
-            <?php }?>
-          </div>
-        </div>
-      </div>
-    </div>
   <?php endif; ?><!-- end flexible sections -->
 <?php endwhile; ?><!-- end flexible fields -->

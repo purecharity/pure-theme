@@ -600,7 +600,7 @@ ul.social-icons li { display: inline-block; margin: 0; font-size: 2em; }
 /* line 287, sass/theme.scss */
 .donatebuttons ul li { list-style: none; margin-bottom: 10px; }
 /* line 291, sass/theme.scss */
-.donatebuttons ul a { width: 300px; font-weight: 600; }
+.donatebuttons ul a.button { width: 300px; display: block; font-weight: 600; }
 
 /* line 298, sass/theme.scss */
 .fr-list-container.is-grid { font-size: .8em; }

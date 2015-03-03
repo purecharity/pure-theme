@@ -17,7 +17,6 @@
 				<?php the_tags('<p class="tags"><span class="tags-title">Tags:</span> ', ', ', '</p>'); ?>
 				<p class="meta categories">Categories: <?php the_category(',') ?></p>
 			</div>
-			
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<div class="row nopadtop">
 					<div class="post-body clr">
