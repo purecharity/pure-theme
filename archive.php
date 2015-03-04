@@ -36,9 +36,7 @@
 	<div class="container">
 		<div class="row page-content articles-container">
 			<?php while (have_posts()) : the_post(); ?>
-				<div class="row article">
-             <?php get_template_part('inc/content','article'); ?> 
-          </div>
+         <?php get_template_part('inc/content','article'); ?> 
 				<?php endwhile; ?>
 					<?php get_template_part( 'inc/feature', 'pagination' ); ?>
 				<?php else : ?>

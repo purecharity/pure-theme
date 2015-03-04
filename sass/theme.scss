@@ -303,19 +303,30 @@ ul.social-icons {
 	font-size:.8em;
 }
 
+.ss-pika {
+	margin-right: 10px;
+}
+
 
 // Blog formatting
 
 // Posts 
+
+.author {
+	float:right;
+}
 
 .article {
 	padding: 50px 0;
 }
 
 .meta {
-		font-size: .8em;
-		font-style: italic;
+	font-size: .8em;
+	font-style: italic;
+	&.author {
+		margin-top: 0;
 	}
+}
 
 .featured-image {
 	img {
@@ -325,6 +336,8 @@ ul.social-icons {
 
 .comments-row {
 	border-top: 1px solid $bordercolor;
+	padding: 20px 0;
+	margin-top: 40px;
 	ol {
 		margin: 0;
 		padding: 0;
