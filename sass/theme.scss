@@ -217,12 +217,16 @@
 }
 
 .sidebar {
-	padding-top: 20px;
+	padding-top: 40px;
+	font-size: .9em;
 	h4 {
 		font-size: 1em;
 	}
 	ul {
 		list-style: none;
+	}
+	.sidebar-section {
+		margin-bottom: 40px;
 	}
 }
 
@@ -305,16 +309,11 @@ ul.social-icons {
 // Posts 
 
 .article {
-	text-align: center;
 	padding: 50px 0;
-	h2 {
-		margin:0;
-	}
 }
 
 .meta {
 		font-size: .8em;
-		text-align: center;
 		font-style: italic;
 	}
 

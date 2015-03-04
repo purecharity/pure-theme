@@ -3,7 +3,7 @@ Theme Name: Pure  Theme
 Theme URI: http://www.purecharity.com
 Github Theme URI: https://github.com/purecharity/pure-theme
 Description: Created by Pure Charity
-Version: 1.2.0
+Version: 1.2.1
 Author: Todd Hiestand
 Author URI: http://www.purecharity.com/
 */
@@ -11,7 +11,7 @@ Author URI: http://www.purecharity.com/
 h1, h2, h3, h4, h5, h6, p, pre, blockquote, dl, address { margin: .7em 0; padding: 0; line-height: 163%; }
 
 /* line 7, sass/format.scss */
-h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+h1, h2, h3, h4, h5, h6 { font-weight: 600; }
 
 /* line 11, sass/format.scss */
 h1 { font-size: 2em; }
@@ -565,90 +565,90 @@ a.button:hover { background: #cf754c; }
 .post-body { padding-top: 30px; }
 
 /* line 219, sass/theme.scss */
-.sidebar { padding-top: 20px; }
-/* line 221, sass/theme.scss */
+.sidebar { padding-top: 40px; font-size: .9em; }
+/* line 222, sass/theme.scss */
 .sidebar h4 { font-size: 1em; }
-/* line 224, sass/theme.scss */
+/* line 225, sass/theme.scss */
 .sidebar ul { list-style: none; }
+/* line 228, sass/theme.scss */
+.sidebar .sidebar-section { margin-bottom: 40px; }
 
-/* line 231, sass/theme.scss */
+/* line 235, sass/theme.scss */
 .footer { border-top: 1px solid #dddddd; font-size: .8em; }
-/* line 234, sass/theme.scss */
-.footer ul { list-style: none; margin: 0; padding: 0; }
 /* line 238, sass/theme.scss */
+.footer ul { list-style: none; margin: 0; padding: 0; }
+/* line 242, sass/theme.scss */
 .footer ul li { margin: 0; }
 
-/* line 244, sass/theme.scss */
+/* line 248, sass/theme.scss */
 .footer-wide { font-size: .9em; }
 
-/* line 248, sass/theme.scss */
-ul.social-icons { list-style: none; margin: 0; text-align: right; }
 /* line 252, sass/theme.scss */
+ul.social-icons { list-style: none; margin: 0; text-align: right; }
+/* line 256, sass/theme.scss */
 ul.social-icons li { display: inline-block; margin: 0; font-size: 2em; }
 
-/* line 261, sass/theme.scss */
+/* line 265, sass/theme.scss */
 .donatebody { padding: 50px 0; color: #fff; font-size: 2em; height: 86vh; }
-/* line 266, sass/theme.scss */
-.donatebody h1 { margin: 0; text-align: center; }
 /* line 270, sass/theme.scss */
+.donatebody h1 { margin: 0; text-align: center; }
+/* line 274, sass/theme.scss */
 .donatebody .donateintro p { text-align: center; margin: 0; line-height: 133%; }
 
-/* line 278, sass/theme.scss */
+/* line 282, sass/theme.scss */
 .donatebuttons ul { margin-top: 0px; text-align: center; list-style: none; font-size: .5em; }
-/* line 283, sass/theme.scss */
-.donatebuttons ul.generaldonation { font-size: .6em; padding-bottom: 10px; }
 /* line 287, sass/theme.scss */
-.donatebuttons ul li { list-style: none; margin-bottom: 10px; }
+.donatebuttons ul.generaldonation { font-size: .6em; padding-bottom: 10px; }
 /* line 291, sass/theme.scss */
-.donatebuttons ul a.button { width: 300px; display: block; font-weight: 600; }
+.donatebuttons ul li { list-style: none; margin-bottom: 10px; }
+/* line 295, sass/theme.scss */
+.donatebuttons ul a { width: 300px; font-weight: 600; }
 
-/* line 298, sass/theme.scss */
+/* line 302, sass/theme.scss */
 .fr-list-container.is-grid { font-size: .8em; }
 
-/* line 307, sass/theme.scss */
-.article { text-align: center; padding: 50px 0; }
-/* line 310, sass/theme.scss */
-.article h2 { margin: 0; }
+/* line 311, sass/theme.scss */
+.article { padding: 50px 0; }
 
 /* line 315, sass/theme.scss */
-.meta { font-size: .8em; text-align: center; font-style: italic; }
+.meta { font-size: .8em; font-style: italic; }
 
-/* line 322, sass/theme.scss */
+/* line 321, sass/theme.scss */
 .featured-image img { -webkit-border-radius: 100%; -moz-border-radius: 100%; border-radius: 100%; }
 
-/* line 327, sass/theme.scss */
+/* line 326, sass/theme.scss */
 .comments-row { border-top: 1px solid #dddddd; }
-/* line 329, sass/theme.scss */
+/* line 328, sass/theme.scss */
 .comments-row ol { margin: 0; padding: 0; list-style: none; }
-/* line 334, sass/theme.scss */
+/* line 333, sass/theme.scss */
 .comments-row li { list-style: none; margin: 0; padding: 0; }
-/* line 339, sass/theme.scss */
+/* line 338, sass/theme.scss */
 .comments-row .comment-author { padding: 0px; font-weight: 600; }
-/* line 342, sass/theme.scss */
+/* line 341, sass/theme.scss */
 .comments-row .comment-author img { float: left; margin: 0 10px 10px 0; }
-/* line 347, sass/theme.scss */
+/* line 346, sass/theme.scss */
 .comments-row .comment-meta { font-size: .9em; }
-/* line 350, sass/theme.scss */
+/* line 349, sass/theme.scss */
 .comments-row .children { margin-left: 40px; }
-/* line 353, sass/theme.scss */
+/* line 352, sass/theme.scss */
 .comments-row .comment-body { margin: 20px 0; padding: 20px 0; border-bottom: 1px solid #dddddd; }
 
-/* line 363, sass/theme.scss */
+/* line 362, sass/theme.scss */
 .leader-section h2 { font-weight: 600; text-align: center; }
 
-/* line 369, sass/theme.scss */
+/* line 368, sass/theme.scss */
 ul.leader-container { text-align: center !important; }
-/* line 371, sass/theme.scss */
+/* line 370, sass/theme.scss */
 ul.leader-container li.col { display: inline-block; width: 22.5%; float: none; min-height: 320px; vertical-align: top; }
-/* line 377, sass/theme.scss */
+/* line 376, sass/theme.scss */
 ul.leader-container li.col.secondary-leader { width: 18.25%; font-size: .7em; }
-/* line 381, sass/theme.scss */
+/* line 380, sass/theme.scss */
 ul.leader-container li.col .leadercontact { font-size: 1.8em; }
-/* line 385, sass/theme.scss */
+/* line 384, sass/theme.scss */
 ul.leader-container img { width: 100%; height: auto; -webkit-border-radius: 100%; -moz-border-radius: 100%; border-radius: 100%; }
-/* line 390, sass/theme.scss */
+/* line 389, sass/theme.scss */
 ul.leader-container h3, ul.leader-container h4 { font-size: 1.2em; font-weight: 600; }
-/* line 394, sass/theme.scss */
+/* line 393, sass/theme.scss */
 ul.leader-container .leader-position { font-size: 1em; }
 
 /*

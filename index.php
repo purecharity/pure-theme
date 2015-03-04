@@ -16,17 +16,20 @@
 
 <div class="wide-container">
 	<div class="container">
-		<div class="row page-content col span_24 articles-container">
-					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-          <div class="row col span_18 centered article">
-             <?php get_template_part('inc/content','article'); ?> 
-          </div>
-					<?php endwhile; else: ?>
-					<?php _e('Sorry, no posts matched your criteria.'); ?>
-					<?php endif; ?>
-          <div class="row">
-    		    <?php get_template_part( 'inc/feature', 'pagination' ); ?>
-          </div>
+		<div class="row nopadrow">
+      <div class="page-content col span_18 articles-container">
+				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+        <div class="article">
+           <?php get_template_part('inc/content','article'); ?> 
+        </div>
+				<?php endwhile; else: ?>
+				<?php _e('Sorry, no posts matched your criteria.'); ?>
+				<?php endif; ?>
+        <div class="row">
+  		    <?php get_template_part( 'inc/feature', 'pagination' ); ?>
+        </div>
+      </div>
+      <?php get_sidebar();?>
     </div><!-- end row-->
 	</div> <!-- end container--> 
 </div>
