@@ -997,13 +997,14 @@ if(function_exists("register_field_group"))
                         'key' => 'field_54caa2c97f582',
                         'label' => 'Link',
                         'name' => 'link',
-                        'type' => 'page_link',
+                        'type' => 'text',
                         'column_width' => '',
-                        'post_type' => array (
-                            0 => 'page',
-                        ),
-                        'allow_null' => 0,
-                        'multiple' => 0,
+                        'default_value' => '',
+                        'placeholder' => '',
+                        'prepend' => '',
+                        'append' => '',
+                        'formatting' => 'html',
+                        'maxlength' => '',
                     ),
                 ),
                 'row_min' => '',
@@ -1612,4 +1613,5 @@ if(function_exists("register_field_group"))
         'menu_order' => 0,
     ));
 }
+
 ?>
