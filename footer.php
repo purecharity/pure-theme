@@ -75,7 +75,8 @@
 	.lightnav ul.menu li a {color: <?php the_field('main_color','options'); ?> !important;}
 	ul.menu li:hover {background: <?php the_field('main_color','options'); ?> !important;}
 	ul.menu li ul li:hover {background: <?php the_field('main_color','options'); ?> !important;}
-	.pin, .pinned {background-color:<?php the_field('static_header_background_color','options'); ?> }
+	.pin {background:<?php the_field('static_header_background_color','options'); ?> !important; }
+	.pinned {background: #000 !important;}
 
 	.light-nav ul.menu li a {color:<?php the_field('main_color','options'); ?> !important;}
 	.light-nav ul.menu li:hover a {color: #fff !important;}

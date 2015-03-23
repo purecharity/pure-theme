@@ -20,20 +20,44 @@ get_header();
  
 	<?get_template_part('inc/nav','dark');?>
 
-	<?php if(get_field('home_slider')): ?>
+	<?php while(the_flexible_field("home_banner_options")): ?>
+  <?php if(get_row_layout() == "slider"): // layout: Main Content with bg image ?> 
 		<div class="header-content">
 		<ul class="bxslider slider-header">
-			<?php while(has_sub_field('home_slider')): ?>
-				<li style="background-image: url(<?php the_sub_field('image'); ?>);">	
-					<div class="slide-content col span_18 centered">
-						<h2><?php the_field('slider_title');?> </h2>
-						<p class="intro"><?php the_field('slider_subtitle');?> </p>
-	 				</div>
-				</li>
-			<?php endwhile; ?>
+			<?php if(get_sub_field('slider_images')): ?>
+         <?php while(has_sub_field('slider_images')): ?>
+            <li class="<?php the_sub_field('darkened_overlay'); ?>" style="background-image: url(<?php the_sub_field('image'); ?>);">	
+							<div class="slide-content col span_18 centered">
+							<h2><?php the_sub_field('slide_title');?> </h2>
+							<p class="intro"><?php the_sub_field('slide_content');?> </p>
+	 					</div>
+						</li>    
+          <?php endwhile; ?>
+      <?php endif; ?>
 		</ul>
 		</div>
-	<?php endif; ?>
+	<?php elseif(get_row_layout() == "single_image"): // layout: General Content with bg image ?> 
+    <div class="header-content single-header-image <?php the_sub_field('darkened_overlay'); ?>" style="color:<?php the_sub_field('font_color'); ?>;background-image: url(<?php the_sub_field('image'); ?>);">
+      <div class="container">
+        <div class="row">
+          <div class="col span_24 centered-section slide-content">
+            <?php if( $general_title = get_sub_field('title') ){ ?>
+                <h3 class="content-heading"><?php echo $general_title; ?></h3>
+              <?php }?>
+              <?php if( $general_content = get_sub_field('content') ){ ?>
+                <p><?php echo $general_content; ?></p>
+              <?php }?>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+ 	<?php endif; ?><!-- end flexible sections -->
+	<?php endwhile; ?><!-- end flexible fields -->
+
+
+
+	
 </div>
 
 <?php 

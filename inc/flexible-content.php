@@ -10,7 +10,7 @@
       </div>
     </div>
   <?php elseif(get_row_layout() == "general_content"): // layout: General Content with bg image ?> 
-    <div class="wide-container general_content content-section bgimage_content_section" style="color:<?php the_sub_field('font_color'); ?>;background-image: url(<?php the_sub_field('background_image'); ?>);">
+    <div class="wide-container general_content content-section bgimage_content_section <?php the_sub_field('darkened_overlay'); ?>" style="color:<?php the_sub_field('font_color'); ?>;background-image: url(<?php the_sub_field('background_image'); ?>);">
       <div class="container">
         <div class="row">
           <div class="col span_24 centered-section">
@@ -288,5 +288,5 @@
               </div>
               </div>
             <?php endif; ?>
-  <?php endif; ?><!-- end flexible sections -->
+ <?php endif; ?><!-- end flexible sections -->
 <?php endwhile; ?><!-- end flexible fields -->

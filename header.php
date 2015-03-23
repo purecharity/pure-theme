@@ -14,9 +14,6 @@
 
 		<!-- mobile meta (hooray!) -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-		<!-- This is the theme's stylesheet, delete it at your own peril! -->
-		<link href="<?php bloginfo('template_directory'); ?>/style.css" rel="stylesheet" type="text/css" />
  
 		<!-- add open graph -->
 		<?php if (have_posts()):while(have_posts()):the_post(); endwhile; endif;?>
