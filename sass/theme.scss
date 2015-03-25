@@ -542,20 +542,17 @@ ul.social-icons {
 
 // Posts 
 
-.author {
-	float:right;
-}
-
 .article {
 	padding: 50px 0;
 }
 
 .meta {
-	font-size: .8em;
+	font-size: 11px;
 	font-style: italic;
-	&.author {
-		margin-top: 0;
-	}
+}
+
+.author {
+	margin-left: 20px;
 }
 
 .featured-image {

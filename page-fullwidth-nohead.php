@@ -8,5 +8,3 @@ Template Name: Full Width Page Template - No Header
 	get_template_part('inc/flexible','content'); 
 	get_footer();
 ?>
-
-<?php var_dump($sponsorships);?>
