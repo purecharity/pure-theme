@@ -687,16 +687,16 @@ ul.social-icons li { display: inline-block; margin: 0; font-size: 2em; }
 /* line 613, sass/theme.scss */
 ul.leader-container { text-align: center !important; }
 /* line 615, sass/theme.scss */
-ul.leader-container li.col { display: inline-block; width: 22.5%; float: none; min-height: 320px; vertical-align: top; }
-/* line 621, sass/theme.scss */
+ul.leader-container li.col { display: inline-block; float: none; min-height: 320px; vertical-align: top; }
+/* line 620, sass/theme.scss */
 ul.leader-container li.col.secondary-leader { width: 18.25%; font-size: .7em; }
-/* line 625, sass/theme.scss */
+/* line 624, sass/theme.scss */
 ul.leader-container li.col .leadercontact { font-size: 1.8em; }
-/* line 629, sass/theme.scss */
+/* line 628, sass/theme.scss */
 ul.leader-container img { width: 100%; height: auto; -webkit-border-radius: 100%; -moz-border-radius: 100%; border-radius: 100%; }
-/* line 634, sass/theme.scss */
+/* line 633, sass/theme.scss */
 ul.leader-container h3, ul.leader-container h4 { font-size: 1.2em; font-weight: 600; }
-/* line 638, sass/theme.scss */
+/* line 637, sass/theme.scss */
 ul.leader-container .leader-position { font-size: 1em; }
 
 /*
