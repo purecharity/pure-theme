@@ -127,7 +127,7 @@ a img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 /* line 6, sass/nav.scss */
 .navigation { font-weight: 600; }
 /* line 8, sass/nav.scss */
-.navigation ul.menu { list-style: none; margin: 0px 0px; padding: 0; width: 100%; float: left; text-align: right; z-index: 3; display: inline-block; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+.navigation ul.menu { list-style: none; margin: 0px 0px; padding: 0 20px 0 0; width: 100%; float: left; text-align: right; z-index: 3; display: inline-block; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 /* line 23, sass/nav.scss */
 .navigation ul.menu li { display: inline-block; position: relative; padding: 0; margin: 0; }
 /* line 28, sass/nav.scss */
