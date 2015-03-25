@@ -1,1 +1,1 @@
-<?php get_template_part('inc/nav','dark');?>
+  <?get_template_part('inc/nav','nohead');?>
