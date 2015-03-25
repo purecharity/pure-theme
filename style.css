@@ -500,7 +500,7 @@ a.button:hover { background: #cf754c; }
 .home-head a.bx-prev, .home-head a.bx-next { color: #fff !important; }
 
 /* line 27, sass/theme.scss */
-.siteid h1 { margin: 18px 20px; padding: 0; text-indent: 100%; white-space: nowrap; overflow: hidden; width: 200px; height: 70px; z-index: 200; position: relative; font-size: 2em; }
+.siteid h1 { margin: 18px 20px; padding: 0; text-indent: 100%; white-space: nowrap; overflow: hidden; width: 200px; height: 120px; z-index: 200; position: relative; font-size: 2em; }
 /* line 38, sass/theme.scss */
 .siteid h1 a { display: block; color: #fff; }
 
