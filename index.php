@@ -1,18 +1,18 @@
 <?php 
 	get_header(); 
 	get_template_part( 'head'); 
-  get_template_part('inc/nav','dark');
 ?>
 
-<div class="wide-container noheaderimage">    
-  <div class="row nopadrow">
-      <div class="col span_24 centered">
-        <header>
-        <h1>Blog</h1>
-        </header>     
+<div class="wide-container page-head">
+  <?get_template_part('inc/nav','dark');?>
+  <div class="wide-container page-header overlayon" style="color:<?php the_field('page_header_text_color'); ?>;background-image: url(<?php if( get_post_meta($post->ID, "page_header", true) ): ?><?php the_field('page_header'); ?><?php else: ?><?php the_field('default_page_header', 'option'); ?><?php endif; ?>);">
+    <div class="row nopadrow">
+      <div class="col span_24 centered page-header-content">
+          <h1>Blog</h1>
       </div>
     </div>
-</div>
+  </div>
+</div>  
 
 <div class="wide-container">
 	<div class="container">
