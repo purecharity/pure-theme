@@ -80,6 +80,7 @@
 
 	.light-nav ul.menu li a {color:<?php the_field('main_color','options'); ?> !important;}
 	.light-nav ul.menu li:hover a {color: #fff !important;}
+	.noheadnav {background: #000 !important;}
 
 </style>
 

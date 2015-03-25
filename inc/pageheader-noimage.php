@@ -1,11 +1,9 @@
-<?php get_template_part('inc/nav','dark');?>
+  <?get_template_part('inc/nav','nohead');?>
 
-<div class="wide-container noheaderimage">    
-  <div class="row nopadrow">
-      <div class="col span_24 centered">
-        <header>
-        <h1><?php the_title();?></h1>
-        </header>     
+  <div class="wide-container">
+    <div class="row nopadrow">
+      <div class="col span_24 centered noheaderimage">
+          <h1><?php the_title();?></h1>
       </div>
     </div>
-</div>
+  </div>
