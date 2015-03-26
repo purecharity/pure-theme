@@ -56,6 +56,10 @@ and (max-width : 421px) {
     display: inline;
   }
 
+  .bx-next, .bx-prev {
+    display: none;
+  }
+
   .mobile-causes-nav.phone-only {
     display: inline;
   }
