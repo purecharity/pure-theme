@@ -1,8 +1,6 @@
 <?php 
-	get_header(); 
-	get_template_part( 'head'); 
-  get_template_part('inc/nav','dark');
-
+  get_header(); 
+  get_template_part('inc/nav','nohead');
 ?>
 
 <div class="wide-container noheaderimage">    
@@ -13,19 +11,19 @@
 					<?php if (have_posts()) : ?>
 					<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
 					<?php /* If this is a category archive */ if (is_category()) { ?>				
-							<h2 class="meta">Category: <?php echo single_cat_title(); ?></h2>
+							<h4>Category: <?php echo single_cat_title(); ?></h4>
 			 		<?php /* If this is a daily archive */ } elseif (is_day()) { ?>
-							<h2 class="meta">Archive for <?php the_time('F jS, Y'); ?></h2>
+							<h4>Archive for <?php the_time('F jS, Y'); ?></h4>
 					<?php /* If this is a monthly archive */ } elseif (is_month()) { ?>
-							<h2 class="meta">Archive for <?php the_time('F, Y'); ?></h2>
+							<h4>Archive for <?php the_time('F, Y'); ?></h4>
 					<?php /* If this is a yearly archive */ } elseif (is_year()) { ?>
-							<h2 class="meta">Archive for <?php the_time('Y'); ?></h2>
+							<h4>Archive for <?php the_time('Y'); ?></h4>
 				    <?php /* If this is a search */ } elseif (is_search()) { ?>
-							<h2 class="meta">Search Results</h2>
+							<h4>Search Results</h4>
 				    <?php /* If this is an author archive */ } elseif (is_author()) { ?>
-							<h2 class="meta">Author Archive</h2>
+							<h4>Author Archive</h4>
 					<?php /* If this is a paged archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
-							<h2 class="meta">Blog Archives</h2>
+							<h4>Blog Archives</h4>
 					<?php } ?>
 				</header><!-- end row-->
       </div>
