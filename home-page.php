@@ -27,7 +27,7 @@ get_header();
 			<?php if(get_sub_field('slider_images')): ?>
          <?php while(has_sub_field('slider_images')): ?>
             <li class="<?php the_sub_field('darkened_overlay'); ?>" style="background-image: url(<?php the_sub_field('image'); ?>);">	
-							<div class="slide-content col span_18 centered">
+							<div class="slide-content col span_14 centered">
 							<h2><?php the_sub_field('slide_title');?> </h2>
 							<p class="intro"><?php the_sub_field('slide_content');?> </p>
 	 					</div>
@@ -40,7 +40,7 @@ get_header();
     <div class="header-content single-header-image <?php the_sub_field('darkened_overlay'); ?>" style="color:<?php the_sub_field('font_color'); ?>;background-image: url(<?php the_sub_field('image'); ?>);">
       <div class="container">
         <div class="row">
-          <div class="col span_24 centered-section slide-content">
+          <div class="col span_16 centered-section slide-content">
             <?php if( $general_title = get_sub_field('title') ){ ?>
                 <h3 class="content-heading"><?php echo $general_title; ?></h3>
               <?php }?>
