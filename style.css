@@ -97,27 +97,27 @@ textarea#comment { width: 100%; }
 /* line 3, sass/images.scss */
 img { max-width: 100%; margin: 0; padding: 0; height: auto; }
 /* line 8, sass/images.scss */
-img.wp-post-image { float: left; margin: 0 1em 1em 0; }
-
-/* line 14, sass/images.scss */
-iframe { max-width: 100%; }
-
-/* line 16, sass/images.scss */
-img.alignright { float: right; margin: 0 0 1em 1em; }
-
-/* line 17, sass/images.scss */
-img.alignleft { float: left; margin: 0 1em 1em 0; }
+img.wp-post-image { float: left; margin: 0 1em 1em 0; width: 100%; height: auto; }
 
 /* line 18, sass/images.scss */
-img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
-
-/* line 19, sass/images.scss */
-a img.alignright { float: right; margin: 0 0 1em 1em; }
+iframe { max-width: 100%; }
 
 /* line 20, sass/images.scss */
-a img.alignleft { float: left; margin: 0 1em 1em 0; }
+img.alignright { float: right; margin: 0 0 1em 1em; }
 
 /* line 21, sass/images.scss */
+img.alignleft { float: left; margin: 0 1em 1em 0; }
+
+/* line 22, sass/images.scss */
+img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+
+/* line 23, sass/images.scss */
+a img.alignright { float: right; margin: 0 0 1em 1em; }
+
+/* line 24, sass/images.scss */
+a img.alignleft { float: left; margin: 0 1em 1em 0; }
+
+/* line 25, sass/images.scss */
 a img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 
 /* ===== Top ===== */
@@ -1630,10 +1630,12 @@ a.mobilepagebtn { color: #000; }
 @media only screen and (max-width: 421px) { /* line 55, sass/mobile.scss */
   .mobileshow { display: inline; }
   /* line 59, sass/mobile.scss */
+  .bx-next, .bx-prev { display: none; }
+  /* line 63, sass/mobile.scss */
   .mobile-causes-nav.phone-only { display: inline; }
-  /* line 64, sass/mobile.scss */
+  /* line 68, sass/mobile.scss */
   ul.leader-container li.col { width: 75%; }
-  /* line 66, sass/mobile.scss */
+  /* line 70, sass/mobile.scss */
   ul.leader-container li.col.secondary-leader { width: 75%; font-size: 1em; } }
 /*! Pushy - v0.9.1 - 2013-9-16
 * Pushy is a responsive off-canvas navigation menu using CSS transforms & transitions.
