@@ -96,29 +96,31 @@ textarea#comment { width: 100%; }
 /* wordpress image styles */
 /* line 3, sass/images.scss */
 img { max-width: 100%; margin: 0; padding: 0; height: auto; }
+/* line 8, sass/images.scss */
+img.wp-post-image { float: left; margin: 0 1em 1em 0; }
 
-/* line 11, sass/images.scss */
+/* line 15, sass/images.scss */
 .single-article.wp-post-image { float: left; margin: 0 1em 1em 0; width: 100%; height: auto; }
 
-/* line 21, sass/images.scss */
+/* line 25, sass/images.scss */
 iframe { max-width: 100%; }
 
-/* line 23, sass/images.scss */
+/* line 27, sass/images.scss */
 img.alignright { float: right; margin: 0 0 1em 1em; }
 
-/* line 24, sass/images.scss */
+/* line 28, sass/images.scss */
 img.alignleft { float: left; margin: 0 1em 1em 0; }
 
-/* line 25, sass/images.scss */
+/* line 29, sass/images.scss */
 img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 
-/* line 26, sass/images.scss */
+/* line 30, sass/images.scss */
 a img.alignright { float: right; margin: 0 0 1em 1em; }
 
-/* line 27, sass/images.scss */
+/* line 31, sass/images.scss */
 a img.alignleft { float: left; margin: 0 1em 1em 0; }
 
-/* line 28, sass/images.scss */
+/* line 32, sass/images.scss */
 a img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 
 /* ===== Top ===== */
