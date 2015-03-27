@@ -12,7 +12,7 @@ img {
 }
 
 .single-article {
-   &.wp-post-image {
+   .wp-post-image {
     float: left;
     margin:0 1em 1em 0;
     width: 100%;
