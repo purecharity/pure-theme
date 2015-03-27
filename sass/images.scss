@@ -5,7 +5,10 @@ img {
   margin:0;
   padding:0;
   height: auto;
-  &.wp-post-image {
+}
+
+.single-article {
+   &.wp-post-image {
     float: left;
     margin:0 1em 1em 0;
     width: 100%;
