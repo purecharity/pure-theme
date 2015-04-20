@@ -1,10 +1,10 @@
 <?php 
 	/*
-		Template Name: Default Template - No Header
+		Template Name: Default Template - No Header and No Title
 	*/
 	get_header();
 	get_template_part( 'head'); 
-  get_template_part('inc/pageheader','noimage'); 
+  get_template_part('inc/pageheader','notitle'); 
 ?>
 
 	<div class="wide-container">
