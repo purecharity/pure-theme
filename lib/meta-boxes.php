@@ -1,6 +1,4 @@
-<?php
-
-if(function_exists("register_field_group"))
+<?phpif(function_exists("register_field_group"))
 {
     register_field_group(array (
         'id' => 'acf_content-sections',
@@ -558,6 +556,54 @@ if(function_exists("register_field_group"))
                                 'type' => 'color_picker',
                                 'column_width' => '',
                                 'default_value' => '',
+                            ),
+                        ),
+                    ),
+                    array (
+                        'label' => 'Blog Posts Section',
+                        'name' => 'blog_posts_section',
+                        'display' => 'row',
+                        'min' => '',
+                        'max' => '',
+                        'sub_fields' => array (
+                            array (
+                                'key' => 'field_5537d35a67e8d',
+                                'label' => 'Title',
+                                'name' => 'title',
+                                'type' => 'text',
+                                'column_width' => '',
+                                'default_value' => '',
+                                'placeholder' => '',
+                                'prepend' => '',
+                                'append' => '',
+                                'formatting' => 'html',
+                                'maxlength' => '',
+                            ),
+                            array (
+                                'key' => 'field_5537d36667e8e',
+                                'label' => 'Intro',
+                                'name' => 'intro',
+                                'type' => 'text',
+                                'column_width' => '',
+                                'default_value' => '',
+                                'placeholder' => '',
+                                'prepend' => '',
+                                'append' => '',
+                                'formatting' => 'html',
+                                'maxlength' => '',
+                            ),
+                            array (
+                                'key' => 'field_5537d36f67e8f',
+                                'label' => 'Articles Link',
+                                'name' => 'articles_link',
+                                'type' => 'text',
+                                'column_width' => '',
+                                'default_value' => '',
+                                'placeholder' => '',
+                                'prepend' => '',
+                                'append' => '',
+                                'formatting' => 'html',
+                                'maxlength' => '',
                             ),
                         ),
                     ),
@@ -1350,6 +1396,5 @@ if(function_exists("register_field_group"))
         'menu_order' => 0,
     ));
 }
-
 
 ?>
