@@ -4,6 +4,9 @@
     <div class="row nopadrow">
       <div class="col span_24 centered page-header-content">
           <h1><?php the_title();?></h1>
+          <?php if( $head_subtext = get_field('header_subtext') ){ ?>
+            <?php echo $head_subtext; ?>
+          <?php }?>
       </div>
     </div>
   </div>

@@ -1316,6 +1316,15 @@ if(function_exists("register_field_group"))
                 'library' => 'all',
             ),
             array (
+                'key' => 'field_55664642ccc2d',
+                'label' => 'Header Subtext',
+                'name' => 'header_subtext',
+                'type' => 'wysiwyg',
+                'default_value' => '',
+                'toolbar' => 'full',
+                'media_upload' => 'yes',
+            ),
+            array (
                 'key' => 'field_54c28c446a916',
                 'label' => 'Page Header Text Color',
                 'name' => 'page_header_text_color',
@@ -1398,5 +1407,6 @@ if(function_exists("register_field_group"))
         'menu_order' => 0,
     ));
 }
+
 
 ?>
