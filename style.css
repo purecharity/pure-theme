@@ -1639,7 +1639,11 @@ a.mobilepagebtn { color: #000; }
   /* line 68, sass/mobile.scss */
   ul.leader-container li.col { width: 75%; }
   /* line 70, sass/mobile.scss */
-  ul.leader-container li.col.secondary-leader { width: 75%; font-size: 1em; } }
+  ul.leader-container li.col.secondary-leader { width: 75%; font-size: 1em; }
+  /* line 78, sass/mobile.scss */
+  .donate-template { height: 172vh; }
+  /* line 82, sass/mobile.scss */
+  .donate-page { height: 172vh; } }
 /*! Pushy - v0.9.1 - 2013-9-16
 * Pushy is a responsive off-canvas navigation menu using CSS transforms & transitions.
 * https://github.com/christophery/pushy/
