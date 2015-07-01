@@ -157,22 +157,24 @@
         </div> 
       <?php elseif(get_row_layout() == "general_rotator"): // layout: Video Embed ?>
         <div class="wide-container content-section" style="color:<?php the_sub_field('font_color'); ?>;background: <?php the_sub_field('background_color'); ?>;">
-            <div class="row">
-              <?php if( $rotator_title = get_sub_field('title') ){ ?>
-                <h3 class="content-heading"><?php echo $rotator_title; ?></h3>
-              <?php }?>
-              <?php if( $rotator_intro = get_sub_field('intro') ){ ?>
-                <p class="intro"><?php echo $rotator_intro; ?></p>
-              <?php }?>
-            </div>
-            <div class="row nopadtop">
-              <ul class="general-slider">
-                <?php while(has_sub_field('rotator_content')): ?>
-                  <div class="row nopadrow">
-                  <li class="bx-general col span_18 centered"><?php the_sub_field('content'); ?> </li>
-                  </div>
-                <?php endwhile; ?>
-              </ul>
+            <div class="container">
+              <div class="row">
+                <?php if( $rotator_title = get_sub_field('title') ){ ?>
+                  <h3 class="content-heading"><?php echo $rotator_title; ?></h3>
+                <?php }?>
+                <?php if( $rotator_intro = get_sub_field('intro') ){ ?>
+                  <p class="intro"><?php echo $rotator_intro; ?></p>
+                <?php }?>
+              </div>
+              <div class="row nopadtop">
+                <ul class="general-slider">
+                  <?php while(has_sub_field('rotator_content')): ?>
+                    <div class="row nopadrow">
+                    <li class="bx-general col span_18 centered"><?php the_sub_field('content'); ?> </li>
+                    </div>
+                  <?php endwhile; ?>
+                </ul>
+              </div>
             </div>
         </div>
       <?php elseif(get_row_layout() == "blog_posts_section"): // layout: Video Embed ?>
