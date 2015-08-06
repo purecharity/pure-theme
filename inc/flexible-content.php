@@ -295,5 +295,59 @@
               </div>
               </div>
             <?php endif; ?>
+
+ <?php elseif(get_row_layout() == "boxes"): // layout: Boxes and Grid Layou ?>
+  
+    <div class="wide-container">
+      <div class="container">
+        <div class="row">
+        <?php if( $info = get_sub_field('info_title') ){ ?>
+          <p class="info"><?php echo $info; ?></p>
+        <?php }?>
+
+        <?php if( $title = get_sub_field('section_title') ){ ?>
+          <h1><?php echo $title; ?></h1>
+        <?php }?>
+
+        </div> 
+
+      <div class="row">
+      <?php // check for rows (parent repeater)
+        if( have_rows('boxes') ): ?>
+          <?php // loop through rows (parent repeater)
+          while( have_rows('boxes') ): the_row(); ?>
+            <?php // check for rows (sub repeater)
+            if( have_rows('box_row') ): ?>
+                <div class="row">
+                    <?php 
+                    // loop through rows (sub repeater)
+                    while( have_rows('box_row') ): the_row();
+                        // display each item
+                        ?>
+                        <div class="col span_8 image-block">
+                         
+                           <?php $image = wp_get_attachment_image_src(get_sub_field('image'), 'image-square'); ?>
+                          
+
+                         <a href="<?php the_sub_field('link');?>"><div class="image" style="background: url(<?php echo $image[0]; ?>);">
+                          <h2><?php the_sub_field('title'); ?></h2>
+                        </div>
+                        <p><?php the_sub_field('content'); ?></p>
+                        </a>
+                        <br style="clear:both;" />
+                      </div>
+                    <?php endwhile; ?>
+                </div>
+            <?php endif; //if( get_sub_field('box_row') ): ?>
+          <?php endwhile; // while( has_sub_field('boxes') ): ?>
+      <?php endif; // if( get_field('boxes') ): ?>
+
+      <?php if( $after_box_text = get_sub_field('content_after_boxes') ){ ?>
+        <?php echo $after_box_text; ?>
+      <?php }?>
+    </div>
+      
+   </div>
+
  <?php endif; ?><!-- end flexible sections -->
 <?php endwhile; ?><!-- end flexible fields -->
