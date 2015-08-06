@@ -9,6 +9,11 @@
         </div>
       </div>
     </div>
+  <?php elseif(get_row_layout() == "full_width_image"): // layout: General Content with bg image ?> 
+    <div class="wide-container general_content content-section">
+      <?php $image = wp_get_attachment_image_src(get_sub_field('image'), 'header'); ?>
+      <img src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(get_field('image')) ?>" />
+    </div>
   <?php elseif(get_row_layout() == "general_content"): // layout: General Content with bg image ?> 
     <div class="wide-container general_content content-section bgimage_content_section <?php the_sub_field('darkened_overlay'); ?>" style="color:<?php the_sub_field('font_color'); ?>;background-image: url(<?php the_sub_field('background_image'); ?>);">
       <div class="container">
