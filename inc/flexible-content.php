@@ -10,7 +10,7 @@
       </div>
     </div>
   <?php elseif(get_row_layout() == "full_width_image"): // layout: General Content with bg image ?> 
-    <div class="wide-container general_content content-section">
+    <div class="wide-container general_content content-section fullwidthimage">
       <?php $image = wp_get_attachment_image_src(get_sub_field('image'), 'header'); ?>
       <img src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(get_field('image')) ?>" />
     </div>

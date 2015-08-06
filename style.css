@@ -717,6 +717,9 @@ ul.leader-container .leader-position { font-size: 1em; }
 /* line 680, sass/theme.scss */
 .image-block p { font-size: 12px; color: #666; margin-top: 12px; }
 
+/* line 687, sass/theme.scss */
+.fullwidthimage img { width: 100%; height: auto; }
+
 /*
 ----------------------------------------------------------------
 
