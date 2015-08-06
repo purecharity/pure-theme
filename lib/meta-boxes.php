@@ -39,10 +39,35 @@ if(function_exists("register_field_group"))
                         'max' => '',
                         'sub_fields' => array (
                             array (
+                                'key' => 'field_55c3cd94184b3',
+                                'label' => 'Show Titles',
+                                'name' => 'show_titles',
+                                'type' => 'select',
+                                'column_width' => '',
+                                'choices' => array (
+                                    'no' => 'No',
+                                    'yes' => 'Yes',
+                                ),
+                                'default_value' => '',
+                                'allow_null' => 0,
+                                'multiple' => 0,
+                            ),
+                            array (
                                 'key' => 'field_54c29c35cb7ce',
                                 'label' => 'Title',
                                 'name' => 'title',
                                 'type' => 'text',
+                                'conditional_logic' => array (
+                                    'status' => 1,
+                                    'rules' => array (
+                                        array (
+                                            'field' => 'field_55c3cd94184b3',
+                                            'operator' => '==',
+                                            'value' => 'yes',
+                                        ),
+                                    ),
+                                    'allorany' => 'all',
+                                ),
                                 'column_width' => '',
                                 'default_value' => '',
                                 'placeholder' => '',
@@ -72,14 +97,6 @@ if(function_exists("register_field_group"))
                                 'library' => 'all',
                             ),
                             array (
-                                'key' => 'field_54c29c35cb7d1',
-                                'label' => 'Font Color',
-                                'name' => 'font_color',
-                                'type' => 'color_picker',
-                                'column_width' => '',
-                                'default_value' => '#000000',
-                            ),
-                            array (
                                 'key' => 'field_550aed698c49e',
                                 'label' => 'Dark Overlay',
                                 'name' => 'darkened_overlay',
@@ -93,6 +110,14 @@ if(function_exists("register_field_group"))
                                 'allow_null' => 0,
                                 'multiple' => 0,
                             ),
+                            array (
+                                'key' => 'field_54c29c35cb7d1',
+                                'label' => 'Font Color',
+                                'name' => 'font_color',
+                                'type' => 'color_picker',
+                                'column_width' => '',
+                                'default_value' => '#000000',
+                            ),
                         ),
                     ),
                     array (
@@ -103,10 +128,46 @@ if(function_exists("register_field_group"))
                         'max' => '',
                         'sub_fields' => array (
                             array (
+                                'key' => 'field_55c3cdee184b4',
+                                'label' => 'Show Title',
+                                'name' => 'show_title',
+                                'type' => 'select',
+                                'conditional_logic' => array (
+                                    'status' => 1,
+                                    'rules' => array (
+                                        array (
+                                            'field' => 'null',
+                                            'operator' => '==',
+                                            'value' => '',
+                                        ),
+                                    ),
+                                    'allorany' => 'all',
+                                ),
+                                'column_width' => '',
+                                'choices' => array (
+                                    'no' => 'No',
+                                    'yes' => 'Yes',
+                                ),
+                                'default_value' => '',
+                                'allow_null' => 0,
+                                'multiple' => 0,
+                            ),
+                            array (
                                 'key' => 'field_54b8554c22cb4',
                                 'label' => 'Title',
                                 'name' => 'title',
                                 'type' => 'text',
+                                'conditional_logic' => array (
+                                    'status' => 1,
+                                    'rules' => array (
+                                        array (
+                                            'field' => 'field_55c3cdee184b4',
+                                            'operator' => '==',
+                                            'value' => 'yes',
+                                        ),
+                                    ),
+                                    'allorany' => 'all',
+                                ),
                                 'column_width' => '',
                                 'default_value' => '',
                                 'placeholder' => '',
@@ -151,10 +212,35 @@ if(function_exists("register_field_group"))
                         'max' => '',
                         'sub_fields' => array (
                             array (
+                                'key' => 'field_55c3ce2d184b5',
+                                'label' => 'Use Title & Intro',
+                                'name' => 'use_intro',
+                                'type' => 'select',
+                                'column_width' => '',
+                                'choices' => array (
+                                    'no' => 'No',
+                                    'yes' => 'Yes',
+                                ),
+                                'default_value' => '',
+                                'allow_null' => 0,
+                                'multiple' => 0,
+                            ),
+                            array (
                                 'key' => 'field_54de72187861a',
                                 'label' => 'Section Title',
                                 'name' => 'section_title',
                                 'type' => 'text',
+                                'conditional_logic' => array (
+                                    'status' => 1,
+                                    'rules' => array (
+                                        array (
+                                            'field' => 'field_55c3ce2d184b5',
+                                            'operator' => '==',
+                                            'value' => 'yes',
+                                        ),
+                                    ),
+                                    'allorany' => 'all',
+                                ),
                                 'column_width' => '',
                                 'default_value' => '',
                                 'placeholder' => '',
@@ -168,6 +254,17 @@ if(function_exists("register_field_group"))
                                 'label' => 'Section Intro',
                                 'name' => 'section_intro',
                                 'type' => 'wysiwyg',
+                                'conditional_logic' => array (
+                                    'status' => 1,
+                                    'rules' => array (
+                                        array (
+                                            'field' => 'field_55c3ce2d184b5',
+                                            'operator' => '==',
+                                            'value' => 'yes',
+                                        ),
+                                    ),
+                                    'allorany' => 'all',
+                                ),
                                 'column_width' => '',
                                 'default_value' => '',
                                 'toolbar' => 'full',
@@ -222,10 +319,35 @@ if(function_exists("register_field_group"))
                         'max' => '',
                         'sub_fields' => array (
                             array (
+                                'key' => 'field_55c3ce6a184b6',
+                                'label' => 'Use Title & Intro',
+                                'name' => 'use_title_&_intro',
+                                'type' => 'select',
+                                'column_width' => '',
+                                'choices' => array (
+                                    'no' => 'No',
+                                    'yes' => 'Yes',
+                                ),
+                                'default_value' => '',
+                                'allow_null' => 0,
+                                'multiple' => 0,
+                            ),
+                            array (
                                 'key' => 'field_54c18675ca6f8',
                                 'label' => 'Section Title',
                                 'name' => 'section_title',
                                 'type' => 'text',
+                                'conditional_logic' => array (
+                                    'status' => 1,
+                                    'rules' => array (
+                                        array (
+                                            'field' => 'field_55c3ce6a184b6',
+                                            'operator' => '==',
+                                            'value' => 'yes',
+                                        ),
+                                    ),
+                                    'allorany' => 'all',
+                                ),
                                 'column_width' => '',
                                 'default_value' => '',
                                 'placeholder' => '',
@@ -239,6 +361,17 @@ if(function_exists("register_field_group"))
                                 'label' => 'Section Intro',
                                 'name' => 'section_intro',
                                 'type' => 'wysiwyg',
+                                'conditional_logic' => array (
+                                    'status' => 1,
+                                    'rules' => array (
+                                        array (
+                                            'field' => 'field_55c3ce6a184b6',
+                                            'operator' => '==',
+                                            'value' => 'yes',
+                                        ),
+                                    ),
+                                    'allorany' => 'all',
+                                ),
                                 'column_width' => '',
                                 'default_value' => '',
                                 'toolbar' => 'full',
@@ -293,10 +426,35 @@ if(function_exists("register_field_group"))
                         'max' => '',
                         'sub_fields' => array (
                             array (
+                                'key' => 'field_55c3cea7184b7',
+                                'label' => 'Show Title & Intro',
+                                'name' => 'show_title_&_intro',
+                                'type' => 'select',
+                                'column_width' => '',
+                                'choices' => array (
+                                    'no' => 'No',
+                                    'yes' => 'Yes',
+                                ),
+                                'default_value' => '',
+                                'allow_null' => 0,
+                                'multiple' => 0,
+                            ),
+                            array (
                                 'key' => 'field_54c2a04d32c28',
                                 'label' => 'Section Title',
                                 'name' => 'section_title',
                                 'type' => 'text',
+                                'conditional_logic' => array (
+                                    'status' => 1,
+                                    'rules' => array (
+                                        array (
+                                            'field' => 'field_55c3cea7184b7',
+                                            'operator' => '==',
+                                            'value' => 'yes',
+                                        ),
+                                    ),
+                                    'allorany' => 'all',
+                                ),
                                 'column_width' => '',
                                 'default_value' => '',
                                 'placeholder' => '',
@@ -310,6 +468,17 @@ if(function_exists("register_field_group"))
                                 'label' => 'Section Intro',
                                 'name' => 'section_intro',
                                 'type' => 'wysiwyg',
+                                'conditional_logic' => array (
+                                    'status' => 1,
+                                    'rules' => array (
+                                        array (
+                                            'field' => 'field_55c3cea7184b7',
+                                            'operator' => '==',
+                                            'value' => 'yes',
+                                        ),
+                                    ),
+                                    'allorany' => 'all',
+                                ),
                                 'column_width' => '',
                                 'default_value' => '',
                                 'toolbar' => 'full',
@@ -364,10 +533,35 @@ if(function_exists("register_field_group"))
                         'max' => '',
                         'sub_fields' => array (
                             array (
+                                'key' => 'field_55c3ced5184b8',
+                                'label' => 'Show Title & Intro',
+                                'name' => 'show_title_&_intro',
+                                'type' => 'select',
+                                'column_width' => '',
+                                'choices' => array (
+                                    'no' => 'No',
+                                    'yes' => 'Yes',
+                                ),
+                                'default_value' => '',
+                                'allow_null' => 0,
+                                'multiple' => 0,
+                            ),
+                            array (
                                 'key' => 'field_54d11f4dfaf61',
                                 'label' => 'Title',
                                 'name' => 'title',
                                 'type' => 'text',
+                                'conditional_logic' => array (
+                                    'status' => 1,
+                                    'rules' => array (
+                                        array (
+                                            'field' => 'field_55c3ced5184b8',
+                                            'operator' => '==',
+                                            'value' => 'yes',
+                                        ),
+                                    ),
+                                    'allorany' => 'all',
+                                ),
                                 'column_width' => '',
                                 'default_value' => '',
                                 'placeholder' => '',
@@ -381,6 +575,17 @@ if(function_exists("register_field_group"))
                                 'label' => 'Intro',
                                 'name' => 'intro',
                                 'type' => 'wysiwyg',
+                                'conditional_logic' => array (
+                                    'status' => 1,
+                                    'rules' => array (
+                                        array (
+                                            'field' => 'field_55c3ced5184b8',
+                                            'operator' => '==',
+                                            'value' => 'yes',
+                                        ),
+                                    ),
+                                    'allorany' => 'all',
+                                ),
                                 'column_width' => '',
                                 'default_value' => '',
                                 'toolbar' => 'full',
@@ -441,10 +646,35 @@ if(function_exists("register_field_group"))
                         'max' => '',
                         'sub_fields' => array (
                             array (
+                                'key' => 'field_55c3cf7c184b9',
+                                'label' => 'Show Title & Intro',
+                                'name' => 'show_title_&_intro',
+                                'type' => 'select',
+                                'column_width' => '',
+                                'choices' => array (
+                                    'no' => 'No',
+                                    'yes' => 'Yes',
+                                ),
+                                'default_value' => '',
+                                'allow_null' => 0,
+                                'multiple' => 0,
+                            ),
+                            array (
                                 'key' => 'field_54c2a26c530f7',
                                 'label' => 'Title',
                                 'name' => 'title',
                                 'type' => 'text',
+                                'conditional_logic' => array (
+                                    'status' => 1,
+                                    'rules' => array (
+                                        array (
+                                            'field' => 'field_55c3cf7c184b9',
+                                            'operator' => '==',
+                                            'value' => 'yes',
+                                        ),
+                                    ),
+                                    'allorany' => 'all',
+                                ),
                                 'column_width' => '',
                                 'default_value' => '',
                                 'placeholder' => '',
@@ -458,6 +688,17 @@ if(function_exists("register_field_group"))
                                 'label' => 'Intro',
                                 'name' => 'intro',
                                 'type' => 'wysiwyg',
+                                'conditional_logic' => array (
+                                    'status' => 1,
+                                    'rules' => array (
+                                        array (
+                                            'field' => 'field_55c3cf7c184b9',
+                                            'operator' => '==',
+                                            'value' => 'yes',
+                                        ),
+                                    ),
+                                    'allorany' => 'all',
+                                ),
                                 'column_width' => '',
                                 'default_value' => '',
                                 'toolbar' => 'full',
@@ -509,10 +750,35 @@ if(function_exists("register_field_group"))
                         'max' => '',
                         'sub_fields' => array (
                             array (
+                                'key' => 'field_55c3cfad184ba',
+                                'label' => 'Show Intro & Title',
+                                'name' => 'show_intro_&_title',
+                                'type' => 'select',
+                                'column_width' => '',
+                                'choices' => array (
+                                    'no' => 'No',
+                                    'yes' => 'Yes',
+                                ),
+                                'default_value' => '',
+                                'allow_null' => 0,
+                                'multiple' => 0,
+                            ),
+                            array (
                                 'key' => 'field_54c2a253530f5',
                                 'label' => 'Title',
                                 'name' => 'title',
                                 'type' => 'text',
+                                'conditional_logic' => array (
+                                    'status' => 1,
+                                    'rules' => array (
+                                        array (
+                                            'field' => 'field_55c3cfad184ba',
+                                            'operator' => '==',
+                                            'value' => 'yes',
+                                        ),
+                                    ),
+                                    'allorany' => 'all',
+                                ),
                                 'column_width' => '',
                                 'default_value' => '',
                                 'placeholder' => '',
@@ -526,6 +792,17 @@ if(function_exists("register_field_group"))
                                 'label' => 'Intro',
                                 'name' => 'intro',
                                 'type' => 'wysiwyg',
+                                'conditional_logic' => array (
+                                    'status' => 1,
+                                    'rules' => array (
+                                        array (
+                                            'field' => 'field_55c3cfad184ba',
+                                            'operator' => '==',
+                                            'value' => 'yes',
+                                        ),
+                                    ),
+                                    'allorany' => 'all',
+                                ),
                                 'column_width' => '',
                                 'default_value' => '',
                                 'toolbar' => 'full',
@@ -617,10 +894,35 @@ if(function_exists("register_field_group"))
                         'max' => '',
                         'sub_fields' => array (
                             array (
+                                'key' => 'field_55c3cffb184bb',
+                                'label' => 'Show Title & Intro',
+                                'name' => 'show_title_&_intro',
+                                'type' => 'select',
+                                'column_width' => '',
+                                'choices' => array (
+                                    'no' => 'No',
+                                    'yes' => 'Yes',
+                                ),
+                                'default_value' => '',
+                                'allow_null' => 0,
+                                'multiple' => 0,
+                            ),
+                            array (
                                 'key' => 'field_559420faeacf1',
                                 'label' => 'Title',
                                 'name' => 'title',
                                 'type' => 'text',
+                                'conditional_logic' => array (
+                                    'status' => 1,
+                                    'rules' => array (
+                                        array (
+                                            'field' => 'field_55c3cffb184bb',
+                                            'operator' => '==',
+                                            'value' => 'yes',
+                                        ),
+                                    ),
+                                    'allorany' => 'all',
+                                ),
                                 'column_width' => '',
                                 'default_value' => '',
                                 'placeholder' => '',
@@ -634,6 +936,17 @@ if(function_exists("register_field_group"))
                                 'label' => 'Intro',
                                 'name' => 'intro',
                                 'type' => 'wysiwyg',
+                                'conditional_logic' => array (
+                                    'status' => 1,
+                                    'rules' => array (
+                                        array (
+                                            'field' => 'field_55c3cffb184bb',
+                                            'operator' => '==',
+                                            'value' => 'yes',
+                                        ),
+                                    ),
+                                    'allorany' => 'all',
+                                ),
                                 'column_width' => '',
                                 'default_value' => '',
                                 'toolbar' => 'full',
@@ -669,6 +982,108 @@ if(function_exists("register_field_group"))
                                 'type' => 'color_picker',
                                 'column_width' => '',
                                 'default_value' => '',
+                            ),
+                        ),
+                    ),
+                    array (
+                        'label' => 'Full Width Image (No overlay text)',
+                        'name' => 'full_width_image',
+                        'display' => 'row',
+                        'min' => '',
+                        'max' => '',
+                        'sub_fields' => array (
+                            array (
+                                'key' => 'field_55c3d037184bd',
+                                'label' => 'Image',
+                                'name' => 'image',
+                                'type' => 'image',
+                                'column_width' => '',
+                                'save_format' => 'id',
+                                'preview_size' => 'header',
+                                'library' => 'all',
+                            ),
+                        ),
+                    ),
+                    array (
+                        'label' => 'Boxes ',
+                        'name' => 'boxes',
+                        'display' => 'row',
+                        'min' => '',
+                        'max' => '',
+                        'sub_fields' => array (
+                            array (
+                                'key' => 'field_55c3d258548b4',
+                                'label' => 'Boxes',
+                                'name' => 'boxes',
+                                'type' => 'repeater',
+                                'column_width' => '',
+                                'sub_fields' => array (
+                                    array (
+                                        'key' => 'field_55c3d265548b5',
+                                        'label' => 'Box Row',
+                                        'name' => 'box_row',
+                                        'type' => 'repeater',
+                                        'column_width' => '',
+                                        'sub_fields' => array (
+                                            array (
+                                                'key' => 'field_55c3d276548b6',
+                                                'label' => 'Title',
+                                                'name' => 'title',
+                                                'type' => 'text',
+                                                'column_width' => '',
+                                                'default_value' => '',
+                                                'placeholder' => '',
+                                                'prepend' => '',
+                                                'append' => '',
+                                                'formatting' => 'html',
+                                                'maxlength' => '',
+                                            ),
+                                            array (
+                                                'key' => 'field_55c3d27f548b7',
+                                                'label' => 'Content',
+                                                'name' => 'content',
+                                                'type' => 'textarea',
+                                                'column_width' => '',
+                                                'default_value' => '',
+                                                'placeholder' => '',
+                                                'maxlength' => '',
+                                                'rows' => '',
+                                                'formatting' => 'br',
+                                            ),
+                                            array (
+                                                'key' => 'field_55c3d28d548b8',
+                                                'label' => 'Image',
+                                                'name' => 'image',
+                                                'type' => 'image',
+                                                'column_width' => '',
+                                                'save_format' => 'id',
+                                                'preview_size' => 'image-square',
+                                                'library' => 'all',
+                                            ),
+                                            array (
+                                                'key' => 'field_55c3d297548b9',
+                                                'label' => 'Link',
+                                                'name' => 'link',
+                                                'type' => 'text',
+                                                'column_width' => '',
+                                                'default_value' => '',
+                                                'placeholder' => '',
+                                                'prepend' => '',
+                                                'append' => '',
+                                                'formatting' => 'html',
+                                                'maxlength' => '',
+                                            ),
+                                        ),
+                                        'row_min' => 1,
+                                        'row_limit' => 3,
+                                        'layout' => 'row',
+                                        'button_label' => 'Add Box',
+                                    ),
+                                ),
+                                'row_min' => '',
+                                'row_limit' => '',
+                                'layout' => 'table',
+                                'button_label' => 'Add Box Row',
                             ),
                         ),
                     ),
@@ -720,6 +1135,13 @@ if(function_exists("register_field_group"))
                     'operator' => '!=',
                     'value' => 'page-noheaderwsidebar.php',
                     'order_no' => 5,
+                    'group_no' => 0,
+                ),
+                array (
+                    'param' => 'post_type',
+                    'operator' => '!=',
+                    'value' => 'tribe_events',
+                    'order_no' => 6,
                     'group_no' => 0,
                 ),
             ),
