@@ -51,8 +51,8 @@
 
 		// CONTROLS
 		controls: true,
-		nextText: '<span class="ss-icon ss-pika">navigateright</span>',
-		prevText: '<span class="ss-icon ss-pika">navigateleft</span>',
+		nextText: '<span class="ss-icon ss-air">navigateright</span>',
+		prevText: '<span class="ss-icon ss-air">navigateleft</span>',
 		nextSelector: null,
 		prevSelector: null,
 		autoControls: false,

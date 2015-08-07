@@ -13,7 +13,7 @@ require_once(__DIR__ . '/lib/widgets.php');
 require_once dirname( __FILE__ ) . '/lib/plugins.php';
 
 // Includes our meta boxes
-require_once(__DIR__ . '/lib/meta-boxes.php');
+// require_once(__DIR__ . '/lib/meta-boxes.php');
 
 // Includes our admin funtions
 require_once(__DIR__ . '/lib/admin.php');
@@ -21,12 +21,14 @@ require_once(__DIR__ . '/lib/admin.php');
 function pure_enqueue_scripts() {
 // Register some often used Scripts
 
+    wp_register_style( 'ss-air', get_template_directory_uri() . '/fonts/ss-air/ss-air.css', array(), '', 'all' );
     wp_register_style( 'ss-pika', get_template_directory_uri() . '/fonts/symbolset/ss-pika.css', array(), '', 'all' );
     wp_register_style( 'ss-social', get_template_directory_uri() . '/fonts/ss-social-circle/ss-social-circle.css', array(), '', 'all' );
  
   // enqueue da scripts
       wp_enqueue_style('ss-social');
       wp_enqueue_style('ss-pika');
+      wp_enqueue_style('ss-air');
    
    // register da scripts that we often use
       wp_deregister_script('jquery');
@@ -36,6 +38,7 @@ function pure_enqueue_scripts() {
       wp_register_script( 'pin', get_template_directory_uri() . '/js/pin.js', array(), true,'1.0',true,true );
       wp_register_script( 'ss-social-circle-js', get_template_directory_uri() . '/fonts/ss-social-circle/ss-social.js', array(), true,'1.0',true,true );
       wp_register_script( 'ss-pika-js', get_template_directory_uri() . '/fonts/symbolset/ss-pika.js', array(), true,'1.0',true,true );
+      wp_register_script( 'ss-air-js', get_template_directory_uri() . '/fonts/ss-air/ss-air.js', array(), true,'1.0',true,true );
       wp_register_script( 'pushy', get_template_directory_uri() . '/js/pushy.js', array(), true,'1.0',true,true );
       wp_register_script( 'bxjs', get_template_directory_uri() . '/js/jquery.bxslider.js', array(), true,true );
  
@@ -48,6 +51,7 @@ function pure_enqueue_scripts() {
       wp_enqueue_script( 'pushy' );
       wp_enqueue_script( 'bxjs' );
       wp_enqueue_script( 'ss-pika-js' );
+      wp_enqueue_script( 'ss-air-js' );
 
       wp_enqueue_script( 'ss-social-circle' );
 }
