@@ -547,6 +547,19 @@ ul.social-icons {
 
 .article {
 	padding: 50px 0;
+	&.resource {
+		padding: 20px 0;
+		border-top: 1px solid $bordercolor;
+	}
+}
+
+h2.tagtitle {
+	font-size: .9em;
+	margin-top: 0;
+}
+
+.restags {
+	line-height: 150%;
 }
 
 .meta {

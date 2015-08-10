@@ -49,6 +49,9 @@ a.button {
 	&:hover {
 		background: $secondarycolor;
 	}
+	&.resource {
+		margin-bottom: 20px;
+	}
 }
 
 

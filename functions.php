@@ -4,7 +4,7 @@
 require_once(__DIR__ . '/lib/taxonomies.php');
 
 // Includes our custom post types
-// require_once(__DIR__ . '/lib/post-types.php');
+require_once(__DIR__ . '/lib/post-types.php');
 
 // Includes our custom widgets
 require_once(__DIR__ . '/lib/widgets.php');
