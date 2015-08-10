@@ -76,7 +76,7 @@
 	ul.menu li:hover {background: <?php the_field('main_color','options'); ?> !important;}
 	ul.menu li ul li:hover {background: <?php the_field('main_color','options'); ?> !important;}
 	.pin {background:<?php the_field('static_header_background_color','options'); ?> !important; }
-	.pinned {background: #000 !important;}
+	.pinned {background:<?php the_field('static_header_background_color','options'); ?> !important;}
 
 	.light-nav ul.menu li a {color:<?php the_field('main_color','options'); ?> !important;}
 	.light-nav ul.menu li:hover a {color: #fff !important;}
