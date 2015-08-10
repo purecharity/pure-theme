@@ -89,6 +89,7 @@ add_filter('excerpt_more', 'new_excerpt_more');
  add_image_size( 'header', 1299, 300, true ); // Sized to fit the headers
  add_image_size( 'fullwidth', 1600, 9999 ); // Sized to fit the headers
  add_image_size( 'videoembedsize', 460, 280, true ); // 460 wide 280 tall cropped / we use this next to size next to youtube videos
+ add_image_size( 'image-grid', 276, 180, true ); // 400 pixels wide (and unlimited height)
 
  }
 
