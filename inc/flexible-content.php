@@ -326,7 +326,7 @@
                         ?>
                         <div class="col span_8 image-block">
                          
-                           <?php $image = wp_get_attachment_image_src(get_sub_field('image'), 'image-square'); ?>
+                           <?php $image = wp_get_attachment_image_src(get_sub_field('image'), 'image-grid'); ?>
                           
 
                          <a href="<?php the_sub_field('link');?>"><div class="image" style="background: url(<?php echo $image[0]; ?>);">
