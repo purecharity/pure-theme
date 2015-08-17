@@ -1,4 +1,5 @@
 <?php
+
 if(function_exists("register_field_group"))
 {
     register_field_group(array (
@@ -1773,24 +1774,6 @@ if(function_exists("register_field_group"))
                 'default_value' => '#CF754C',
             ),
             array (
-                'key' => 'field_54c18c62bf726',
-                'label' => 'Default Page Header',
-                'name' => 'default_page_header',
-                'type' => 'image',
-                'save_format' => 'url',
-                'preview_size' => 'full',
-                'library' => 'all',
-            ),
-            array (
-                'key' => 'field_5515a8f5d550a',
-                'label' => 'Blog Landing Header',
-                'name' => 'blog_landing_header',
-                'type' => 'image',
-                'save_format' => 'url',
-                'preview_size' => 'full',
-                'library' => 'all',
-            ),
-            array (
                 'key' => 'field_5515aa14ba6cb',
                 'label' => 'Blog Overlay',
                 'name' => 'blog_overlay',
@@ -1884,8 +1867,8 @@ if(function_exists("register_field_group"))
                 'name' => 'nav_color',
                 'type' => 'select',
                 'choices' => array (
-                    'dark-nav' => 'Dark',
-                    'light-nav' => 'White',
+                    'dark-nav' => 'White Text',
+                    'light-nav' => 'Link Color Text',
                     'nobg-nav' => 'No Background Color',
                 ),
                 'default_value' => '',
@@ -1898,6 +1881,30 @@ if(function_exists("register_field_group"))
                 'name' => 'mobile_menu_link_font_color',
                 'type' => 'color_picker',
                 'default_value' => '',
+            ),
+            array (
+                'key' => 'field_55d249ae66242',
+                'label' => 'Header Images',
+                'name' => '',
+                'type' => 'tab',
+            ),
+            array (
+                'key' => 'field_54c18c62bf726',
+                'label' => 'Default Page Header',
+                'name' => 'default_page_header',
+                'type' => 'image',
+                'save_format' => 'url',
+                'preview_size' => 'full',
+                'library' => 'all',
+            ),
+            array (
+                'key' => 'field_5515a8f5d550a',
+                'label' => 'Blog Landing Header',
+                'name' => 'blog_landing_header',
+                'type' => 'image',
+                'save_format' => 'url',
+                'preview_size' => 'full',
+                'library' => 'all',
             ),
         ),
         'location' => array (
@@ -1913,7 +1920,7 @@ if(function_exists("register_field_group"))
         ),
         'options' => array (
             'position' => 'normal',
-            'layout' => 'no_box',
+            'layout' => 'default',
             'hide_on_screen' => array (
             ),
         ),
@@ -2063,5 +2070,6 @@ if(function_exists("register_field_group"))
         'menu_order' => 0,
     ));
 }
+
 
 ?>
