@@ -281,11 +281,13 @@
                     <div class="row">
                     <?php while(has_sub_field('photos')): ?>
                       <div class="col span_12">
+                        <a href="<?php the_sub_field('photo_link');?>">
                         <?php 
                           $image = get_sub_field('photos');
                           $size = 'grid-sidebyside'; // (thumbnail, medium, large, full or custom size)
                           if( $image ) { echo wp_get_attachment_image( $image, $size ); }
                         ?>
+                        </a>
                       </div>
                     <?php endwhile; ?>    
                     </div>                
