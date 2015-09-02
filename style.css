@@ -1726,6 +1726,30 @@ a.mobilepagebtn { color: #000; }
 /* Example Media Query */
 @media screen and (max-width: 768px) { /* line 125, sass/pushy.scss */
   .pushy { font-size: 1.0em; } }
+/* Overlay */
+/* Container */
+/* line 5, sass/modal.scss */
+#basic-modal-content { display: none; }
+
+/* line 9, sass/modal.scss */
+#simplemodal-overlay { background: #fff; }
+
+/* line 13, sass/modal.scss */
+#simplemodal-container { -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; height: 300px; width: 500px; background: #eeeeee; border: 3px solid #333; padding: 20px; z-index: 99999 !important; font-size: .9em; }
+/* line 22, sass/modal.scss */
+#simplemodal-container p { line-height: 133%; }
+/* line 25, sass/modal.scss */
+#simplemodal-container h3 { margin-top: 0; margin-bottom: 8px; }
+/* line 30, sass/modal.scss */
+#simplemodal-container a.modalCloseImg { background: url(./images/close.png) no-repeat; width: 30px; height: 29px; display: inline; z-index: 3200; position: absolute; top: -15px; right: -16px; cursor: pointer; }
+/* line 41, sass/modal.scss */
+#simplemodal-container a.button { background: #cccb6c; color: #fff; }
+
+/* line 49, sass/modal.scss */
+.modal img { float: left; width: 100%; height: auto; -webkit-border-radius: 100%; -moz-border-radius: 100%; border-radius: 100%; }
+
+@media screen and (max-width: 768px) { /* line 59, sass/modal.scss */
+  #simplemodal-container { width: 95%; height: 330px; } }
 /** BxSlider v4.0 - Fully loaded, responsive content slider http://bxslider.com  Written by: Steven Wanderski, 2012 http://stevenwanderski.com (while drinking Belgian ales and listening to jazz)  CEO and founder of bxCreative, LTD http://bxcreative.com */
 /** RESET AND LAYOUT
 ===================================*/

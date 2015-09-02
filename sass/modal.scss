@@ -1,0 +1,63 @@
+/* Overlay */
+
+/* Container */
+
+#basic-modal-content {
+	display:none;
+}
+
+#simplemodal-overlay {
+	background: #fff;
+}
+
+#simplemodal-container {
+	@include rounded(5px);
+	height: 300px;
+	width: 500px;
+	background: $primarylightcolor; 
+	border:3px solid #333; 
+	padding:20px;
+	z-index: 99999 !important; 
+	font-size: .9em;
+	p {
+		line-height: 133%;
+	}
+	h3 {
+		margin-top: 0;
+		margin-bottom: 8px;
+	}
+	a {
+		&.modalCloseImg {
+			background:url(./images/close.png) no-repeat; 
+			width:30px; 
+			height:29px; 
+			display:inline; 
+			z-index:3200; 
+			position:absolute; 
+			top:-15px; 
+			right:-16px; 
+			cursor:pointer;
+		}
+		&.button {
+			background:$primarycolor;
+			color: #fff;
+		}
+	}
+}
+
+.modal {
+	img {
+		float: left;
+		width: 100%;
+		height: auto;
+		@include rounded(100%);
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	#simplemodal-container {
+		width: 95%;
+		height: 330px;
+	}
+}
