@@ -76,13 +76,13 @@ Template Name: Leadership Template
 				<div class="container">
 					<h2><?php the_sub_field('group_title'); ?></h2>
 						<?php if( have_rows('leadership_group') ): ?>
-							<?php $counter = 1;  //this sets up the counter starting at 0 ?>
+							<?php $counter2 = 10;  //this sets up the counter starting at 0 ?>
 							<div class="row">
 								<ul class="leader-container col span_24">
 								<?php while( have_rows('leadership_group') ): the_row(); ?>
 									<li class="leader secondary-leader col span_6">
 										<?php if( $profile = get_sub_field('profile') ){ ?>
-			               <a data-leader-id="lead2-<?php echo $counter; ?>" class="modal-link" href="#">
+			               <a data-leader-id="lead2-<?php echo $counter2; ?>" class="modal-link" href="#">
 			             <?php }?>
 										<h4><?php the_sub_field('name'); ?></h4>
 										<img class="rounded-avatar" src="<?php the_sub_field('image'); ?>" alt="<?php the_sub_field('name'); ?>">
@@ -94,7 +94,7 @@ Template Name: Leadership Template
 			               	</a>
 			            	 <?php }?>
 			            	  <!-- add the modal window within the loop -->
-				            	<div id="basic-modal-content" class="modal" data-leader-id="lead2-<?php echo $counter; ?>">
+				            	<div id="basic-modal-content" class="modal" data-leader-id="lead2-<?php echo $counter2; ?>">
 												<div class="row nopadrow">
 													<div class="col span_6">
 														<img class="rounded-avatar" src="<?php the_sub_field('image'); ?>" alt="<?php the_sub_field('name'); ?>">
@@ -105,6 +105,8 @@ Template Name: Leadership Template
 													</div>
 											</div>
 											<!-- end modal window -->
+																	<?php $counter2++; // add one per row ?> 
+
 									</li>
 								<?php endwhile; ?>
 								</ul>
