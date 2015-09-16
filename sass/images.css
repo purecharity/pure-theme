@@ -1,0 +1,20 @@
+/* wordpress image styles */
+/* line 3, /Users/HotRod/Dropbox (Personal)/wpdev/wpdemo/wp-content/themes/pure-theme/sass/images.scss */ img { max-width: 100%; margin: 0; padding: 0; height: auto; }
+
+/* line 8, /Users/HotRod/Dropbox (Personal)/wpdev/wpdemo/wp-content/themes/pure-theme/sass/images.scss */ img.wp-post-image { float: left; margin: 0 1em 1em 0; }
+
+/* line 15, /Users/HotRod/Dropbox (Personal)/wpdev/wpdemo/wp-content/themes/pure-theme/sass/images.scss */ .single-article .wp-post-image { float: left; margin: 0 1em 1em 0; }
+
+/* line 21, /Users/HotRod/Dropbox (Personal)/wpdev/wpdemo/wp-content/themes/pure-theme/sass/images.scss */ iframe { max-width: 100%; }
+
+/* line 23, /Users/HotRod/Dropbox (Personal)/wpdev/wpdemo/wp-content/themes/pure-theme/sass/images.scss */ img.alignright { float: right; margin: 0 0 1em 1em; }
+
+/* line 24, /Users/HotRod/Dropbox (Personal)/wpdev/wpdemo/wp-content/themes/pure-theme/sass/images.scss */ img.alignleft { float: left; margin: 0 1em 1em 0; }
+
+/* line 25, /Users/HotRod/Dropbox (Personal)/wpdev/wpdemo/wp-content/themes/pure-theme/sass/images.scss */ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+
+/* line 26, /Users/HotRod/Dropbox (Personal)/wpdev/wpdemo/wp-content/themes/pure-theme/sass/images.scss */ a img.alignright { float: right; margin: 0 0 1em 1em; }
+
+/* line 27, /Users/HotRod/Dropbox (Personal)/wpdev/wpdemo/wp-content/themes/pure-theme/sass/images.scss */ a img.alignleft { float: left; margin: 0 1em 1em 0; }
+
+/* line 28, /Users/HotRod/Dropbox (Personal)/wpdev/wpdemo/wp-content/themes/pure-theme/sass/images.scss */ a img.aligncenter { display: block; margin-left: auto; margin-right: auto; }

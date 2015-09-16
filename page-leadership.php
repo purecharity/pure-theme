@@ -30,7 +30,7 @@ Template Name: Leadership Template
 						<?php if( have_rows('leadership_group') ): ?>
 							<?php $counter = 1;  //this sets up the counter starting at 0 ?>
 							<div class="row">
-								<ul class="leader-container col span_24">
+								<ul class="leader-container group<?php echo $counter; ?> col span_24">
 								<?php while( have_rows('leadership_group') ): the_row(); ?>
 									<li class="leader col span_8">
 									<?php if( $profile = get_sub_field('profile') ){ ?>
@@ -78,7 +78,7 @@ Template Name: Leadership Template
 						<?php if( have_rows('leadership_group') ): ?>
 							<?php $counter2 = 10;  //this sets up the counter starting at 0 ?>
 							<div class="row">
-								<ul class="leader-container col span_24">
+								<ul class="leader-container group<?php echo $counter2; ?> col span_24">
 								<?php while( have_rows('leadership_group') ): the_row(); ?>
 									<li class="leader secondary-leader col span_6">
 										<?php if( $profile = get_sub_field('profile') ){ ?>
