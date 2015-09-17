@@ -25,7 +25,7 @@ Author URI: http://www.purecharity.com/
 
 /* line 18, /Users/HotRod/Dropbox (Personal)/wpdev/wpdemo/wp-content/themes/pure-theme/sass/format.scss */ h6 { font-size: 1em; }
 
-/* line 20, /Users/HotRod/Dropbox (Personal)/wpdev/wpdemo/wp-content/themes/pure-theme/sass/format.scss */ body { margin: 0 auto; padding: 0; font-family: "proxima-nova", sans-serif; font-style: normal; font-weight: 400; color: #333; background: #fff; -webkit-font-smoothing: antialiased; }
+/* line 20, /Users/HotRod/Dropbox (Personal)/wpdev/wpdemo/wp-content/themes/pure-theme/sass/format.scss */ body { margin: 0 auto; padding: 0; font-family: "Lato", sans-serif; font-style: normal; font-weight: 400; color: #333; background: #fff; -webkit-font-smoothing: antialiased; }
 
 /* line 30, /Users/HotRod/Dropbox (Personal)/wpdev/wpdemo/wp-content/themes/pure-theme/sass/format.scss */ blockquote { padding: 2px 20px; margin: 5px 30px; border-left: 1px dotted #ccc; }
 

@@ -15,6 +15,8 @@
 		<!-- mobile meta (hooray!) -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
  
+ 		<link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,700italic,400italic,700' rel='stylesheet' type='text/css'>
+
 		<!-- add open graph -->
 		<?php if (have_posts()):while(have_posts()):the_post(); endwhile; endif;?>
 
