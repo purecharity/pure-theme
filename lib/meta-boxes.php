@@ -1722,9 +1722,9 @@ if(function_exists("register_field_group"))
                                 'name' => 'profile',
                                 'type' => 'wysiwyg',
                                 'column_width' => '',
+                                'default_value' => '',
                                 'toolbar' => 'full',
                                 'media_upload' => 'yes',
-                                'default_value' => '',
                             ),
                         ),
                         'row_min' => '',
@@ -2103,6 +2103,5 @@ if(function_exists("register_field_group"))
         'menu_order' => 0,
     ));
 }
-
 
 ?>
