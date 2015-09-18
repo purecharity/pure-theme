@@ -92,6 +92,29 @@
 		  pager: true
 	 }); 
 
+	  if($(window).outerWidth() > 414){
+    var options = {
+      minSlides: 4,
+      maxSlides: 20,
+      slideWidth: 240,
+      slideMargin: 5,
+      pager: true,
+      touchEnabled: false,
+      autoStart: true
+    }
+  }else{
+    var options = {
+      minSlides: 1,
+      maxSlides: 1,
+      slideWidth: 240,
+      slideMargin: 5,
+      pager: true,
+      touchEnabled: true,
+      autoStart: true
+    }
+  }
+  $('.featured-fundraisers-slider').bxSlider(options);
+
 	 $(window).scroll(function(){
 		  var sticky = $('.sticky'),
 		      scroll = $(window).scrollTop();

@@ -9,6 +9,79 @@
         </div>
       </div>
     </div>
+  <?php elseif(get_row_layout() == "featured_fundraiser_embeds"): // layout: Intro with Call to Action ?>   
+    <div class="wide-container content-section" style="color:<?php the_sub_field('font_color'); ?>;background: <?php the_sub_field('background_color'); ?>;">
+      <div class="container">
+        <div class="row">
+            <div class="col span_24 centered-section">
+            <?php if( $fundembed_title = get_sub_field('title') ){ ?>
+                <h3 class="content-heading"><?php echo $fundembed_title; ?></h3>
+              <?php }?>
+              <?php if( $fundembed_content = get_sub_field('intro') ){ ?>
+                <p><?php echo $fundembed_content; ?></p>
+              <?php }?>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col span_24 centered-section">
+              <?php if(get_sub_field('featured_fundraisers')): ?>
+                <ul class="bxslider featured-fundraisers-slider col span_18">
+                <?php while(has_sub_field('featured_fundraisers')): ?>
+                     <li>
+                      <?php the_sub_field('fundraiser_embed');?>
+                    </li>
+                  <?php endwhile; ?>
+                </ul>
+              <?php endif; ?>
+          </div>
+        </div>
+      </div> 
+    </div> 
+  <?php elseif(get_row_layout() == "offset_box_grid"): // layout: Three Columns ?>
+    <div class="wide-container content-section photo-content-section tall-photo-section" style="color:<?php the_sub_field('font_color'); ?>;background: <?php the_sub_field('background_color'); ?>;">
+      <div class="container">
+        <div class="row">
+          <div class="col span_24 centered-section">
+            <?php if( $offsetgrid_title = get_sub_field('title') ){ ?>
+                <h3 class="content-heading"><?php echo $offsetgrid_title; ?></h3>
+              <?php }?>
+              <?php if( $offsetgrid_content = get_sub_field('intro') ){ ?>
+                <p><?php echo $offsetgrid_content; ?></p>
+              <?php }?>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col span_12">
+            <a href="<?php the_sub_field("tall_box_link"); ?>">
+            <div class="spon_box tall_box" style="background-image:url(<?php the_sub_field("tall_box_image"); ?>);">
+                <div class="spon-box-content">
+                  <h3><?php the_sub_field("tall_box_title"); ?></h3>
+                  <p><?php the_sub_field("tall_box_text"); ?></p>
+                </div>
+            </div>
+            </a>
+          </div>
+          <div class="col span_12">
+            <a href="<?php the_sub_field("top_right_box_link"); ?>">
+            <div class="spon_box" style="background-image:url(<?php the_sub_field("top_right_image"); ?>);">
+              <div class="spon-box-content">
+                  <h3><?php the_sub_field("top_right_box_title"); ?></h3>
+                  <p><?php the_sub_field("top_right_box_text"); ?></p>
+              </div>
+            </div>
+            </a>
+            <a href="<?php the_sub_field("bottom_right_link"); ?>">
+            <div class="spon_box" style="background-image:url(<?php the_sub_field("bottom_right_image"); ?>);">
+              <div class="spon-box-content">
+                <h3><?php the_sub_field("bottom_right_title"); ?></h3>
+                <p><?php the_sub_field("bottom_right_text"); ?></p>
+              </div>
+            </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div> 
   <?php elseif(get_row_layout() == "full_width_image"): // layout: General Content with bg image ?> 
     <div class="wide-container general_content content-section fullwidthimage">
       <?php $image = wp_get_attachment_image_src(get_sub_field('image'), 'fullwidth'); ?>

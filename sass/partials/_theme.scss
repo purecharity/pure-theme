@@ -700,3 +700,58 @@ ul.leader-container {
 	}
 }
 
+
+.pcsponsor-item {
+	background: none !important;
+}
+
+.pcsponsor-content h4, 
+.pcsponsor-content p {
+	color: #545454 !important;
+}
+
+.poweredby {
+	margin-top: 70px;
+}
+
+.content-section.bgimage_content_section {
+	font-size: 2em;
+	padding: 100px 0;
+}
+
+.general_content_section_bgcolor {
+	padding-top:0;
+	padding-bottom: 0;
+}
+
+.spon_box {
+	height: 21em;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 32px;
+	position: relative;
+	color: #fff;
+	a {display: block;}
+	&.tall_box {
+		height: 44em;
+	}
+	.spon-box-content {
+		position: absolute;
+		bottom: 0%;
+		left: 0;
+		width: 100%;
+	  z-index: 1;
+	  font-size: .8em;
+	  padding: 10px;
+		background: #545454;
+	}
+	h3 {
+		margin:0;
+		color: #D8E737;
+	}
+	p {
+		margin-top: 0;
+		line-height: 125%;
+	}
+}
+

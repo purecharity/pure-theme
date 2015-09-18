@@ -74,6 +74,10 @@ and (max-width : 421px) {
     } 
   }
 
+    .bx-wrapper .featured-fundraisers-slider, .bx-viewport .featured-fundraisers-slider, .bx-wrapper .featured-fundraisers-slider li {height: 421px !important;}
+
+  .discover-fundraisers iframe {  height: 401px;}
+
   
   .donate-template {
     height: 172vh;

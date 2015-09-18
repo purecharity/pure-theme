@@ -19,10 +19,11 @@
   margin: 0 auto 0px;
   padding: 0;
   *zoom: 1;
-  img {
-    max-width: 100%;
-    display: block;
-  }
+}
+
+.bx-wrapper img {
+  max-width: 100%;
+  display: block;
 }
 
 /** THEME
@@ -31,7 +32,6 @@
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
   position: absolute;
-  bottom: -40px;
   width: 100%;
 }
 
@@ -52,8 +52,9 @@
 
 .bx-pager
  {
-  padding-top: 0px;
+  padding-top: 30px;
   text-align: center;
+
 }
 
 .bx-pager .bx-pager-item,
@@ -64,13 +65,12 @@
 }
 
 .bx-pager.bx-default-pager a {
-  background: none;
-  border: 3px solid $primarycolor;
+  background: #666;
   text-indent: -9999px;
   display: block;
   width: 30px;
-  height: 20px;
-  width: 20px;
+  height: 10px;
+  width: 10px;
   margin: 0 2px;
   outline: 0;
   -moz-border-radius: 100%;
@@ -80,37 +80,28 @@
 
 .bx-pager.bx-default-pager a:hover,
 .bx-pager.bx-default-pager a.active {
-  background: $primarycolor;
+  background: #CC6633;
 }
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
 
 .bx-wrapper .bx-prev {
-  left: 160px;
+  left: -100px;
 }
 
 .bx-wrapper .bx-next {
-  right: 60px;
+  right: -100px;
 }
 
-.bx-wrapper .bx-prev:hover {
-  background-position: 0 -71px;
-}
-
-.bx-wrapper .bx-next:hover {
-  background-position: -53px -71px;
-}
 
 .bx-wrapper .bx-controls-direction a {
   position: absolute;
   top: 50%;
   margin-top: -16px;
-  margin-left: -100px;
+  margin-left: 0px;
   outline: 0;
-  width: 40px;
-  height: 59px;
-  z-index: 9999;
-  font-size: 3em;
+  color: #CC6633;
+  font-size: 1.4em;
 }
 
 .bx-wrapper .bx-controls-direction a.disabled {
