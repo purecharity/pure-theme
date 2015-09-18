@@ -71,16 +71,11 @@
 	}
 	.pushy {background-color: <?php the_field('main_color','options'); ?>;}
 	.pushy a {color: #fff !important;}
-	.navigation ul.menu li a { color: #fff !important; }
-	.lightnav ul.menu li a {color: <?php the_field('main_color','options'); ?> !important;}
-	ul.menu li:hover {background: <?php the_field('main_color','options'); ?> !important;}
-	ul.menu li ul li:hover {background: <?php the_field('main_color','options'); ?> !important;}
-	.pin {background:<?php the_field('static_header_background_color','options'); ?> !important; }
-	.pinned {background:<?php the_field('static_header_background_color','options'); ?> !important;}
-
-	.light-nav ul.menu li a {color:<?php the_field('main_color','options'); ?> !important;}
-	.light-nav ul.menu li:hover a {color: #fff !important;}
-	.noheadnav {background: #000 !important;}
+	.navigation ul.menu li a { color: <?php the_field('nav_color','options'); ?> !important; }
+	ul.menu li:hover {background: <?php the_field('main_color','options'); ?> ;}
+	ul.menu li ul li:hover {background: <?php the_field('main_color','options'); ?>;}
+	.pin {background:<?php $nav_Bar = get_field('nav_bar_bg_question','option'); if ( $nav_Bar == "no" ) { echo "none"; } else { echo the_field('static_header_background_color','options'); } ?> ; }
+	.pinned {background:<?php the_field('scrolling_header_background_color','options'); ?>;}
 
 </style>
 

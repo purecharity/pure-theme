@@ -1807,19 +1807,6 @@ if(function_exists("register_field_group"))
                 'default_value' => '#CF754C',
             ),
             array (
-                'key' => 'field_5515aa14ba6cb',
-                'label' => 'Blog Overlay',
-                'name' => 'blog_overlay',
-                'type' => 'select',
-                'choices' => array (
-                    'overlayon' => 'On',
-                    'overlayoff' => 'Off',
-                ),
-                'default_value' => '',
-                'allow_null' => 0,
-                'multiple' => 0,
-            ),
-            array (
                 'key' => 'field_55102ebc93185',
                 'label' => 'Social',
                 'name' => '',
@@ -1881,32 +1868,50 @@ if(function_exists("register_field_group"))
                 'type' => 'tab',
             ),
             array (
-                'key' => 'field_54c7db485f038',
-                'label' => 'Static Header Background Color',
-                'name' => 'static_header_background_color',
+                'key' => 'field_55fc4df9dc457',
+                'label' => 'Do you want a background on the navigation bar?',
+                'name' => 'nav_bar_bg_question',
                 'type' => 'select',
                 'choices' => array (
-                    '#00000' => 'Black',
-                    '#FFFFFF' => 'White',
-                    'none' => 'None',
+                    'no' => 'No',
+                    'yes' => 'Yes',
                 ),
                 'default_value' => '',
                 'allow_null' => 0,
                 'multiple' => 0,
             ),
             array (
+                'key' => 'field_54c7db485f038',
+                'label' => 'Static Header Background Color',
+                'name' => 'static_header_background_color',
+                'type' => 'color_picker',
+                'conditional_logic' => array (
+                    'status' => 1,
+                    'rules' => array (
+                        array (
+                            'field' => 'field_55fc4df9dc457',
+                            'operator' => '==',
+                            'value' => 'yes',
+                        ),
+                    ),
+                    'allorany' => 'all',
+                ),
+                'default_value' => '',
+            ),
+            array (
                 'key' => 'field_54d90222f07be',
                 'label' => 'Nav Text Color',
                 'name' => 'nav_color',
-                'type' => 'select',
-                'choices' => array (
-                    'dark-nav' => 'White Text',
-                    'light-nav' => 'Link Color Text',
-                    'nobg-nav' => 'No Background Color',
-                ),
+                'type' => 'color_picker',
                 'default_value' => '',
-                'allow_null' => 0,
-                'multiple' => 0,
+            ),
+            array (
+                'key' => 'field_55fc46c5b6b4d',
+                'label' => 'Scrolling Header Background Color',
+                'name' => 'scrolling_header_background_color',
+                'type' => 'color_picker',
+                'instructions' => 'Choose the color you want the navigation bar to be when the user scrolls. Defaults to black.',
+                'default_value' => '#000000',
             ),
             array (
                 'key' => 'field_54c2c059dd55f',
@@ -1938,6 +1943,19 @@ if(function_exists("register_field_group"))
                 'save_format' => 'url',
                 'preview_size' => 'full',
                 'library' => 'all',
+            ),
+            array (
+                'key' => 'field_5515aa14ba6cb',
+                'label' => 'Blog Header Overlay',
+                'name' => 'blog_overlay',
+                'type' => 'select',
+                'choices' => array (
+                    'overlayon' => 'On',
+                    'overlayoff' => 'Off',
+                ),
+                'default_value' => '',
+                'allow_null' => 0,
+                'multiple' => 0,
             ),
         ),
         'location' => array (
@@ -2103,5 +2121,6 @@ if(function_exists("register_field_group"))
         'menu_order' => 0,
     ));
 }
+
 
 ?>
