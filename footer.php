@@ -77,6 +77,8 @@
 	.pin {background:<?php $nav_Bar = get_field('nav_bar_bg_question','option'); if ( $nav_Bar == "no" ) { echo "none"; } else { echo the_field('static_header_background_color','options'); } ?> ; }
 	.pinned {background:<?php the_field('scrolling_header_background_color','options'); ?>;}
 
+	<?php the_field('custom_css_styles','options'); ?>
+
 </style>
 
 <script> 
