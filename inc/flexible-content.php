@@ -373,15 +373,15 @@
 
  <?php elseif(get_row_layout() == "boxes"): // layout: Boxes and Grid Layou ?>
   
-    <div class="wide-container">
+    <div class="wide-container content-section">
       <div class="container">
         <div class="row">
-        <?php if( $info = get_sub_field('grid_title') ){ ?>
-          <p class="info"><?php echo $info; ?></p>
-        <?php }?>
+        <?php if( $title = get_sub_field('grid_title') ){ ?>
+                <h3 class="content-heading"><?php echo $title; ?></h3>
+      <?php }?>
 
-        <?php if( $title = get_sub_field('grid_intro') ){ ?>
-          <h1><?php echo $title; ?></h1>
+        <?php if( $intro = get_sub_field('grid_intro') ){ ?>
+           <p class="intro"><?php echo $intro; ?></p>
         <?php }?>
 
         </div> 
