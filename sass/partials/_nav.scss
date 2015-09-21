@@ -38,16 +38,16 @@
         transition: all 0.2s;
         &:hover{
           position:relative;
-          color: #000; // main nav hover color
+          color: #fff !important; // main nav hover color
           text-shadow:none;   
         }
       }
       &:hover {
           position:relative;
-          color: #000 !important; // main name li hover color
+          color: #fff !important; // main name li hover color
           text-shadow:none; 
           a {
-            color: #000; // main nav li hover color
+            color: #fff !important; // main nav li hover color
           } 
         }
       &.current-page-parent,
@@ -62,13 +62,13 @@
       background:#444;
       text-align: left;
       &:hover {
-        color: #000; // main nav second level ul hover color
+        color: #fff !important; // main nav second level ul hover color
       }
       li {
         border:none;
         background: #444;
         &:active {
-          color: #fff; // main nav second level li active color
+          color: #fff !important; // main nav second level li active color
         } 
         a {
           float:none;

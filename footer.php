@@ -71,7 +71,7 @@
 	}
 	.pushy {background-color: <?php the_field('main_color','options'); ?>;}
 	.pushy a {color: #fff !important;}
-	.navigation ul.menu li a { color: <?php the_field('nav_color','options'); ?> !important; }
+	.navigation ul.menu li a { color: <?php the_field('nav_color','options'); ?>; }
 	ul.menu li:hover {background: <?php the_field('main_color','options'); ?> ;}
 	ul.menu li ul li:hover {background: <?php the_field('main_color','options'); ?>;}
 	.pin {background:<?php $nav_Bar = get_field('nav_bar_bg_question','option'); if ( $nav_Bar == "no" ) { echo "none"; } else { echo the_field('static_header_background_color','options'); } ?> ; }

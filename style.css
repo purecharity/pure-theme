@@ -139,21 +139,21 @@ a img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 /* line 28, sass/partials/_nav.scss */
 .navigation ul.menu li a { display: block; text-decoration: none; padding: 0 10px; line-height: 43px; color: #fff; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -ms-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
 /* line 39, sass/partials/_nav.scss */
-.navigation ul.menu li a:hover { position: relative; color: #000; text-shadow: none; }
+.navigation ul.menu li a:hover { position: relative; color: #fff !important; text-shadow: none; }
 /* line 45, sass/partials/_nav.scss */
-.navigation ul.menu li:hover { position: relative; color: #000 !important; text-shadow: none; }
+.navigation ul.menu li:hover { position: relative; color: #fff !important; text-shadow: none; }
 /* line 49, sass/partials/_nav.scss */
-.navigation ul.menu li:hover a { color: #000; }
+.navigation ul.menu li:hover a { color: #fff !important; }
 /* line 55, sass/partials/_nav.scss */
 .navigation ul.menu li.current-page-parent a, .navigation ul.menu li.current_page_item a { color: #fff; text-shadow: none; }
 /* line 61, sass/partials/_nav.scss */
 .navigation ul.menu ul { background: #444; text-align: left; }
 /* line 64, sass/partials/_nav.scss */
-.navigation ul.menu ul:hover { color: #000; }
+.navigation ul.menu ul:hover { color: #fff !important; }
 /* line 67, sass/partials/_nav.scss */
 .navigation ul.menu ul li { border: none; background: #444; }
 /* line 70, sass/partials/_nav.scss */
-.navigation ul.menu ul li:active { color: #fff; }
+.navigation ul.menu ul li:active { color: #fff !important; }
 /* line 73, sass/partials/_nav.scss */
 .navigation ul.menu ul li a { float: none; width: 200px; line-height: normal; font-variant: normal; font-weight: normal; font-size: 14px; text-transform: none; padding: 12px 15px; background: none !important; font-style: normal; text-shadow: none; color: #000; }
 /* line 88, sass/partials/_nav.scss */
