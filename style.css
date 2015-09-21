@@ -503,7 +503,7 @@ a.button.resource { margin-bottom: 20px; }
 .header-content { z-index: 1; position: absolute; width: 100%; top: 0; }
 
 /* line 18, sass/partials/_theme.scss */
-.home-head { height: 98vh; position: relative; }
+.home-head { height: 102vh; position: relative; }
 /* line 21, sass/partials/_theme.scss */
 .home-head a.bx-prev, .home-head a.bx-next { color: #fff !important; }
 

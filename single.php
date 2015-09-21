@@ -21,7 +21,7 @@
 				<?php the_content('Read the rest of this entry &raquo;'); ?>
 				<?php the_tags('<span class="tags"><span class="tags-title"><span class="ss-icon ss-pika">tag</span>Tags:</span> ', ', ', '</p>'); ?>
 				<p class="categories"><span class="ss-icon ss-pika">pushpin</span>Categories: <?php the_category(',') ?></p>
-
+			
 				<div class="comments-row">	
 					<?php comments_template( '', true ); ?>	
 				</div>
