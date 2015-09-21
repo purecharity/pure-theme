@@ -18,32 +18,29 @@ Template Name: Donate Page Template with Inputs
 	    </div>
 	    <div class="row nopadrow">
 	      <div class="title col span_24 donateintro">
-	        <?php the_field('donate_input_intro');?>
+	        <?php the_field('donate_intro');?>
 	      </div>
 	    </div>
-	    <div class="row">
-	      <div class="col span_24">
-	       <h3><?php the_field('main_box_title');?></h3>
-          <p><?php the_field('main_box_intro');?></p>
+	    <div class="row nopadrow">
+	      <div class="col span_12">
+	       <h3><?php the_field('main_donate_title');?></h3>
           <form>
             <input class="donatefield" name="give" type="text" placeholder="$ USD" /><br/>
-            <input class="donatesubmit" data-url="<?php the_field('recurring_link');?>/" name="donaterecurring" type="submit" value="Recurring" />
-            <input class="donatesubmit" data-url="<?php the_field('one_time_link');?>/" name="donateonetime" type="submit" value="One-Time" />
+            <input class="donatesubmit" data-url="<?php the_field('recurring_link');?>/" name="donaterecurring" type="submit" value="Give Recurring" />
+            <input class="donatesubmit" data-url="<?php the_field('one_time_link');?>/" name="donateonetime" type="submit" value="Give One-Time" />
           </form>
-	      </div>
-	  	</div>
-	  	<div class="row">
-	  		<div class="col span_24">
+        </div>
+	      <div class="col span_12">
+	  			<h3>Other Ways to Give</h3>
 	  			<?php if(get_field('additional_donate_options')): ?>
             <ul class="donate-options">
             <?php while(has_sub_field('additional_donate_options')): ?>
-              <li><a class="button" href="<?php the_sub_field('link');?>"><?php the_sub_field('title');?></a></li>
+              <li><a class="button alt-donate-buttons" href="<?php the_sub_field('link');?>"><?php the_sub_field('title');?></a></li>
             <?php endwhile; ?>
             </ul>
         		<?php endif; ?>
 	         </div>
-	  	</div>
-	  	
+	  	</div>	  	
   	</div>
   </div>
 </div>  

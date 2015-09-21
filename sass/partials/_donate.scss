@@ -47,6 +47,8 @@
 	color: #fff;
 	font-size: 1.3em;
 	padding: 200px 0;
+	z-index: 1;
+	position: relative;
 	h1 {
 		margin: 0;
 	}
@@ -69,20 +71,62 @@
 .donatebuttons {
 	position: relative;
 	z-index: 1;
-	ul {
+}
+
+ul.donate-options {
 		margin-top: 0px;
 		text-align: center;
 		list-style: none;
-		&.generaldonation {
-			padding-bottom: 10px;
-		}
 		li {
 			list-style: none;
 			margin-bottom: 10px;
 		}
 		a {
-			width: 300px;
 			font-weight: $boldfontweight;
+			width: 300px;
 		}
 	}
+
+ul.generaldonation {
+	margin-bottom: 10px;
+	list-style: none;
+	a.button {
+		padding: 20px;
+		width: 300px;
+	}
 }
+
+
+a.alt-donate-buttons {
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+input.donatesubmit {
+	@include rounded(3px);	
+	font-size: .9em;
+	background: $primarycolor;
+	padding: 10px;
+	color:#fff;
+	font-weight: $boldfontweight;
+	text-transform: uppercase;
+	border:none;
+	margin-bottom: 10px;
+	@include trans(.3s);	
+	&:hover {
+		background: $secondarycolor;
+		color: #fff !important;
+	}
+}
+
+.donatefield {
+	padding: 10px;
+	margin-bottom: 10px;
+	background: #fff;
+	border-radius: 5px;
+	border:none;
+	font-style: italic;
+}
+
+
+

@@ -20,7 +20,7 @@ Template Name: Donate Page Template
 	      <div class="title col span_14 donateintro">
 	        <?php the_field('donate_intro');?>
 	      </div>
-	      <div class="col span_10 donatebuttons">
+	      <div class="col span_10 alt-donate-buttons">
 	        <?php if(get_field('additional_donate_options')): ?>
 	              <ul class="generaldonation">
 	                <li><a class="general-donaton button large" href="<?php the_field('main_donate_button_link');?>"><?php the_field('main_donate_link_text');?></a></li>
