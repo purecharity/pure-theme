@@ -376,11 +376,11 @@
     <div class="wide-container">
       <div class="container">
         <div class="row">
-        <?php if( $info = get_sub_field('info_title') ){ ?>
+        <?php if( $info = get_sub_field('grid_title') ){ ?>
           <p class="info"><?php echo $info; ?></p>
         <?php }?>
 
-        <?php if( $title = get_sub_field('section_title') ){ ?>
+        <?php if( $title = get_sub_field('grid_intro') ){ ?>
           <h1><?php echo $title; ?></h1>
         <?php }?>
 
