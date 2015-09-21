@@ -9,7 +9,7 @@ Template Name: Donate Page Template
 
 <div class="wide-container page-head donate-template">
   <?get_template_part('inc/nav','dark');?>
-  <div class="wide-container page-header donate-page overlayon" style="color:<?php the_field('page_header_text_color'); ?>;background-image: url(<?php if( get_post_meta($post->ID, "page_background", true) ): ?><?php the_field('page_background'); ?><?php else: ?><?php the_field('default_page_header', 'option'); ?><?php endif; ?>);">
+  <div class="wide-container page-header donate-page <?php the_field('backround_overlay'); ?>" style="color:<?php the_field('page_header_text_color'); ?>;background-image: url(<?php if( get_post_meta($post->ID, "page_background", true) ): ?><?php the_field('page_background'); ?><?php else: ?><?php the_field('default_page_header', 'option'); ?><?php endif; ?>);">
   	<div class="container donatebody">
 	  	<div class="row">
 	  		<div class="col span_24 centered">
