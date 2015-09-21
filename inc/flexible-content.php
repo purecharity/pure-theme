@@ -271,9 +271,9 @@
               <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 <div class="col span_12">
                   <div class="article">
-                    <?php the_post_thumbnail( 'header' ); ?>    
                     <p class="meta date"><?php the_time('F j, Y'); ?></p>
                     <h4><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h4>
+                    <?php the_post_thumbnail('image-square'); ?>    
                     <?php the_excerpt(); ?>     
                   </div>  
                 </div>
