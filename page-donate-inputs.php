@@ -25,7 +25,7 @@ Template Name: Donate Page Template with Inputs
 	      <div class="col span_12">
 	       <h3><?php the_field('main_donate_title');?></h3>
           <form>
-            <input class="donatefield" name="give" type="text" placeholder="$ USD" /><br/>
+            <input class="donatefield" name="give" type="number" placeholder="$ USD" /><br/>
             <input class="donatesubmit" data-url="<?php the_field('recurring_link');?>/" name="donaterecurring" type="submit" value="Give Recurring" />
             <input class="donatesubmit" data-url="<?php the_field('one_time_link');?>/" name="donateonetime" type="submit" value="Give One-Time" />
           </form>
@@ -51,7 +51,7 @@ Template Name: Donate Page Template with Inputs
 
      jQuery(document).ready(function(){
     jQuery(document).on('click', '.donatesubmit', function(){
-      var redirect_to = jQuery(this).attr('data-url') + jQuery(this).parent().find('input[type=text]:first').val();
+      var redirect_to = jQuery(this).attr('data-url') + jQuery(this).parent().find('input[type=number]:first').val();
       location.href = redirect_to;
       return false;
     });
