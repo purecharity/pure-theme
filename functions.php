@@ -10,7 +10,7 @@ require_once(__DIR__ . '/lib/post-types.php');
 require_once(__DIR__ . '/lib/widgets.php');
 
 // Includes required plugins file
-// require_once dirname( __FILE__ ) . '/lib/plugins.php';
+require_once dirname( __FILE__ ) . '/lib/plugins.php';
 
 // Includes our meta boxes
 require_once(__DIR__ . '/lib/meta-boxes.php');
